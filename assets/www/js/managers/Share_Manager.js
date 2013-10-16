@@ -68,6 +68,7 @@ function shareMan() {
 
     $("#browseBtn").click(function () {
         alert('1');
+        alert(navigator.camera);
         navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
