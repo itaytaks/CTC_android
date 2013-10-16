@@ -83,6 +83,8 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
 .down_menu_background {
     /*height: 40px;*/
     height: 4em;
+    width: 101%;
+    left: -5px;
 }
 
 .Up_banner_background {
@@ -103,7 +105,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     left: 8px;
     width: 29px;
     background-size: auto 60%;
-    top: 8px;
+    top: 6px;
 }
 
 .info_btn_main {
@@ -1621,5 +1623,3 @@ ire_icon_recipes {
 #TextArea_share {
     font-size: 16px;
 }
-
-
