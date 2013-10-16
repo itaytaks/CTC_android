@@ -211,6 +211,9 @@ a {
     position: fixed;
     width: 100%;
     z-index: 20;
+    left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .icon {
@@ -379,7 +382,7 @@ a {
 .dots_position ul {
     position: relative;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
     width: 21px;
 }
 
@@ -2438,7 +2441,7 @@ a {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    width: 603px;
+    /*width: 603px;*/
     -webkit-overflow-scrolling: touch;
 }
 

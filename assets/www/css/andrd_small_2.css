@@ -33,10 +33,13 @@ body {
     height: 286px;
 }
 
-.recipes_middel_window{
+.recipes_middel_window, .recipes_middel_window_what_u_need {
     height: 380px;
 }
 
 .message_no_Results{
     font-size: 13px;
+}
+.recipes_text_down {
+height: 8px;
 }
