@@ -1,22 +1,42 @@
 body {
 }
 
-.all_categories{
+.all_categories {
     top: 0px;
 }
 
-.all_categories ul{
-    margin-top: 0%;
+.all_categories ul {
+    margin-top: 2%;
 }
 
-.Gesture_btn_main{
+.Gesture_btn_main {
     top: -5px;
 }
 
-.info_btn_main{
+.info_btn_main {
     top: -5px;
 }
 
 .page {
     height: 107%;
+}
+
+.search_btn {
+    top: 6px;
+}
+
+#btn_txt_1 {
+    line-height: 17px;
+}
+
+.categories_text_down {
+    height: 286px;
+}
+
+.recipes_middel_window{
+    height: 380px;
+}
+
+.message_no_Results{
+    font-size: 13px;
 }
