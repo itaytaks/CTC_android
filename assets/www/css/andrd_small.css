@@ -1512,9 +1512,6 @@ ire_icon_recipes {
     display: inherit;
 }
 
-.delete_btn_foodgator {
-    left: 275;
-}
 
 .food_list ul li {
     line-height: 15px;
@@ -1648,8 +1645,4 @@ ire_icon_recipes {
 
 .foodgrator_instructions {
     top: 200px;
-}
-
-.delete_btn_foodgator {
-    font-size: 0.8em;
 }
