@@ -369,11 +369,11 @@ a {
     text-align: center;
     top: 4px;
     /*width: 583px;*/
-    width: 100%;
+    /*width: 100%;
     height: 2%;
     right: 0;
     left: 0;
-    margin: auto;
+    margin: auto;*/
 }
 
 .dots_position ul {
@@ -929,7 +929,7 @@ a {
 }*/
 .recipes_list_Results ul li {
     height: 183px;
-    width: 589px;
+    /*width: 589px;*/
     position: relative;
     margin-bottom: 46px;
     cursor: pointer;
