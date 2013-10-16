@@ -103,7 +103,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     left: 8px;
     width: 29px;
     background-size: auto 60%;
-    top: 13px;
+    top: 8px;
 }
 
 .info_btn_main {
@@ -111,7 +111,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     width: 24px;
     float: right;
     position: relative;
-    top: -1px;
+    top: -7px;
     right: 8px;
 }
 
@@ -120,7 +120,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     width: 24px;
     float: right;
     position: relative;
-    top: -1px;
+    top: -7px;
     right: 12px;
 }
 
