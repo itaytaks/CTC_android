@@ -1,10 +1,5 @@
-.Up_banner_background{
-    background-color: #aa00cc;
-}
-
-
 body {
-    font-size: 0.6em;
+    font-size: 0.6px;
     width: 100%;
 }
 
@@ -1509,6 +1504,18 @@ ire_icon_recipes {
     font-size: 1.4em;
     width: 80%;
     display: inherit;
+}
+
+.delete_btn_foodgator {
+    left: 275;
+}
+
+.food_name{
+    line-height: 12px;
+}
+
+.food_list ul li {
+    line-height: 18px;
 }
 
 .food_list {
