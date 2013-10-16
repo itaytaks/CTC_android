@@ -57,5 +57,11 @@ height: 8px;
     height: 16px;
 }
 .recipes_middel_window_favorite {
-height: 395px;
+height: 400px;
+}
+.recipes_look_inside_btn{
+    top: 36%;
+}
+.recipes_middel_window_recipres_page{
+    height: 400px;
 }
