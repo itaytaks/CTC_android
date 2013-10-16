@@ -293,12 +293,15 @@ left: 96px;*/
     font-size: 1em;
     width: 86%;
 }
+
 .title_pic_text {
-left: 0;
+    left: 0;
 }
+
 .white_background {
     height: 10em;
 }
+
 .midddel_main_pic {
     padding-top: 30px;
 }
@@ -1231,12 +1234,13 @@ left: 69px;*/
     display: none;
     cursor: pointer;
     position: absolute;
-    left: 226px;
-    line-height: 22px;
+    left: 375px;
+    line-height: 34px;
     bottom: -55px;
     z-index: 600;
-    height: 20px;
-    width: 52px;
+    height: 35px;
+    width: 82px;
+    font-size: 16px;
     text-indent: 2px;
 }
 
@@ -1513,7 +1517,7 @@ ire_icon_recipes {
 }
 
 .food_list ul li {
-    line-height: 18px;
+    line-height: 15px;
 }
 
 .food_list {
@@ -1525,9 +1529,9 @@ ire_icon_recipes {
 }
 
 .food_name {
-    font-size: 1.5em;
+    font-size: 3em;
     top: 0;
-    line-height: 2em;
+    line-height: 3em;
     display: block;
     width: 207px;
 }
@@ -1576,7 +1580,7 @@ ire_icon_recipes {
     margin-left: 44px;
 }
 
-#one, #two, #three, .foodgrator_instruction_text_left, .foodgrator_instruction_text_right, .foodgrator_instruction_text_down{
+#one, #two, #three, .foodgrator_instruction_text_left, .foodgrator_instruction_text_right, .foodgrator_instruction_text_down {
     font-size: 11px;
 }
 
@@ -1644,7 +1648,8 @@ ire_icon_recipes {
 
 .foodgrator_instructions {
     top: 200px;
-}   
-.delete_btn_foodgator{
+}
+
+.delete_btn_foodgator {
     font-size: 0.8em;
 }
