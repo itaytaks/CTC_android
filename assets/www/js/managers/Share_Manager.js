@@ -67,13 +67,13 @@ function shareMan() {
     }
 
     $("#browseBtn").click(function () {
-
-                        navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
-                                                    destinationType: Camera.DestinationType.DATA_URL,
-                                                    sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
-                                                    targetWidth: 584
-                                                    });                                                
-  });
+        alert('1');
+        navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
+            destinationType: Camera.DestinationType.DATA_URL,
+            sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
+            targetWidth: 584
+        });
+    });
   $("#takeAPicBtn").click(function () {
       //$('.share_position').hide();
       //$('.share_specific_pic').show();
