@@ -1510,10 +1510,6 @@ ire_icon_recipes {
     left: 275;
 }
 
-.food_name{
-    line-height: 12px;
-}
-
 .food_list ul li {
     line-height: 18px;
 }
