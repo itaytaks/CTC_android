@@ -1,2 +1,22 @@
 body {
 }
+
+.all_categories{
+    top: 0px;
+}
+
+.all_categories ul{
+    margin-top: 0%;
+}
+
+.Gesture_btn_main{
+    top: -5px;
+}
+
+.info_btn_main{
+    top: -5px;
+}
+
+.page {
+    height: 107%;
+}
