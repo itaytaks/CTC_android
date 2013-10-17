@@ -74,8 +74,7 @@ body {
     height: 400px;
 }
 
-
-element.style {
+.star_icon_recipes_one {
     background-size: 24px 13px;
     left: 37%;
     width: 77px;
@@ -83,4 +82,5 @@ element.style {
     top: -6px;
     background-position: 21px 6px;
     left: 12px;
+    background-color: bisque;
 }
