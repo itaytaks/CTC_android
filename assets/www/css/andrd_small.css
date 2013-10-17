@@ -322,13 +322,14 @@ left: 96px;*/
     padding-top: 30px;
 }
 /******categories list********/
-.all_categories{
+.all_categories {
     top: 0px;
 }
 
 .all_categories ul {
     margin-top: 2%;
 }
+
 .all_categories ul li {
     height: 120px;
     margin-bottom: -53px;
@@ -1524,7 +1525,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: -10px
+    top: -10px;
 }
 
 #Text_search_foodgrator {
@@ -1671,3 +1672,11 @@ ire_icon_recipes {
     top: 200px;
 }
 
+.star_icon_recipes_one {
+    background-size: 135% 71%;
+    left: 37%;
+    width: 29px;
+    height: 24px;
+    top: -11px;
+    background-position: 100% 104%;
+}
