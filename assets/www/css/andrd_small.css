@@ -414,7 +414,7 @@ left: 69px;*/
 .inside_information {
     display: block;
     height: 70px;
-    width: 250px;
+    width: 400px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -1574,11 +1574,6 @@ ire_icon_recipes {
 .recipes_list_Results {
     margin: auto;
     position: relative;
-}
-
-.inside_information {
-    float: left;
-    width: 50%;
 }
 
 .recipes_list_Results .inside_information {
