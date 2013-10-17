@@ -1525,7 +1525,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: -10px;
+    top: -15px;
 }
 
 #Text_search_foodgrator {
@@ -1552,7 +1552,7 @@ ire_icon_recipes {
 
 .food_name {
     font-size: 25px;
-    top: 30px;
+    top: 15px;
     line-height: 5px;
     display: block;
     width: 207px;
@@ -1673,10 +1673,11 @@ ire_icon_recipes {
 }
 
 .star_icon_recipes_one {
-    background-size: 135% 71%;
+    background-size: 17px 15px;
     left: 37%;
-    width: 29px;
-    height: 24px;
+    width: 34px;
+    height: 26px;
     top: -11px;
-    background-position: 100% 104%;
+    background-position: 18px 6px;
+    left: 29px;
 }
