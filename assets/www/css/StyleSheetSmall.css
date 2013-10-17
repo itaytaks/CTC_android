@@ -938,7 +938,8 @@ left: 69px;*/
 /*********info page*********/
 .about_all_text {
     top: 0;
-    height: 94%;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .about_two_logos {
@@ -980,7 +981,7 @@ left: 69px;*/
 }
 
 .screenz_logo {
-    top: 17px;
+    top: 6px;
     background-size: 100px;
     right: 0em;
     width: 112px;
