@@ -34,20 +34,20 @@ function initBrowser() {
     }
     if (androidSmall) {
         //for galaxy s4 -s3
-        browser = "androidSmall";
+        browser = "isGt3";
     }
     if (ua.search("android") > -1 && ua.search("mobile") > -1 && ua.search("i9100") > -1) {
         androidSmall2 = true;
     }
     if (androidSmall2) {
-        browser = "androidSmall2";
+        browser = "isGt2";
     }
 }
 
 function loadRelevantCss() {
     switch (browser) {
 
-        case "androidSmall2":
+        case "isGt2":
             loadcssfile("css/andrd_small_2.css");
 
             break;
@@ -57,7 +57,7 @@ function loadRelevantCss() {
 
             break;
 
-        case "androidSmall":
+        case "isGt3":
             //for galaxy s4 -s3
             loadcssfile("css/andrd_small.css");
 

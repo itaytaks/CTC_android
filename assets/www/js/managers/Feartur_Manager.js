@@ -88,7 +88,6 @@ function FeatureMan () {
         //var dot_margin = $dotMargin.css("margin-left") + $dotMargin.css("margin-right");
         //dotWidth += dot_margin;
         dotWidth += 3;
-        alert(dotWidth);
         $(".dots_position ul").width(dotWidth * numOfItems);
         //$(".dots_position ul").width("100%");
         //$(".dots_position ul").css({ "width": "100%" });

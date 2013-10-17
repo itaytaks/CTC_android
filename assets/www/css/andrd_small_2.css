@@ -83,7 +83,9 @@ body {
     left: 12px;
     background-image: url("./images/one_recipe_one_star.png");
 }
-
+.dots_position {
+top: 4px;
+}
 /*----------info Page------------*/
 
 .about_two_logos {
