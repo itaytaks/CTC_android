@@ -413,8 +413,8 @@ left: 69px;*/
 
 .inside_information {
     display: block;
-    height: 85px;
-    width: 300px;
+    height: 80px;
+    width: 250px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -695,7 +695,7 @@ left: 69px;*/
 
 /******recipe page*****/
 .recipes_footer {
-    bottom: 0px;
+    bottom: 20px;
     position: relative;
 }
 
