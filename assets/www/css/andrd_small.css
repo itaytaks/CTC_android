@@ -414,7 +414,7 @@ left: 69px;*/
 .inside_information {
     display: block;
     height: 85px;
-    width: 300px;
+    width: 270px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -486,7 +486,7 @@ left: 69px;*/
 }
 
 .what_u_need_wrap {
-    height: 120%;
+    height: 150%;
 }
 
 .search_page .recipes_footer_text {
@@ -700,7 +700,7 @@ left: 69px;*/
 }
 
 .recipes_middel_pic {
-    height: 120%;
+    height: 150%;
     top: -1px;
 }
 
