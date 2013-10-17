@@ -322,13 +322,14 @@ left: 96px;*/
     padding-top: 30px;
 }
 /******categories list********/
-.all_categories{
+.all_categories {
     top: 0px;
 }
 
 .all_categories ul {
     margin-top: 2%;
 }
+
 .all_categories ul li {
     height: 120px;
     margin-bottom: -53px;
@@ -412,8 +413,8 @@ left: 69px;*/
 
 .inside_information {
     display: block;
-    height: 66px;
-    width: 211px;
+    height: 50px;
+    width: 150px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -437,6 +438,7 @@ left: 69px;*/
     /*white-space: nowrap;*/
     margin-top: 6px;
     max-height: 22px;
+    height: 30px;
 }
 
 
@@ -458,7 +460,7 @@ left: 69px;*/
 }
 
 .recipes_list ul li, .recipes_list_search ul li {
-    height: 78px;
+    height: 90px;
     width: 99%;
     padding-right: 0;
     padding-left: 1%;
@@ -512,7 +514,7 @@ left: 69px;*/
 
 .recipes_look_inside_btn {
     right: 1px;
-    top: 10px;
+    top: 15px;
     position: absolute;
     font-size: 1.5em;
     width: 9px;
@@ -694,6 +696,7 @@ left: 69px;*/
 /******recipe page*****/
 .recipes_footer {
     bottom: 0px;
+    position: relative;
 }
 
 .recipes_middel_pic {
@@ -1256,7 +1259,7 @@ left: 69px;*/
     color: #fff;
     margin: auto;
     text-align: center;
-    top: -60px;
+    top: -50px;
     display: none;
     cursor: pointer;
     position: absolute;
@@ -1265,7 +1268,7 @@ left: 69px;*/
     bottom: -55px;
     z-index: 600;
     height: 30px;
-    width: 82px;
+    width: 76px;
     font-size: 16px;
     text-indent: 2px;
 }
@@ -1528,7 +1531,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: -17px
+    top: -17px;
 }
 
 #Text_search_foodgrator {
@@ -1573,8 +1576,9 @@ ire_icon_recipes {
     position: relative;
 }
 
-.inside_information{
+.inside_information {
     float: left;
+    width: 50%;
 }
 
 .recipes_list_Results .inside_information {
@@ -1678,4 +1682,15 @@ ire_icon_recipes {
 .foodgrator_instructions {
     top: 200px;
 }
+
+.star_icon_recipes_one {
+    background-size: 24px 13px;
+    width: 34px;
+    height: 26px;
+    top: -6px;
+    background-position: 21px 6px;
+    left: 22px;
+}
+
+
 

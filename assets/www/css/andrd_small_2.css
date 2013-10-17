@@ -74,3 +74,12 @@ body {
     height: 400px;
 }
 
+
+.star_icon_recipes_one {
+    background-size: 24px 13px;
+    width: 34px;
+    height: 26px;
+    top: -6px;
+    background-position: 21px 6px;
+    left: 22px;
+}
