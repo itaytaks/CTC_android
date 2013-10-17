@@ -325,7 +325,7 @@ left: 96px;*/
 }
 
 .all_categories ul {
-    margin-top: 8%;
+    margin-top: 5%;
 }
 .all_categories ul li {
     height: 120px;
@@ -1251,12 +1251,11 @@ left: 69px;*/
     margin: auto;
     text-align: center;
     top: -55px;
-    line-height: 16px;
     display: none;
     cursor: pointer;
     position: absolute;
-    left: 250px;
-    line-height: 34px;
+    left: 240px;
+    line-height: 36px;
     bottom: -55px;
     z-index: 600;
     height: 35px;
@@ -1523,11 +1522,11 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: 10px
+    top: 0px
 }
 
 #Text_search_foodgrator {
-    height: 19px;
+    height: 17px;
     top: -14px;
     line-height: 1em;
     font-size: 1.4em;
@@ -1537,7 +1536,7 @@ ire_icon_recipes {
 
 
 .food_list ul li {
-    line-height: 9px;
+    height: 10px;
 }
 
 .food_list {
@@ -1549,8 +1548,8 @@ ire_icon_recipes {
 }
 
 .food_name {
-    font-size: 23px;
-    top: 10px;
+    font-size: 25px;
+    top: 40px;
     line-height: 5px;
     display: block;
     width: 207px;
