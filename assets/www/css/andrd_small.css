@@ -999,18 +999,18 @@ left: 69px;*/
 }
 
 .about_text_position {
-    padding: 6% 10%;
+    padding: 4% 10%;
 }
 
 .about_text_title {
     line-height: 1em;
     font-size: 14px;
-    top: -11px;
+    top: -5px;
     letter-spacing: 0em;
 }
 
 .about_text_credits {
-    line-height: 1.1em;
+    line-height: 1em;
     font-size: 11px;
     bottom: 0px;
     letter-spacing: 0em;
