@@ -5,24 +5,22 @@ function RecipeMan () {
       
         $('.one_recipe_text_bar_left').css({"color":"#f3f2ee"});
         $('.one_recipe_bar_left').css({"background-color":"#4d555f"});
-        this.showRecipePage = function(recipe) {
+        this.showRecipePage = function (recipe) {
             this.clearRecipePage();
-            if(isIpad())
-        {
-          $('.Gesture_btn').css({"background-position":"-59px 50%"});
-        }
-        else
-        {
-         
-          $('.Gesture_btn').css({"background-position":"-59px 50%"}); 
-        }
+            if (isIpad()) {
+                $('.Gesture_btn').css({ "background-position": "-59px 50%" });
+            }
+            else {
+
+                $('.Gesture_btn').css({ "background-position": "-59px 50%" });
+            }
             //init the current tab
             $('.one_recipe_text_bar_left').css({ "color": "#f3f2ee" });
-            $('.one_recipe_bar_left').css({ "background-color":"#4d555f"});
+            $('.one_recipe_bar_left').css({ "background-color": "#4d555f" });
             $('.one_recipe_text_bar_middel').css({ "color": "#4d555f" });
-            $('.one_recipe_bar_middel').css({ "background-color":"#f3f2ee"});
+            $('.one_recipe_bar_middel').css({ "background-color": "#f3f2ee" });
             $('.one_recipe_text_bar_right').css({ "color": "#4d555f" });
-            $('.one_recipe_bar_right').css({ "background-color":"#f3f2ee"});
+            $('.one_recipe_bar_right').css({ "background-color": "#f3f2ee" });
 
             NavigationMan_.navigate("categories", "recipe");
 
@@ -32,7 +30,7 @@ function RecipeMan () {
             //set now the category title, because now i know the current category -  
             // if there are more than one
             this.setCategoryDataTitle(category);
-            if(result == false)
+            if (result == false)
             { this.getPostContent(id); }
             else {
                 this.setRecipeContent(result);
@@ -40,15 +38,15 @@ function RecipeMan () {
             }
 
             //set favorite in cookie
-            $("#addFavoiteRecipe").click(function() {
-
+            $("#addFavoiteRecipe").click(function () {
+                alert('#addFavoiteRecipe');//shai- temp for testing
                 //sent the clicked obj with the recipe data
                 favoriteMan_.addRecipeToList(this);
-                $(this).parent().fadeOut(400,function(){$('#favorited').fadeIn();});
-                
+                $(this).parent().fadeOut(400, function () { $('#favorited').fadeIn(); });
+
             });
 
-            $("#addFavoriteRecipeBox").click(function() {
+            $("#addFavoriteRecipeBox").click(function () {
 
                 favoriteMan_.addRecipeToList("#addFavoiteRecipe");
                 $(this).parent().fadeOut();

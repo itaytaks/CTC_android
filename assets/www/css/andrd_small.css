@@ -1,5 +1,5 @@
 body {
-    font-size: 0.6px;
+    font-size: 0.6em;
     width: 100%;
 }
 
@@ -83,6 +83,8 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
 .down_menu_background {
     /*height: 40px;*/
     height: 4em;
+    width: 100.5%;
+    left: -1px;
 }
 
 .Up_banner_background {
@@ -103,7 +105,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     left: 8px;
     width: 29px;
     background-size: auto 60%;
-    top: 13px;
+    top: 6px;
 }
 
 .info_btn_main {
@@ -111,7 +113,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     width: 24px;
     float: right;
     position: relative;
-    top: -1px;
+    top: -7px;
     right: 8px;
 }
 
@@ -120,7 +122,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     width: 24px;
     float: right;
     position: relative;
-    top: -1px;
+    top: -7px;
     right: 12px;
 }
 
@@ -320,6 +322,13 @@ left: 96px;*/
     padding-top: 30px;
 }
 /******categories list********/
+.all_categories{
+    top: 0px;
+}
+
+.all_categories ul {
+    margin-top: 2%;
+}
 .all_categories ul li {
     height: 120px;
     margin-bottom: -53px;
@@ -474,6 +483,10 @@ left: 69px;*/
     margin-right: 2px;
 }
 
+.what_u_need_wrap {
+    height: 100%;
+}
+
 .search_page .recipes_footer_text {
     width: 70%;
 }
@@ -483,7 +496,7 @@ left: 69px;*/
 }
 
 .recipes_middel_window_recipres_page {
-    height: 388px;
+    height: 450px;
 }
 
 .fire_icon_recipes {
@@ -1243,16 +1256,15 @@ left: 69px;*/
     color: #fff;
     margin: auto;
     text-align: center;
-    top: -55px;
-    line-height: 16px;
+    top: -60px;
     display: none;
     cursor: pointer;
     position: absolute;
-    left: 150px;
-    line-height: 34px;
+    left: 240px;
+    line-height: 36px;
     bottom: -55px;
     z-index: 600;
-    height: 35px;
+    height: 30px;
     width: 82px;
     font-size: 16px;
     text-indent: 2px;
@@ -1514,22 +1526,23 @@ ire_icon_recipes {
 }
 
 .foodgrator_text_background .search_btn_icon {
-    width: 14px;
+    width: 28px;
     height: 100%;
+    top: -17px
 }
 
 #Text_search_foodgrator {
-    height: 21px;
-    top: 0px;
+    height: 17px;
+    top: -14px;
     line-height: 1em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 80%;
     display: inherit;
 }
 
 
 .food_list ul li {
-    line-height: 12px;
+    height: 35px;
 }
 
 .food_list {
@@ -1541,8 +1554,8 @@ ire_icon_recipes {
 }
 
 .food_name {
-    font-size: 10px;
-    top: 0;
+    font-size: 25px;
+    top: 15px;
     line-height: 5px;
     display: block;
     width: 207px;
@@ -1558,6 +1571,10 @@ ire_icon_recipes {
 .recipes_list_Results {
     margin: auto;
     position: relative;
+}
+
+.inside_information{
+    float: left;
 }
 
 .recipes_list_Results .inside_information {
@@ -1661,3 +1678,4 @@ ire_icon_recipes {
 .foodgrator_instructions {
     top: 200px;
 }
+

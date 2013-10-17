@@ -37,31 +37,40 @@ body {
     height: 380px;
 }
 
-.message_no_Results{
+.message_no_Results {
     font-size: 13px;
 }
+
 .recipes_text_down {
-height: 8px;
+    height: 8px;
 }
+
 .down_menu_background {
     width: 100.8%;
     left: -1px;
 }
-.recipes_background_foodgrator{
+
+.recipes_background_foodgrator {
     overflow-x: hidden;
 }
-.message_no_Results{
+
+.message_no_Results {
     font-size: 12px;
 }
-.recipes_text_down{
+
+.recipes_text_down {
     height: 16px;
 }
+
 .recipes_middel_window_favorite {
-height: 400px;
-}
-.recipes_look_inside_btn{
-    top: 36%;
-}
-.recipes_middel_window_recipres_page{
     height: 400px;
 }
+
+.recipes_look_inside_btn {
+    top: 36%;
+}
+
+.recipes_middel_window_recipres_page {
+    height: 400px;
+}
+
