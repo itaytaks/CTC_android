@@ -1,5 +1,5 @@
 body {
-    font-size: 0.6px;
+    font-size: 0.6em;
     width: 100%;
 }
 
@@ -83,6 +83,8 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
 .down_menu_background {
     /*height: 40px;*/
     height: 4em;
+    width: 100.5%;
+    left: -1px;
 }
 
 .Up_banner_background {
@@ -103,7 +105,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     left: 8px;
     width: 29px;
     background-size: auto 60%;
-    top: 13px;
+    top: 6px;
 }
 
 .info_btn_main {
@@ -111,7 +113,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     width: 24px;
     float: right;
     position: relative;
-    top: -1px;
+    top: -7px;
     right: 8px;
 }
 
@@ -120,7 +122,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     width: 24px;
     float: right;
     position: relative;
-    top: -1px;
+    top: -7px;
     right: 12px;
 }
 
@@ -1668,3 +1670,4 @@ ire_icon_recipes {
 .foodgrator_instructions {
     top: 200px;
 }
+
