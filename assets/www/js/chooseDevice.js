@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
     //initAppSize();
+    alert('1');
     initBrowser();
     loadRelevantCss();
 
@@ -17,6 +18,7 @@ function initAppSize() {
 
 var browser;
 function initBrowser() {
+    alert('2');
     var ua = navigator.userAgent.toLowerCase();
     console.log("user agent: " + ua);
     var androidSmall = false;
@@ -34,20 +36,21 @@ function initBrowser() {
     }
     if (androidSmall) {
         //for galaxy s4 -s3
-        browser = "isGt3";
+        browser = "androidSmall";
     }
     if (ua.search("android") > -1 && ua.search("mobile") > -1 && ua.search("i9100") > -1) {
         androidSmall2 = true;
     }
     if (androidSmall2) {
-        browser = "isGt2";
+        browser = "androidSmall2";
+        alert("androidSmall2");
     }
 }
 
 function loadRelevantCss() {
     switch (browser) {
 
-        case "isGt2":
+        case "androidSmall2":
             loadcssfile("css/andrd_small_2.css");
 
             break;
@@ -57,7 +60,7 @@ function loadRelevantCss() {
 
             break;
 
-        case "isGt3":
+        case "androidSmall":
             //for galaxy s4 -s3
             loadcssfile("css/andrd_small.css");
 
@@ -66,6 +69,7 @@ function loadRelevantCss() {
 }
 
 function loadcssfile(filename) {
+    alert('3');
     //if filename is an external CSS file
     var fileref = document.createElement("link")
     fileref.setAttribute("rel", "stylesheet")
@@ -74,6 +78,7 @@ function loadcssfile(filename) {
     $("head").append(fileref);
 
     
+    alert(filename); //temp test
 
 }
 
