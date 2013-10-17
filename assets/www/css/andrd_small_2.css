@@ -75,11 +75,12 @@ body {
 }
 
 
-.star_icon_recipes_one {
+element.style {
     background-size: 24px 13px;
-    width: 34px;
-    height: 26px;
+    left: 37%;
+    width: 77px;
+    height: 46px;
     top: -6px;
     background-position: 21px 6px;
-    left: 22px;
+    left: 12px;
 }
