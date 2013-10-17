@@ -386,7 +386,7 @@ left: 69px;*/
 .inside_information {
     display: block;
     height: 85px;
-    width: 270px;
+    width: 250px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -865,7 +865,7 @@ top: 4px;
 }
 
 .recipes_middel_window {
-    height: 330px;
+    height: 150%px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -1226,7 +1226,7 @@ top: 4px;
     color: #fff;
     margin: auto;
     text-align: center;
-    top: -52px;
+    top: -53px;
     display: none;
     cursor: pointer;
     position: absolute;
