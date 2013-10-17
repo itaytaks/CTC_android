@@ -1,6 +1,7 @@
 body {
 }
 
+
 .all_categories {
     top: 0px;
 }
@@ -21,9 +22,6 @@ body {
     height: 107%;
 }
 
-.search_btn {
-    top: 6px;
-}
 
 #btn_txt_1 {
     line-height: 17px;
@@ -83,7 +81,9 @@ body {
     left: 12px;
     background-image: url("../images/one_recipe_one_star.png");
 }
-
+.dots_position {
+top: 4px;
+}
 /*----------info Page------------*/
 
 .about_two_logos {
@@ -153,4 +153,7 @@ body {
     font-size: 10px;
     top: -13px;
     position: relative;
+}
+.search_btn {
+    top: 6px;
 }
