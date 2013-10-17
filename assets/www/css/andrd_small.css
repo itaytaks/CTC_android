@@ -325,7 +325,7 @@ left: 96px;*/
 }
 
 .all_categories ul {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .all_categories ul li {
     height: 120px;
@@ -1522,7 +1522,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: 0px
+    top: -10px
 }
 
 #Text_search_foodgrator {
@@ -1536,7 +1536,7 @@ ire_icon_recipes {
 
 
 .food_list ul li {
-    height: 10px;
+    height: 35px;
 }
 
 .food_list {
@@ -1549,7 +1549,7 @@ ire_icon_recipes {
 
 .food_name {
     font-size: 25px;
-    top: 40px;
+    top: 30px;
     line-height: 5px;
     display: block;
     width: 207px;
