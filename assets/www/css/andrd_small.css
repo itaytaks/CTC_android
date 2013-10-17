@@ -412,8 +412,8 @@ left: 69px;*/
 
 .inside_information {
     display: block;
-    height: 66px;
-    width: 211px;
+    height: 50px;
+    width: 150px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -695,7 +695,7 @@ left: 69px;*/
 /******recipe page*****/
 .recipes_footer {
     bottom: 0px;
-    position: absolute;
+    position: relative;
 }
 
 .recipes_middel_pic {
