@@ -81,7 +81,7 @@ body {
     top: -6px;
     background-position: 27px 6px;
     left: 12px;
-    background-image: url("./images/one_recipe_one_star.png");
+    background-image: url("../images/one_recipe_one_star.png");
 }
 .dots_position {
 top: 4px;
