@@ -37,8 +37,6 @@ function RecipeMan () {
 
             }
 
-            $(".one_recipe_page_description_recipe").on('click', function(e){
-                alert(e.target.className)});
 
             //set favorite in cookie
             $("#addFavoiteRecipe").click(function (e) {
