@@ -28,7 +28,7 @@ function FeatureMan () {
         //    case "iphone": background_pos = "-9px 50%";
         //    break;
         //}
-        background_pos = "-9px 50%";
+        background_pos = "-8.8px 50%";
          featureMan_.slider = new Swipe(document.getElementById('middel_main'), {
             callback: function(e, pos) {
                 $("#dots li").each(function(i) {
@@ -72,16 +72,16 @@ function FeatureMan () {
         numOfFeaters = numOfItems;
         var background_pos; // = "-26px 50%";
         var dotWidth; // = 40;
-        background_pos = "-9px 50%";
-        dotWidth = 40;
+        background_pos = "-8.8px 50%";
+        dotWidth = 9;
         switch (browser) {
             case "isGt2":
-                background_pos = "-9px 50%";
-                dotWidth = 40;
+                background_pos = "-8.8px 50%";
+                dotWidth = 9;
                 break;
             case "isGt3":
-                background_pos = "-9px 50%";
-                dotWidth = 40;
+                background_pos = "-8.8px 50%";
+                dotWidth = 9;
                 break;
         }
         

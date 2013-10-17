@@ -383,7 +383,7 @@ a {
     position: relative;
     text-align: center;
     margin: auto;
-    width: 21px;
+    /*width: 21px;*/
 }
 
 .dots_position ul li {
