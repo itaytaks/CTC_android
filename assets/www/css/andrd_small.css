@@ -413,8 +413,8 @@ left: 69px;*/
 
 .inside_information {
     display: block;
-    height: 80px;
-    width: 250px;
+    height: 85px;
+    width: 300px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -695,7 +695,7 @@ left: 69px;*/
 
 /******recipe page*****/
 .recipes_footer {
-    bottom: 20px;
+    bottom: 0px;
     position: relative;
 }
 
@@ -999,18 +999,18 @@ left: 69px;*/
 }
 
 .about_text_position {
-    padding: 6% 10%;
+    padding: 4% 10%;
 }
 
 .about_text_title {
     line-height: 1em;
     font-size: 14px;
-    top: -11px;
+    top: -5px;
     letter-spacing: 0em;
 }
 
 .about_text_credits {
-    line-height: 1.1em;
+    line-height: 1em;
     font-size: 11px;
     bottom: 0px;
     letter-spacing: 0em;
@@ -1685,7 +1685,7 @@ ire_icon_recipes {
     top: -6px;
     background-position: 27px 6px;
     left: 12px;
-    background-image: url("./images/one_recipe_one_star.png");
+    background-image: url("../images/one_recipe_one_star.png");
 }
 
 /*----------info Page------------*/
