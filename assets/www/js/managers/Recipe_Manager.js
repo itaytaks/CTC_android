@@ -38,7 +38,8 @@ function RecipeMan () {
             }
 
             //set favorite in cookie
-            $("#addFavoiteRecipe").click(function () {
+            $("#addFavoiteRecipe").click(function (e) {
+                alert(e.target.id);
                 alert('#addFavoiteRecipe');//shai- temp for testing
                 //sent the clicked obj with the recipe data
                 favoriteMan_.addRecipeToList(this);
