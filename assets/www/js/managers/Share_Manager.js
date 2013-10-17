@@ -68,12 +68,13 @@ function shareMan() {
 
     $("#browseBtn").click(function () {
         alert('1');
-        alert(navigator.camera);
+        alert(navigator.camera.getPicture);
         navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
             targetWidth: 584
         });
+
     });
   $("#takeAPicBtn").click(function () {
       //$('.share_position').hide();
@@ -107,7 +108,7 @@ function shareMan() {
     }
 
     this.onFail = function (message) {
-        //alert('Failed because: ' + message);
+        alert('Failed because: ' + message);
     }
 
     $(".share_facebook_btn").click(function () {
