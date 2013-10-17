@@ -1679,20 +1679,20 @@ ire_icon_recipes {
 }
 
 .star_icon_recipes_one {
-    background-size: 24px 13px;
-    left: 37%;
-    width: 77px;
+    background-size: 14px 13px;
+    width: 60px;
     height: 40px;
     top: -6px;
-    background-position: 21px 6px;
+    background-position: 27px 6px;
     left: 12px;
+    background-image: url("./images/one_recipe_one_star.png");
 }
 
 /*----------info Page------------*/
 
 .about_all_text {
-top: 0;
-height: 100%;
+    top: 0;
+    height: 100%;
 }
 
 .about_two_logos {
@@ -1763,4 +1763,3 @@ height: 100%;
     top: -13px;
     position: relative;
 }
-
