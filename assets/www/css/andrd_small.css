@@ -1524,7 +1524,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: -10px
+    top: -15px
 }
 
 #Text_search_foodgrator {
@@ -1551,7 +1551,7 @@ ire_icon_recipes {
 
 .food_name {
     font-size: 25px;
-    top: 30px;
+    top: 15px;
     line-height: 5px;
     display: block;
     width: 207px;
