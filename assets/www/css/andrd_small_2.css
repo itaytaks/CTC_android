@@ -1,6 +1,7 @@
 body {
 }
 
+
 .all_categories {
     top: 0px;
 }
@@ -21,9 +22,6 @@ body {
     height: 107%;
 }
 
-.search_btn {
-    top: 6px;
-}
 
 #btn_txt_1 {
     line-height: 17px;
@@ -155,4 +153,7 @@ top: 4px;
     font-size: 10px;
     top: -13px;
     position: relative;
+}
+.search_btn {
+    top: 6px;
 }
