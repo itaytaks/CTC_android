@@ -982,6 +982,13 @@ top: 30px;
     height: 900px;
     overflow-y: auto;
 }
+.middel_pic_gesture{
+    width: 320px;
+    height: 100%;
+    background-size: 100% auto;
+    overflow-y: auto;
+    margin-bottom: 60px;    
+}
 
 /*********info page*********/
 .about_all_text {
