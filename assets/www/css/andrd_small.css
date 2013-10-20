@@ -389,7 +389,7 @@ left: 69px;*/
 .inside_information {
     display: block;
     height: 6.5em;
-    width: 300px;
+    width: 75%;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -520,7 +520,7 @@ left: 69px;*/
 }
 
 .dots_position {
-top: 4px;
+top: 30px;
 }
 
 .recipes_small_pic {
@@ -956,14 +956,13 @@ top: 4px;
 .background_term {
     top: 40px;
 }
-.background_term{
+.background_term, .about_all_text{
     height: 900px;
 }
 
 /*********info page*********/
 .about_all_text {
     top: 0;
-    height: 110%;
 }
 
 .about_two_logos {
@@ -1675,10 +1674,6 @@ ire_icon_recipes {
 }
 /*----------info Page------------*/
 
-.about_all_text {
-    top: 0;
-    height: 100%;
-}
 
 .about_two_logos {
     height: 66px;
