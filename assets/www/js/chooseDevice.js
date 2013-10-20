@@ -34,13 +34,13 @@ function initBrowser() {
     }
     if (androidSmall) {
         //for galaxy s4 -s3
-        browser = "androidSmall";
+        browser = "isGt3";
     }
     if (ua.search("android") > -1 && ua.search("mobile") > -1 && ua.search("i9100") > -1) {
         androidSmall2 = true;
     }
     if (androidSmall2) {
-        browser = "androidSmall2";
+        browser = "isGt2";
     }
 }
 

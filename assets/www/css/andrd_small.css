@@ -247,20 +247,20 @@ left: 96px;*/
 
 .main_btn_position {
     height: 7%;
-    top: 10%;
+    top: 14%;
 }
 
 .search_text_background {
-    height: 20px;
-    top: 10px;
-    margin-bottom: 30px;
-    width: 90%;
-    border-radius: 3px;
-    position: relative;
+   height: 48px;
+top: 26px;
+margin-bottom: 0px;
+width: 90%;
+border-radius: 8px;
+position: relative;
 }
 
 .search_btn_icon {
-    width: 20px;
+    width: 49px;
     height: auto;
     clear: both;
     float: right;
@@ -271,15 +271,20 @@ left: 96px;*/
 }
 
 .search_text {
-    height: 16px;
-    top: 1px;
-    line-height: 1em;
-    font-size: 1em;
-    width: 86%;
+ width: 80%;
+height: 1.7em;
+line-height: 25px;
+font-size: 23px;
+top: 2px;
 }
 
+.search_page .search_text{
+    font-size: 17px;
+}
+
+
 .title_pic_text {
-    left: 0;
+    left: 1em;
 }
 
 .time_pic_white, .title_pic_text {
@@ -294,8 +299,13 @@ left: 96px;*/
     padding-top: 30px;
 }
 /******categories list********/
+
+.categories_page {
+height: 1100px;
+}
 .all_categories {
     top: 0px;
+    height: 100%;
 }
 
 .all_categories ul {
@@ -344,12 +354,20 @@ left: 69px;*/
     margin-bottom: 10px;
 }
 
-/*****recipe page******/
 
+.categories_text_down{
+    height: 85px;
+}
+/*****recipe page******/
+.one_recipe_page {
+height: 1280px;
+}
 .recipes_background_recipres_page, .recipes_background_favorite, .recipes_background_search {
     top: auto;
 }
-
+.recipes_background_search{
+    top: 138px;
+}
 .title_up_main_first, .title_up_main_all, .title_up_recipes, .title_up_one_recipe, .title_up_main_categories {
     font-size: 1.6em;
     width: 46%;
@@ -377,8 +395,8 @@ left: 69px;*/
 }
 
 .recipes_small_pic_border {
-    width: 7em;
-    height: 7em;
+    width: 6.8em;
+    height: 6.8em;
     margin: 0;
     float: left;
 }
@@ -386,7 +404,7 @@ left: 69px;*/
 .inside_information {
     display: block;
     height: 6.5em;
-    width: 300px;
+    width: 78%;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -458,7 +476,7 @@ left: 69px;*/
 }
 
 .what_u_need_wrap {
-    height: 120%;
+    height: 100%;
 }
 
 .search_page .recipes_footer_text {
@@ -517,13 +535,15 @@ left: 69px;*/
 }
 
 .dots_position {
-top: 4px;
+top: 30px;
 }
 
 .recipes_small_pic {
     border-radius: 6px;
 }
-
+.recipes_list_search ul li{
+    height: 93px;
+}
 .one_recipe_small_up_icons {
     width: 100%;
 }
@@ -873,14 +893,14 @@ top: 4px;
 }
 
 .recipes_middel_window {
-    height: 330px;
+    height: 542px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 .recipes_background_what_to_do {
     top: 0.6em;
-    height: 39em;
+    height: 100%;
 }
 
 #recipePage_what_to_do_title {
@@ -953,11 +973,13 @@ top: 4px;
 .background_term {
     top: 40px;
 }
+.background_term, .about_all_text{
+    height: 900px;
+}
 
 /*********info page*********/
 .about_all_text {
     top: 0;
-    height: 110%%;
 }
 
 .about_two_logos {
@@ -1329,18 +1351,17 @@ top: 4px;
     left: 33%;
     margin: auto;
     position: absolute;
-    top: 305px;
-    width: 34%;
+   top: 313px;
+width: 25%;
     background-size: 100% 100%;
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 38px;
-    left: 33%;
+    left: 37%;
     margin: auto;
     position: absolute;
-    top: 235px;
-    width: 34%;
+   
     background-size: 100% 100%;
 }
 
@@ -1398,7 +1419,8 @@ top: 4px;
 
 .recipes_middel_window_what_u_need {
     overflow-y: scroll;
-    height: 282px;
+    height: 100%;
+    
 }
 
 .one_recipe_middle_what_u_need_list {
@@ -1506,7 +1528,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: -17px;
+    
 }
 
 #Text_search_foodgrator {
@@ -1549,10 +1571,6 @@ ire_icon_recipes {
 .recipes_list_Results {
     margin: auto;
     position: relative;
-}
-
-.recipes_list_Results .inside_information {
-    float: left;
 }
 
 .recipes_list_Results ul li {
@@ -1668,10 +1686,6 @@ ire_icon_recipes {
 }
 /*----------info Page------------*/
 
-.about_all_text {
-    top: 0;
-    height: 100%;
-}
 
 .about_two_logos {
     height: 66px;

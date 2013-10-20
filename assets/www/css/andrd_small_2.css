@@ -163,3 +163,12 @@ body {
 .categories_text_down {
     height: 60px;
 }
+.inside_information {
+display: block;
+height: 7em;
+width: 66%;
+float: right;
+margin-left: 5px;
+position: relative;
+font-size: 1.15em;
+}
