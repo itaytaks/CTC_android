@@ -3,7 +3,7 @@
     // maxOfFeater: "5",
    // this.featerDisplayID =  0;
     //this.numOfFeaters =  0;
-    this.numOfRecipesForPage = 3;
+    this.numOfRecipesForPage = 5;
     this.page =1;
     this.category;
     this.categoryTitle;
