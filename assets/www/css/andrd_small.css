@@ -524,8 +524,8 @@ height: 1280px;
 
 .recipes_text_down {
     font-size: 14px;
-    height: 36px;
-    margin-top: 16px;
+    height: 0px;
+    margin-top: 0px;
 }
 
 .clock_icon_recipes {
@@ -867,7 +867,7 @@ top: 30px;
 }
 
 .recipes_middel_window_favorite {
-    height: 400px;
+    height: 515px;
 }
 
 .favorite_delete_icon {
