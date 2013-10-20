@@ -280,7 +280,7 @@ top: 2px;
 }
 
 .search_page .search_text{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -620,7 +620,7 @@ top: 30px;
     width: 193px;
     top: 347px;
     height: 35px;
-    left: 66px;
+    left: 92px;
     background-size: 21px 21px;
     line-height: 36px;
     font-size: 12px;
@@ -898,7 +898,7 @@ top: 30px;
 }
 
 .recipes_middel_window {
-    height: 542px;
+    height: 473px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -1336,6 +1336,7 @@ top: 30px;
     width: 86%;
     left: 21px;
     top: 200px;
+    z-index: 13;
 }
 
 
@@ -1347,6 +1348,7 @@ top: 30px;
     top: 236px;
     width: 60%;
     left: 20%;
+    z-index: 17;
 }
 
 .shopping_ok_border {
@@ -1369,6 +1371,7 @@ width: 25%;
     position: absolute;
    
     background-size: 100% 100%;
+    z-index: 15;
 }
 
 .timer_finish_OK {
@@ -1422,10 +1425,13 @@ width: 25%;
     clear: both;
     height: 203px;
 }
+.recipes_middel_window_main {
+height: 473px; 
+}
 
 .recipes_middel_window_what_u_need {
-    overflow-y: scroll;
-    height: 100%;
+   overflow-y: auto;
+height: 473px;
     
 }
 
