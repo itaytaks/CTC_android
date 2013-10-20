@@ -79,8 +79,8 @@ function FeatureMan () {
         //dotWidth += dot_margin;
         dotWidth += 3;
         $(".dots_position ul").width(dotWidth * numOfItems);
-    alert("dotWidth: " + dotWidth);
-    alert("background_pos: " + background_pos);
+   //alert("dotWidth: " + dotWidth);
+    //alert("background_pos: " + background_pos);
         //$(".dots_position ul").width("100%");
         //$(".dots_position ul").css({ "width": "100%" });
         for (var i = 0; i < numOfItems; i++) {
