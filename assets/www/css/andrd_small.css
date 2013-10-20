@@ -247,7 +247,7 @@ left: 96px;*/
 
 .main_btn_position {
     height: 7%;
-    top: 10%;
+    top: 14%;
 }
 
 .search_text_background {
@@ -380,15 +380,15 @@ left: 69px;*/
 }
 
 .recipes_small_pic_border {
-    width: 7em;
-    height: 7em;
+    width: 6.8em;
+    height: 6.8em;
     margin: 0;
     float: left;
 }
 
 .inside_information {
     display: block;
-    height: 6.9em;
+    height: 7em;
     width: 78%;
     float: right;
     margin-left: 5px;
