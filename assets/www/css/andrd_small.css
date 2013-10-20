@@ -251,16 +251,16 @@ left: 96px;*/
 }
 
 .search_text_background {
-    height: 20px;
-    top: 10px;
-    margin-bottom: 30px;
-    width: 90%;
-    border-radius: 3px;
-    position: relative;
+   height: 48px;
+top: 26px;
+margin-bottom: 0px;
+width: 90%;
+border-radius: 8px;
+position: relative;
 }
 
 .search_btn_icon {
-    width: 20px;
+    width: 49px;
     height: auto;
     clear: both;
     float: right;
@@ -271,12 +271,13 @@ left: 96px;*/
 }
 
 .search_text {
-    height: 16px;
-    top: 1px;
-    line-height: 1em;
-    font-size: 1em;
-    width: 86%;
+ width: 80%;
+height: 1.7em;
+line-height: 25px;
+font-size: 25px;
+top: 2px;
 }
+
 
 .title_pic_text {
     left: 1em;
@@ -349,7 +350,9 @@ left: 69px;*/
 .recipes_background_recipres_page, .recipes_background_favorite, .recipes_background_search {
     top: auto;
 }
-
+.recipes_background_search{
+    top: 138px;
+}
 .title_up_main_first, .title_up_main_all, .title_up_recipes, .title_up_one_recipe, .title_up_main_categories {
     font-size: 1.6em;
     width: 46%;
@@ -873,7 +876,7 @@ top: 4px;
 }
 
 .recipes_middel_window {
-    height: 330px;
+    height: 542px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -1401,7 +1404,8 @@ top: 4px;
 
 .recipes_middel_window_what_u_need {
     overflow-y: scroll;
-    height: 282px;
+    height: 545px;
+    
 }
 
 .one_recipe_middle_what_u_need_list {
