@@ -407,9 +407,9 @@ z-index: 1;
 
 .inside_information {
     display: block;
-    height: 6.5em;
+    height: 6em;
     width: 78%;
-    float: right;
+    float: left;
     margin-left: 5px;
     position: relative;
     font-size: 1.15em;
@@ -437,7 +437,7 @@ z-index: 1;
 
 
 .delete .inside_information {
-    width: 179px;
+    width: 60%;
 }
 
 .delete .recipes_small_pic_border {
@@ -447,6 +447,7 @@ z-index: 1;
 .delete .cover_delete {
     left: 63px;
     width: 90%;
+    height: 84%;
 }
 
 .delete .recipes_second_title {
@@ -454,8 +455,8 @@ z-index: 1;
 }
 
 .recipes_list ul li, .recipes_list_search ul li {
-    height: 75px;
-    width: 99%;
+    height: 86px;
+    width: 98%;
     padding-right: 0;
     padding-left: 1%;
     padding-top: 8px;
