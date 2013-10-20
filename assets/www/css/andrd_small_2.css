@@ -148,6 +148,7 @@ body {
     font-size: 12px;
     top: -6px;
     position: relative;
+    height: 20px;
 }
 
 .about_text_copyright_red {
@@ -175,6 +176,6 @@ font-size: 1.15em;
 .about_all_text{
     overflow-y: scroll;
 }
-.App_posotion {
+/*.App_posotion {
     height: 1280px;
-}
+}*/
