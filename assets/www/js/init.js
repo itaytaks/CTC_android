@@ -30,10 +30,10 @@ var init = {
         document.addEventListener("touchstart", function() { }, true);
 
         //$('.upload_app').hide();
-        $('#favorite_icon_hover').hide();
-        $('#recipes_icon_hover').hide();
-        $('#foodgrator_icon_hover').hide();
-        $('#tools_icon_hover').hide();
+        //$('#favorite_icon_hover').hide();
+       // $('#recipes_icon_hover').hide();
+       // $('#foodgrator_icon_hover').hide();
+      //  $('#tools_icon_hover').hide();
 
         //init js object
         jsonMan_ = new JsonMan();

@@ -6,7 +6,7 @@
 					useCachedDialogs : false
 				});
 			} catch (e) {
-				alert(e);
+			//	alert(e);
 			}
 		}, false);
 				

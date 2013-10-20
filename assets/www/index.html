@@ -8,9 +8,10 @@
 
         <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
         <link rel="stylesheet" type="text/css" media="all and (max-device-width: 480px)" href="css/StyleSheetSmall.css" />
-        <link rel="stylesheet" type="text/css" media="all and (min-device-width: 481px)" href="css/andrd_small.css" />
-        <link rel="stylesheet" media="screen and (max-width:320px) and (min-height:548px)" href="css/iphone5.css?v=1" /><!--for iphone5 needs to be tested-->
- 
+       
+        <!--<link rel="stylesheet" type="text/css" media="all and (min-device-width: 481px)" href="css/andrd_small.css" />-->
+         <link rel="stylesheet" type="text/css"  href="css/andrd_small.css" />
+        
         
         <script type="text/javascript" id="myJSONPCall" src=""></script>
         <script type="text/javascript" src="js/jquery.js"></script>
@@ -936,21 +937,13 @@
                         <!-- <div class="text_icon_position">Favorite</div>-->
                         <div class="text_icon_position">избранное</div>
                     </div>
-                    <div id="favorite_icon_hover" class="icon_hover">
-                        <div class="img_icon_posotion"></div>
-                        <!--<div class="text_icon_position_hover">Favorite</div>-->
-                        <div class="text_icon_position_hover">избранное</div>
-                    </div>
+                    
                     <div id="recipes_icon" class="icon" ontouchstart="CategoriesRecipeListMan_.categories_start_touch(event)" ontouchend="CategoriesRecipeListMan_.categories_page()">
                         <div class="img_icon_posotion"></div>
                         <!--<div class="text_icon_position">Recipes</div>-->
                         <div class="text_icon_position">рецепты</div>
                     </div>
-                    <div id="recipes_icon_hover" class="icon_hover">
-                        <div class="img_icon_posotion"></div>
-                        <div class="text_icon_position_hover">рецепты</div>
-                        <!-- <div class="text_icon_position_hover">Recipes</div>-->
-                    </div>
+                    
                     <div id="main_icon" class="icon_main" ontouchend="mainMan_.gotoMain()">
 
                         <div class="img_icon_posotion"></div>
@@ -962,11 +955,7 @@
                         <!--<div class="text_icon_position">Refriginator</div>-->
                         <div class="text_icon_position">рецептор</div>
                     </div>
-                    <div id="foodgrator_icon_hover" class="icon_hover">
-                        <div class="img_icon_posotion"></div>
-                        <!--<div class="text_icon_position_hover">Refriginator</div>-->
-                        <div class="text_icon_position_hover">рецептор</div>
-                    </div>
+                   
                     <div id="tools_icon" class="icon">
                         <!--ontouchstart="toolsMan_.start_touch(event)" ontouchend="toolsMan_.start()">-->
                         <div class="img_icon_posotion">
@@ -974,11 +963,7 @@
                         <!-- <div class="text_icon_position_tools">Tools</div>-->
                         <div id="tools_icon_x" class="text_icon_position">инструменты</div>
                     </div>
-                    <div id="tools_icon_hover" class="icon_hover">
-                        <div class="img_icon_posotion"></div>
-                        <!--<div class="text_icon_position_hover_tools">Tools</div>-->
-                        <div class="text_icon_position_hover_tools">инструменты</div>
-                    </div>
+                    
                 </div>
             </div>
             <div id="try"></div>

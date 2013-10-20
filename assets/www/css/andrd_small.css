@@ -299,8 +299,13 @@ top: 2px;
     padding-top: 30px;
 }
 /******categories list********/
+
+.categories_page {
+height: 1100px;
+}
 .all_categories {
     top: 0px;
+    height: 100%;
 }
 
 .all_categories ul {
@@ -1344,18 +1349,17 @@ top: 30px;
     left: 33%;
     margin: auto;
     position: absolute;
-    top: 305px;
-    width: 34%;
+   top: 313px;
+width: 25%;
     background-size: 100% 100%;
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
     cursor: pointer;
     height: 38px;
-    left: 33%;
+    left: 37%;
     margin: auto;
     position: absolute;
-    top: 235px;
-    width: 34%;
+   
     background-size: 100% 100%;
 }
 
@@ -1522,7 +1526,7 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    top: -17px;
+    
 }
 
 #Text_search_foodgrator {
