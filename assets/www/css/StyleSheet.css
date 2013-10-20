@@ -1868,11 +1868,11 @@ a {
     margin: auto;
     text-align: center;
     font-family: Conv_PlumbMed;
-    font-size: 20px;
+    font-size: 2em;
     text-shadow: 1px 2px white;
     color: #540A24;
     margin-top: 40px;
-    margin-left: 16px;
+    margin-left: 2em;
 }
 
 .timer_Start_btn {
@@ -2593,13 +2593,13 @@ a {
 
 #term_search {
     border-color: transparent;
-    font-size: 26px;
-    height: 2em;
-    left: 7px;
-    position: relative;
-    top: 3px;
-    width: 100%;
-    -webkit-user-select: auto;
+font-size: 2em;
+height: 90%;
+left: 7px;
+position: relative;
+top: 1%;
+width: 100%;
+-webkit-user-select: auto;
 }
 
 .term_list {
@@ -2630,6 +2630,7 @@ a {
     font-weight: bold;
     position: relative;
     top: 20px;
+    padding-left: 1em;
 }
 
 .get_information_term {
