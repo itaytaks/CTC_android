@@ -527,8 +527,8 @@ z-index: 1;
 
 .recipes_text_down {
     font-size: 14px;
-    height: 0px;
-    margin-top: 0px;
+    height: 36px;
+    margin-top: 16px;
     top: 20px;
 }
 
@@ -871,7 +871,7 @@ top: 30px;
 }
 
 .recipes_middel_window_favorite {
-    height: 515px;
+    height: 400px;
 }
 
 .favorite_delete_icon {
@@ -973,7 +973,7 @@ top: 30px;
 }
 /*********gesture page********/
 .middel_pic_gesture {
-    background-size: 100%;
+    background-size:  auto 100%;
 }
 
 .background_term {
