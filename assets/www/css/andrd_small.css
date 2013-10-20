@@ -3,7 +3,6 @@ body {
     width: 100%;
 }
 
-
 #recipes_icon, #favorite_icon, #main_icon, #foodgrator_icon, #tools_icon {
     width: 17.5%;
     margin-left: 1%;
@@ -66,7 +65,7 @@ border: 1px solid red;
     overflow-x: hidden;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    height: 150%;
+    height: 100%;
 }
 
 .recipes_middel_pic_what_u_need {
@@ -183,10 +182,6 @@ left: 96px;*/
     background-position-x: 15%;
 }
 
-.title_pic_text {
-    left: 5px;
-}
-
 .time_pic_white {
     top: 54%;
     left: 13%;
@@ -285,6 +280,10 @@ left: 96px;*/
 
 .title_pic_text {
     left: 0;
+}
+
+.time_pic_white, .title_pic_text {
+    top: 50px;
 }
 
 .white_background {
@@ -386,8 +385,8 @@ left: 69px;*/
 
 .inside_information {
     display: block;
-    height: 85px;
-    width: 250px;
+    height: 6.5em;
+    width: 300px;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -459,7 +458,7 @@ left: 69px;*/
 }
 
 .what_u_need_wrap {
-    height: 150%;
+    height: 120%;
 }
 
 .search_page .recipes_footer_text {
@@ -529,6 +528,9 @@ top: 4px;
     width: 100%;
 }
 
+.recipes_look_inside_btn{
+    top: 36%;    
+}
 /*******share pic page- partial***************/
 
 .share_position {
@@ -672,8 +674,13 @@ top: 4px;
     position: relative;
 }
 
+.recipes_middel_pic {
+    height: 120%;
+    top: -1px;
+}
+
 .recipes_background_main {
-    height: 150%;
+    height: 100%;
     margin: auto;
     top: 6px;
     width: 100%;
@@ -866,7 +873,7 @@ top: 4px;
 }
 
 .recipes_middel_window {
-    height: 150%px;
+    height: 330px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -950,7 +957,7 @@ top: 4px;
 /*********info page*********/
 .about_all_text {
     top: 0;
-    height: 110%;
+    height: 110%%;
 }
 
 .about_two_logos {
@@ -1227,7 +1234,7 @@ top: 4px;
     color: #fff;
     margin: auto;
     text-align: center;
-    top: -53px;
+    top: -54px;
     display: none;
     cursor: pointer;
     position: absolute;
@@ -1374,11 +1381,10 @@ top: 4px;
 }
 
 .recipes_middel_pic {
-    height: 150%;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    top: -1px;
 }
 
 .one_recipe_text_pic {
@@ -1656,7 +1662,10 @@ ire_icon_recipes {
     left: 12px;
     background-image: url("../images/one_recipe_one_star.png");
 }
-
+.foodgrator_instructions{
+    width: 90%;
+    padding: 5%;
+}
 /*----------info Page------------*/
 
 .about_all_text {

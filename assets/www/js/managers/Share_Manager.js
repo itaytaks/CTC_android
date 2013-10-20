@@ -103,7 +103,7 @@ function shareMan() {
                 hideLoading();
 
             }
-        });
+        });*/
 
     }
 
