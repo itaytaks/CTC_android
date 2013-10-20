@@ -178,7 +178,10 @@ font-size: 1.15em;
 .middel_pic_gesture{
     width: 320px;
     height: 100%;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     overflow-y: auto;
     margin-bottom: 60px;    
+}
+.background_term{
+    height: 430px; 
 }
