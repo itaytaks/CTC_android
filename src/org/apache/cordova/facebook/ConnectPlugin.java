@@ -101,7 +101,8 @@ public class ConnectPlugin extends Plugin {
                 this.permissions = permissions;
                 this.callbackId = callbackId;
                 Runnable runnable = new Runnable() {
-                    public void run() {
+                    @Override
+					public void run() {
                         me.facebook.authorize(cordova.getActivity(), me.permissions, new AuthorizeListener(me));
                     };
                 };
@@ -175,7 +176,8 @@ public class ConnectPlugin extends Plugin {
         		this.paramBundle =  new Bundle(collect);
         		this.callbackId = callbackId;
         		Runnable runnable = new Runnable() {
-        			public void run() {
+        			@Override
+					public void run() {
         				me.facebook.dialog (me.cordova.getActivity(), me.method , me.paramBundle , new UIDialogListener(me));
         			};
         		};
@@ -235,23 +237,27 @@ public class ConnectPlugin extends Plugin {
 			this.fba = fba;
 		}
 
+		@Override
 		public void onComplete(Bundle values) {
 			//  Handle a successful dialog
 			Log.d(TAG,values.toString());
 			this.fba.success(new PluginResult(PluginResult.Status.OK), this.fba.callbackId);
 		}
 
+		@Override
 		public void onFacebookError(FacebookError e) {
            Log.d(TAG, "facebook error");
            this.fba.error("Facebook error: " + e.getMessage(), callbackId);
        }
 
-       public void onError(DialogError e) {
+       @Override
+	public void onError(DialogError e) {
            Log.d(TAG, "other error");
            this.fba.error("Dialog error: " + e.getMessage(), this.fba.callbackId);
        }
 
-       public void onCancel() {
+       @Override
+	public void onCancel() {
            Log.d(TAG, "cancel");
            this.fba.error("Cancelled", this.fba.callbackId);
        }
@@ -265,7 +271,8 @@ public class ConnectPlugin extends Plugin {
             this.fba = fba;
         }
 
-        public void onComplete(Bundle values) {
+        @Override
+		public void onComplete(Bundle values) {
             //  Handle a successful login
 
             String token = this.fba.facebook.getAccessToken();
@@ -278,7 +285,8 @@ public class ConnectPlugin extends Plugin {
             Log.d(TAG, values.toString());
 
             Thread t = new Thread(new Runnable() {
-                public void run() {
+                @Override
+				public void run() {
                     try {
                         JSONObject o = new JSONObject(fba.facebook.request("/me"));
                         fba.userId = o.getString("id");
@@ -298,17 +306,20 @@ public class ConnectPlugin extends Plugin {
             t.start();
         }
 
-        public void onFacebookError(FacebookError e) {
+        @Override
+		public void onFacebookError(FacebookError e) {
             Log.d(TAG, "facebook error");
             this.fba.error("Facebook error: " + e.getMessage(), callbackId);
         }
 
-        public void onError(DialogError e) {
+        @Override
+		public void onError(DialogError e) {
             Log.d(TAG, "other error");
             this.fba.error("Dialog error: " + e.getMessage(), this.fba.callbackId);
         }
 
-        public void onCancel() {
+        @Override
+		public void onCancel() {
             Log.d(TAG, "cancel");
             this.fba.error("Cancelled", this.fba.callbackId);
         }

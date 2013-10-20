@@ -1,7 +1,5 @@
 body {
 }
-
-
 .all_categories {
     top: 0px;
 }
@@ -166,16 +164,14 @@ body {
 }
 .inside_information {
 display: block;
-height: 6.8em;
-width: 66%;
+height: 6em;
+width: 68%;
 float: right;
 margin-left: 5px;
 position: relative;
 font-size: 1.15em;
 }
 .about_all_text{
-    overflow-y: scroll;
-}
-/*.App_posotion {
-    height: 1280px;
+    overflow-y: auto;
+    height: 100%;
 }*/

@@ -70,6 +70,7 @@ border: 1px solid red;
 
 .recipes_middel_pic_what_u_need {
     overflow: auto;
+    height: 100%;
 }
 
 user agent stylesheetdiv {
@@ -300,12 +301,12 @@ top: 2px;
 }
 /******categories list********/
 
-.categories_page {
+/*.categories_page {
 height: 1100px;
-}
+}*/
 .all_categories {
     top: 0px;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .all_categories ul {
@@ -339,6 +340,7 @@ height: 1100px;
     top: 66%;
     margin-left: 15px;
     position: absolute;
+    color: #87207e;/*test sara*/ 
 }
 
 .title_up_main_categories {
@@ -978,6 +980,7 @@ top: 30px;
 }
 .background_term, .about_all_text{
     height: 900px;
+    overflow-y: auto;
 }
 
 /*********info page*********/
