@@ -207,13 +207,11 @@ a {
      z-index: 20;*/
     background-color: #fcbf14;
     bottom: 0px;
+    left: 0;
     height: 78px;
     position: fixed;
     width: 100%;
     z-index: 20;
-    left: 0;
-    padding: 0;
-    margin: 0;
 }
 
 .icon {
@@ -383,7 +381,7 @@ a {
     position: relative;
     text-align: center;
     margin: auto;
-    /*width: 21px;*/
+    width: 21px;
 }
 
 .dots_position ul li {
@@ -932,7 +930,7 @@ a {
 }*/
 .recipes_list_Results ul li {
     height: 183px;
-    /*width: 589px;*/
+    width: 589px;
     position: relative;
     margin-bottom: 46px;
     cursor: pointer;
@@ -2441,7 +2439,7 @@ a {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    /*width: 603px;*/
+    width: 603px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -3301,11 +3299,10 @@ a {
     margin: auto;
     position: relative;
     text-align: left;
+    top: 45px;
     width: 94%;
-    top: 0;
-    height: 100%;
     background-color: #fff;
-    overflow-y: scroll;
+    overflow-y: hidden;
     color: #484F57;
 }
 
@@ -3346,7 +3343,7 @@ a {
 }
 
 .screenz_logo {
-    /*background-image: url("../images_ipad/logo_screenz_new.png");*/
+    background-image: url("../images_ipad/logo_screenz_new.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     float: right;
@@ -3392,6 +3389,7 @@ a {
 .about_text_copyright, .about_text_copyright_red {
     font-size: 1.2em;
     padding-left: 10%;
+    top: 0;
 }
 
 .search_page {

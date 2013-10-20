@@ -2,8 +2,12 @@ var featerDisplayID =0;
 var numOfFeaters =  0;
 var maxOfFeater = 5;
 function FeatureMan () {
+    // maxOfFeater: "5",
+   // this.featerDisplayID =  0;
+    //this.numOfFeaters =  0;
     this.slider;
     this.createList = function() {
+        //getBrowser();
         try {
 
              jsonMan_.get_posts_by_category("feature", numOfFeaters, 1, "featureMan_.createListCB");
@@ -18,29 +22,38 @@ function FeatureMan () {
 
     this.startSlider = function() {           
         var background_pos;
-        //switch(browser){
-        //    case "isGt2": background_pos = "-26px 50%";
-        //    break;
-        //    case "isGt3": background_pos = "-26px 50%";
-        //    break;
-        //    case "ipad": background_pos = "-20.5px 1px";
-        //    break;
-        //    case "iphone": background_pos = "-9px 50%";
-        //    break;
-        //}
-        background_pos = "-9px 50%";
+//        var browser=getBrowser();
+        switch(browser){
+            case "isGt2": background_pos = "-26px 50%";
+            break;
+            case "isGt3": background_pos = "-26px 50%";
+            break;
+            case "ipad": background_pos = "-20.5px 1px";
+            break;
+            case "iphone": background_pos = "-9px 50%";
+            break;
+        }
+        /*var background_pos = "-26px 50%"
+        //var background_pos = "-17px 50%";- iphone
+        if(isIpad()) {
+            background_pos = "-38px 50%";
+        }*/
+        
          featureMan_.slider = new Swipe(document.getElementById('middel_main'), {
             callback: function(e, pos) {
                 $("#dots li").each(function(i) {
                     if(i != pos) {
                         $(this).css({ "background-position": "" });
+                        //$(this).attr("src", image + "/point_empty.png");
                     } else {
+                        //$(this).attr("src", image + "/point_full.png");
                         $(this).css({ "background-position": background_pos });
 					
                     }
 
                 });
 
+                //$("#dots li img").eq(pos).attr("src", image + "/point_full.png");
             }
         });
 
@@ -70,27 +83,45 @@ function FeatureMan () {
             numOfItems = maxOfFeater;
         }
         numOfFeaters = numOfItems;
+        //creates the featers containers
+        //val.posts[i].id
+
         var background_pos; // = "-26px 50%";
         var dotWidth; // = 40;
-        background_pos = "-9px 50%";
-        dotWidth = 9;
+
         switch (browser) {
             case "isGt2":
-                background_pos = "-9px 50%";
-                dotWidth = 9;
+                background_pos = "-26px 50%";
+                dotWidth = 40;
                 break;
             case "isGt3":
+                background_pos = "-26px 50%";
+                dotWidth = 40;
+                break;
+            case "ipad":
+                background_pos = "-20.5px 1px";
+                dotWidth = 43;
+                break;
+            case "iphone":
                 background_pos = "-9px 50%";
-                dotWidth = 9;
+                dotWidth = 12;
                 break;
         }
-        //var $dotMargin = $(".dots_position ul li");
-        //var dot_margin = $dotMargin.css("margin-left") + $dotMargin.css("margin-right");
-        //dotWidth += dot_margin;
-        dotWidth += 3;
+        var inIpad = isIpad();
+        /*//var background_pos = "-17px 50%";
+        var background_pos = "-26px 50%";
+        
+        
+        //var dotWidth = 22;
+        var dotWidth = 40;
+        if(inIpad) {
+        background_pos = "-38px 50%";
+        dotWidth = 43;
+        }*/
+
         $(".dots_position ul").width(dotWidth * numOfItems);
-        //$(".dots_position ul").width("100%");
-        //$(".dots_position ul").css({ "width": "100%" });
+      alert("background_pos: " + background_pos);
+      alert("dotWidth: " + dotWidth);
         for (var i = 0; i < numOfItems; i++) {
             //check if there is a picture
             var small_imag = val.posts[i].custom_fields["wpcf-image"];

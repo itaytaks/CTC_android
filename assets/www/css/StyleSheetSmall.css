@@ -375,7 +375,7 @@ left: 69px;*/
 
 .inside_information {
     display: block;
-    height: 6.5em;
+    height: 66px;
     width: 211px;
     float: right;
     margin-left: 5px;
@@ -938,8 +938,8 @@ left: 69px;*/
 /*********info page*********/
 .about_all_text {
     top: 0;
-    height: 100%;
-    overflow-y: scroll;
+    height: 94%;
+    padding-bottom: 10px;
 }
 
 .about_two_logos {
@@ -981,7 +981,7 @@ left: 69px;*/
 }
 
 .screenz_logo {
-    top: 6px;
+    top: 0;
     background-size: 100px;
     right: 0em;
     width: 112px;
@@ -1007,7 +1007,7 @@ left: 69px;*/
 
 .about_text_copyright_red {
     font-size: 10px;
-    top: -13px;
+    top: 0;
     position: relative;
 }
 /*******tools page*****/
@@ -1338,7 +1338,7 @@ left: 69px;*/
 }
 
 .midddel_main_pic {
-    padding-top: 21px;
+    top: 21px;
     height: 52%;
 }
 
