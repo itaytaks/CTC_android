@@ -47,7 +47,7 @@ function initBrowser() {
 function loadRelevantCss() {
     switch (browser) {
 
-        case "androidSmall2":
+        case "isGt2":
             loadcssfile("css/andrd_small_2.css");
 
             break;
@@ -57,7 +57,7 @@ function loadRelevantCss() {
 
             break;
 
-        case "androidSmall":
+        case "isGt3":
             //for galaxy s4 -s3
             loadcssfile("css/andrd_small.css");
 

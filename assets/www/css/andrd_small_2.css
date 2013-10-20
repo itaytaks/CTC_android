@@ -165,10 +165,16 @@ body {
 }
 .inside_information {
 display: block;
-height: 7em;
+height: 6.8em;
 width: 66%;
 float: right;
 margin-left: 5px;
 position: relative;
 font-size: 1.15em;
+}
+.about_all_text{
+    overflow-y: scroll;
+}
+.App_posotion {
+    height: 1280px;
 }
