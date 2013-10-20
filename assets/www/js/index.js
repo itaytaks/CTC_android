@@ -6,17 +6,18 @@ var app = {
         document.addEventListener('deviceready', this.deviceready, false);
     },
     deviceready: function() {
-        window.plugins.applicationPreferences.set('idleTimerDisabled','YES', function() {                                                  
-                                                  }, function(error) {
-                                                  }
+        window.plugins.applicationPreferences.set('idleTimerDisabled', 'YES', function() {
+        }, function(error) {
+        }
                                                   );
         window.echo = function(str, callback) {
             cordova.exec(callback, function(err) {
-                         callback('Nothing to echo.');
-                         }, "EyeSight", "eyeSight", [str]);
+                callback('Nothing to echo.');
+            }, "EyeSight", "eyeSight", [str]);
         };
         window.echo("echome", function(echoValue) {
-                    alert(echoValue == "echome");});
+            //  alert(echoValue == "echome");
+        });
         // note that this is an event handler so the scope is that of the event
         // so we need to call app.report(), and not this.report()
         app.report('deviceready');
@@ -24,7 +25,7 @@ var app = {
         //ChildBorwser init
         client_browser = ChildBrowser.install();
         app.report('installed child browser'); // for some reason this doesn't run
-        
+
     },
     report: function(id) {
         console.log("report:" + id);

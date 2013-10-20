@@ -1,9 +1,11 @@
 
 $(document).ready(function () {
     //initAppSize();
+    alert("chooseDevice");//shai temp for test
     initBrowser();
+    alert("chooseDevice2");//shai temp for test
     loadRelevantCss();
-
+    alert("chooseDevice4");//shai temp for test
     //checkOrientation();
 });
 
@@ -17,6 +19,7 @@ function initAppSize() {
 
 var browser;
 function initBrowser() {
+    alert("chooseDevice1");//shai temp for test
     var ua = navigator.userAgent.toLowerCase();
     console.log("user agent: " + ua);
     var androidSmall = false;
@@ -45,6 +48,8 @@ function initBrowser() {
 }
 
 function loadRelevantCss() {
+    alert("chooseDevice3");//shai temp for test
+    alert(browser);//shai temp for test
     switch (browser) {
 
         case "isGt2":
@@ -66,6 +71,9 @@ function loadRelevantCss() {
 }
 
 function loadcssfile(filename) {
+    alert("chooseDevice5");//shai temp for test
+     alert(filename);//shai temp for test
+
     //if filename is an external CSS file
     var fileref = document.createElement("link")
     fileref.setAttribute("rel", "stylesheet")

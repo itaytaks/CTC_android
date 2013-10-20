@@ -827,6 +827,7 @@ FB.provide('Flash', {
    * @access private
    */
   init: function() {
+      alert("fb init");
     // only initialize once
     if (FB.Flash._init) {
       return;
