@@ -279,7 +279,7 @@ top: 2px;
 }
 
 .search_page .search_text{
-    font-size: 17px;
+    font-size: 14px;
 }
 
 
@@ -361,6 +361,8 @@ left: 69px;*/
 /*****recipe page******/
 .one_recipe_page {
 height: 1280px;
+position: relative;
+z-index: 1;
 }
 .recipes_background_recipres_page, .recipes_background_favorite, .recipes_background_search {
     top: auto;
@@ -524,6 +526,7 @@ height: 1280px;
     font-size: 14px;
     height: 0px;
     margin-top: 0px;
+    top: 20px;
 }
 
 .clock_icon_recipes {
