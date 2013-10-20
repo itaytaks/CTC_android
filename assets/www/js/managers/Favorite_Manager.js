@@ -147,25 +147,27 @@ favorite_Manager = function() {
         var myObj = "#recipeGoToFA" + id;
         $(myObj).data("swipe", true);
         list_hover($(myObj));
-           $(myObj).addClass("delete");
+        $(".delete").removeClass("delete");
+        $(".favorite_delete_icon").hide();
+        $(myObj).addClass("delete");
         switch(browser) {
             case "isGt2":
-                $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
-                $(myObj + ' .recipes_first_title').css("margin-left", "28px");
+             //   $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
+             //   $(myObj + ' .recipes_first_title').css("margin-left", "28px");
                 /*$(myObj + ' .recipes_second_title').css("margin-left", "227px");*/
-                $(myObj + ' .recipes_second_title').css("display", "none");
+             //   $(myObj + ' .recipes_second_title').css("display", "none");
                 //$(myObj + ' .cover_delete').css("left", "115px");
                 //$(myObj + ' .cover_delete').css("width", "30%");
-                $(myObj + ' .recipes_look_inside_btn').css("display", "none");
+             //   $(myObj + ' .recipes_look_inside_btn').css("display", "none");
                 break;
             case "isGt3":
-                $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
-                $(myObj + ' .recipes_first_title').css("margin-left", "228px");
+              //  $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
+              //  $(myObj + ' .recipes_first_title').css("margin-left", "228px");
                 /*$(myObj + ' .recipes_second_title').css("margin-left", "227px");*/
-                $(myObj + ' .recipes_second_title').css("display", "none");
-                $(myObj + ' .cover_delete').css("left", "115px");
-                $(myObj + ' .cover_delete').css("width", "30%");
-                $(myObj + ' .recipes_look_inside_btn').css("display", "none");
+             //   $(myObj + ' .recipes_second_title').css("display", "none");
+            //    $(myObj + ' .cover_delete').css("left", "115px");
+            //    $(myObj + ' .cover_delete').css("width", "30%");
+            //    $(myObj + ' .recipes_look_inside_btn').css("display", "none");
                 break;
         }
 
@@ -332,10 +334,10 @@ favorite_Manager = function() {
             if($(this).css("display") == "block") {
                 myObj = "#" + $(this).parent().attr("id");
                 if(isIpad()) {
-                 //   $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 23px");
-                //    $(myObj + ' .recipes_first_title').css("margin-left", "380px");
-                 //   $(myObj + ' .recipes_second_title').css("margin-left", "378px");
-               //     $(myObj + ' .decoration_recipes_favorite').css("left", "32%");
+                    //   $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 23px");
+                    //    $(myObj + ' .recipes_first_title').css("margin-left", "380px");
+                    //   $(myObj + ' .recipes_second_title').css("margin-left", "378px");
+                    //     $(myObj + ' .decoration_recipes_favorite').css("left", "32%");
                 } else {
                     // $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 23px");
                     //  $(myObj + ' .recipes_first_title').css("margin-left", "188px");
