@@ -403,7 +403,7 @@ height: 1280px;
 
 .inside_information {
     display: block;
-    height: 7em;
+    height: 6.5em;
     width: 78%;
     float: right;
     margin-left: 5px;
@@ -541,7 +541,9 @@ top: 30px;
 .recipes_small_pic {
     border-radius: 6px;
 }
-
+.recipes_list_search ul li{
+    height: 93px;
+}
 .one_recipe_small_up_icons {
     width: 100%;
 }
