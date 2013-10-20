@@ -398,8 +398,8 @@ height: 1280px;
 
 .inside_information {
     display: block;
-    height: 6.5em;
-    width: 75%;
+    height: 6.9em;
+    width: 78%;
     float: right;
     margin-left: 5px;
     position: relative;
@@ -1565,10 +1565,6 @@ ire_icon_recipes {
 .recipes_list_Results {
     margin: auto;
     position: relative;
-}
-
-.recipes_list_Results .inside_information {
-    float: left;
 }
 
 .recipes_list_Results ul li {
