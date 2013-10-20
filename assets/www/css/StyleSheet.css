@@ -3435,7 +3435,7 @@ width: 100%;
 
 .timer_list_background {
     z-index: 3;
-    a position: absolute;
+    position: absolute;
     top: 55px;
 }
 

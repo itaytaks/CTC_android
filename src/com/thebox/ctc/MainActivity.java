@@ -2,11 +2,9 @@ package com.thebox.ctc;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
-import android.view.Menu;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.util.Log;
 import android.webkit.DownloadListener;
 
@@ -22,7 +20,8 @@ public class MainActivity extends DroidGap {
 		
 		appView.setDownloadListener(new DownloadListener() 
         { 
-            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimeType, long size) 
+            @Override
+			public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimeType, long size) 
             { 
                 Intent viewIntent = new Intent(Intent.ACTION_VIEW); 
                 viewIntent.setDataAndType(Uri.parse(url), mimeType); 

@@ -38,10 +38,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 
-import android.os.Handler;
 import android.util.Log;
-
-import com.thebox.ctc.R;
 
 public class StatusBarNotification extends Plugin {
     //	Action to execute

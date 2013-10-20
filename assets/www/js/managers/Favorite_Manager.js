@@ -151,11 +151,12 @@ favorite_Manager = function() {
         switch(browser) {
             case "isGt2":
                 $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
-                $(myObj + ' .recipes_first_title').css("margin-left", "228px");
+                $(myObj + ' .recipes_first_title').css("margin-left", "28px");
                 /*$(myObj + ' .recipes_second_title').css("margin-left", "227px");*/
                 $(myObj + ' .recipes_second_title').css("display", "none");
-                $(myObj + ' .cover_delete').css("left", "115px");
-                $(myObj + ' .cover_delete').css("width", "80%");
+                //$(myObj + ' .cover_delete').css("left", "115px");
+                //$(myObj + ' .cover_delete').css("width", "30%");
+                $(myObj + ' .recipes_look_inside_btn').css("display", "none");
                 break;
             case "isGt3":
                 $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
@@ -163,29 +164,8 @@ favorite_Manager = function() {
                 /*$(myObj + ' .recipes_second_title').css("margin-left", "227px");*/
                 $(myObj + ' .recipes_second_title').css("display", "none");
                 $(myObj + ' .cover_delete').css("left", "115px");
-                $(myObj + ' .cover_delete').css("width", "80%");
-                break;
-            case "ipad":
-               // $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 171px");
-              ///  $(myObj + ' .recipes_first_title').css("margin-left", "541px");
-              //  $(myObj + ' .recipes_first_title').css("width", "779px");
-                /*$(myObj + ' .recipes_second_title').css("margin-left", "541px");*/
-             //   $(myObj + ' .decoration_recipes_favorite').css("left", "42%");
-             //   $(myObj + ' .recipes_second_title').css("display", "none");
-             //   $(myObj + ' .cover_delete').css("left", "145px");
-            //    $(myObj + ' .cover_delete').css("width", "90%");
-                break;
-            case "iphone":
-                // $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 32px");
-                //$(myObj + ' .recipes_first_title').css("margin-left", "231px");
-                // $(myObj + ' .recipes_first_title').css("width", "287px");
-                /*$(myObj + ' .recipes_second_title').css("margin-left", "231px");*/
-                //$(myObj + ' .recipes_second_title').css("display", "none");
-                // $(myObj + ' .cover_delete').css("left", "63px");
-                //  $(myObj + ' .cover_delete').css("width", "90%");
-
-
-             
+                $(myObj + ' .cover_delete').css("width", "30%");
+                $(myObj + ' .recipes_look_inside_btn').css("display", "none");
                 break;
         }
 
