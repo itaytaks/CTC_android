@@ -256,16 +256,16 @@ left: 96px;*/
 }
 
 .search_text_background {
-    height: 20px;
-    top: 10px;
+    height: 57px;
+    top: 39px;
     margin-bottom: 30px;
     width: 90%;
-    border-radius: 3px;
+    border-radius: 8px;
     position: relative;
 }
 
 .search_btn_icon {
-    width: 20px;
+    width: 59px;
     height: auto;
     clear: both;
     float: right;

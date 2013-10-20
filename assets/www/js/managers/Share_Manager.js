@@ -67,7 +67,7 @@ function shareMan() {
     }
 
     $("#browseBtn").click(function () {
-        alert('1');
+      //  alert('1');
         alert(navigator.camera.getPicture);
         navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
@@ -87,9 +87,11 @@ function shareMan() {
       //        $('.share_img').attr("src", "data:image/jpeg;base64," + imageData);
       //      $('.share_specific_pic').show();
       //    $('.share_position').hide();
-      //  NavigationMan_.navigate("","browse");
-      showLoading();
-      jQuery.ajax({
+     alert("sucess");
+       NavigationMan_.navigate("","browse");
+     
+     // showLoading();
+    /*  jQuery.ajax({
           type: 'POST',
           url: 'http://appetite.theboxsite.com/wp-content/uploads/save.php',
           data: { 'data': 'data:image/jpeg;base64,' + imageData },
@@ -103,7 +105,7 @@ function shareMan() {
               hideLoading();
 
             }
-        });
+        });*/
 
     }
 
@@ -166,11 +168,11 @@ function shareMan() {
         // You can change
         var params = {};
         params['message'] = msg;
-        params['name'] = 'Домашний.Рецепты — приложение без прикосновения к экрану';
-        params['description'] = "Я готовлю с помощью приложения «Домашний.Рецепты» и вот, что у меня получилось";
+        params['name'] = '׀”׀¾׀¼׀°ׁˆ׀½׀¸׀¹.׀ ׀µׁ†׀µ׀¿ׁ‚ׁ‹ ג€” ׀¿ׁ€׀¸׀»׀¾׀¶׀µ׀½׀¸׀µ ׀±׀µ׀· ׀¿ׁ€׀¸׀÷׀¾ׁ�׀½׀¾׀²׀µ׀½׀¸ׁ� ׀÷ ׁ�׀÷ׁ€׀°׀½ׁƒ';
+        params['description'] = "׀¯ ׀³׀¾ׁ‚׀¾׀²׀»ׁ� ׁ� ׀¿׀¾׀¼׀¾ׁ‰ׁ�ׁ� ׀¿ׁ€׀¸׀»׀¾׀¶׀µ׀½׀¸ׁ� ֲ«׀”׀¾׀¼׀°ׁˆ׀½׀¸׀¹.׀ ׀µׁ†׀µ׀¿ׁ‚ׁ‹ֲ» ׀¸ ׀²׀¾ׁ‚, ׁ‡ׁ‚׀¾ ׁƒ ׀¼׀µ׀½ׁ� ׀¿׀¾׀»ׁƒׁ‡׀¸׀»׀¾ׁ�ׁ�";
         params['link'] = "http://www.domashniy.ru/article/eda/";
         params['picture'] = $('.share_img').attr("src");
-        params['caption'] = 'Привет, Друзья ';
+        params['caption'] = '׀�ׁ€׀¸׀²׀µׁ‚, ׀”ׁ€ׁƒ׀·ׁ�ׁ� ';
 
         // When you're ready send you request off to be processed!
         facebookMan_.post(_fbType, params);
