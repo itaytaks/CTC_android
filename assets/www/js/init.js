@@ -18,6 +18,7 @@ var searchMan_;
 var categoryListDisplay;
 var recipeList;
 var facebookMan_;
+var facebookManAndroid_;
 
 var json = {};
 //var recipesArray = new Array();
@@ -26,8 +27,8 @@ var recipesArray2 = new Object;
 var recipesFeature = [];
 var categoriesArray = [];
 var init = {
-    start: function() {
-        document.addEventListener("touchstart", function() { }, true);
+    start: function () {
+        document.addEventListener("touchstart", function () { }, true);
 
         //$('.upload_app').hide();
         $('#favorite_icon_hover').hide();
@@ -76,9 +77,9 @@ var init = {
 
         termSingle_Manager_ = new termSingle_Manager();
 
-        if(browser != "isGt2" && browser != "isGt3") {
-            facebookMan_ = new FacebookMan();
-        }
+
+        //   facebookManAndroid_ = new FacebookMan();
+       
 
         //when the keyboard is up - hide the footer
         keyboardUpEvent();
@@ -88,8 +89,8 @@ var init = {
         try {
             isFirstTime = localStorage.getItem('CTCFirstTime');
         }
-        catch(e) { }
-        if(isFirstTime != "noFirstTime") {
+        catch (e) { }
+        if (isFirstTime != "noFirstTime") {
             $(".start_pop_page").show();
             localStorage.setItem('CTCFirstTime', "noFirstTime");
         }

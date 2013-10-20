@@ -103,7 +103,7 @@ function shareMan() {
                 hideLoading();
 
             }
-        });*/
+        });
 
     }
 
@@ -111,33 +111,36 @@ function shareMan() {
         alert('Failed because: ' + message);
     }
 
-    $(".share_facebook_btn").click(function () {
-        //$(".Up_banner_background").hide();
-        //$(".second_nav_background_papers").hide();
-        //$(".share_position").hide();
-        //$(".share_specific_pic").hide();
-        //$(".facebookDialog").show();
+    //$(".share_facebook_btn").click(function () {
+    //    alert('facebook');
+    //    //$(".Up_banner_background").hide();
+    //    //$(".second_nav_background_papers").hide();
+    //    //$(".share_position").hide();
+    //    //$(".share_specific_pic").hide();
+    //    //$(".facebookDialog").show();
 
-        // First lets check to see if we have a user or not
-        if (!localStorage.getItem("fbToken")) {
-            /*$("#facebook_loginArea").show();
-            $("#facebook_status").hide();
+    //    // First lets check to see if we have a user or not
+    //    if (!localStorage.getItem("fbToken")) {
+    //        /*$("#facebook_loginArea").show();
+    //        $("#facebook_status").hide();
 
-            $("#facebook_login").click(function(){*/
-            facebookMan_.init();
+    //        $("#facebook_login").click(function(){*/
+    //          alert('facebook1');
+    //        facebookManAndroid_.init();
+    //          alert('facebook2');
 
-            //});
+    //        //});
 
-        }
+    //    }
 
-        else {
-            console.log("showing loged in");
-            // show our info
-            $("#info").show();
-            shareMan_.createPost();
-        }
+    //    else {
+    //        console.log("showing loged in");
+    //        // show our info
+    //        $("#info").show();
+    //        shareMan_.createPost();
+    //    }
 
-    });
+    //});
 
 
 
