@@ -18,16 +18,6 @@ function FeatureMan () {
 
     this.startSlider = function() {           
         var background_pos;
-        //switch(browser){
-        //    case "isGt2": background_pos = "-26px 50%";
-        //    break;
-        //    case "isGt3": background_pos = "-26px 50%";
-        //    break;
-        //    case "ipad": background_pos = "-20.5px 1px";
-        //    break;
-        //    case "iphone": background_pos = "-9px 50%";
-        //    break;
-        //}
         background_pos = "-9px 50%";
          featureMan_.slider = new Swipe(document.getElementById('middel_main'), {
             callback: function(e, pos) {
@@ -89,6 +79,8 @@ function FeatureMan () {
         //dotWidth += dot_margin;
         dotWidth += 3;
         $(".dots_position ul").width(dotWidth * numOfItems);
+    alert("dotWidth: " + dotWidth);
+    alert("background_pos: " + background_pos);
         //$(".dots_position ul").width("100%");
         //$(".dots_position ul").css({ "width": "100%" });
         for (var i = 0; i < numOfItems; i++) {

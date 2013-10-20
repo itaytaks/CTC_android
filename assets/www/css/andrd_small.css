@@ -280,7 +280,7 @@ top: 2px;
 
 
 .title_pic_text {
-    left: 0;
+    left: 1em;
 }
 
 .time_pic_white, .title_pic_text {
@@ -955,6 +955,9 @@ top: 4px;
 
 .background_term {
     top: 40px;
+}
+.background_term{
+    height: 900px;
 }
 
 /*********info page*********/
