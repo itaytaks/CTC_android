@@ -577,12 +577,14 @@ this.showTimerPage = function() {
         this.pagePosition = "browse";
 
     }
-    this.showGesturePage = function() {
+    this.showGesturePage = function () {
         $(".page").hide();
 
         $('.Gesture_page').show();
+        alert("width" + $(".middel_pic_gesture").width()); //sara test
+        alert("height" + $(".middel_pic_gesture").height()); //sara test
         // $('.home_page').hide();
-          $(".Gesture_page .one_recipe_back_btn").show();
+        $(".Gesture_page .one_recipe_back_btn").show();
 
         this.backPosition = this.pagePosition;
         this.pagePosition = "gesture";
