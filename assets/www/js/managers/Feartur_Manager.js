@@ -19,6 +19,16 @@ function FeatureMan () {
     this.startSlider = function() {           
         var background_pos;
         background_pos = "-9px 50%";
+        switch (browser) {
+            case "isGt2":
+                background_pos = "-9px 50%";
+                dotWidth = 12;
+                break;
+            case "isGt3":
+                background_pos = "-17px 50%";
+                dotWidth = 27;
+                break;
+        }
          featureMan_.slider = new Swipe(document.getElementById('middel_main'), {
             callback: function(e, pos) {
                 $("#dots li").each(function(i) {
@@ -63,24 +73,22 @@ function FeatureMan () {
         var background_pos; // = "-26px 50%";
         var dotWidth; // = 40;
         background_pos = "-9px 50%";
-        dotWidth = 9;
+        dotWidth = 12;
         switch (browser) {
             case "isGt2":
                 background_pos = "-9px 50%";
-                dotWidth = 9;
+                dotWidth = 12;
                 break;
             case "isGt3":
-                background_pos = "-9px 50%";
-                dotWidth = 9;
+                background_pos = "-17px 50%";
+                dotWidth = 27;
                 break;
         }
         //var $dotMargin = $(".dots_position ul li");
         //var dot_margin = $dotMargin.css("margin-left") + $dotMargin.css("margin-right");
         //dotWidth += dot_margin;
-        dotWidth += 3;
+        // dotWidth += 3;
         $(".dots_position ul").width(dotWidth * numOfItems);
-   //alert("dotWidth: " + dotWidth);
-    //alert("background_pos: " + background_pos);
         //$(".dots_position ul").width("100%");
         //$(".dots_position ul").css({ "width": "100%" });
         for (var i = 0; i < numOfItems; i++) {
