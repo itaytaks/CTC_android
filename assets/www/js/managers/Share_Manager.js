@@ -1,22 +1,22 @@
 function shareMan() {
 
     this.initShare = function () {
-        
-        
-        $("#text-area-cover").click(function(){
-                                    $("#text-area-cover").hide();
-                                    if(!$(".share_specific_pic").hasClass("up")){
-                                        $(".share_specific_pic").addClass("up");
-                                    }
-                                   
-                                    $("#TextArea_share").focus();
-                                    });
-        
-        $("#TextArea_share").blur(function(){
-                                  $("#text-area-cover").show();
-                                  $(".share_specific_pic").removeClass("up");
-                                  });
-        
+
+
+        $("#text-area-cover").click(function () {
+            $("#text-area-cover").hide();
+            if (!$(".share_specific_pic").hasClass("up")) {
+                $(".share_specific_pic").addClass("up");
+            }
+
+            $("#TextArea_share").focus();
+        });
+
+        $("#TextArea_share").blur(function () {
+            $("#text-area-cover").show();
+            $(".share_specific_pic").removeClass("up");
+        });
+
         try {
             jsonMan_.get_share("ipad", "shareMan_.initShareCB");
             return sswsd;
@@ -46,29 +46,27 @@ function shareMan() {
         catch (e) { }
     }
 
-    this.showPage = function() {
+    this.showPage = function () {
         NavigationMan_.navigate("tools", "share");
 
         $(".share_position").show();
-        
-       
-     //   $(".share_text_area").click(function() {
-            //  $(".share_specific_pic").animate({ "top": "-50%" }, 500);
-      //                             alert("NP");
-      //                             $(".share_specific_pic").addClass("up");
-      //  });
-         //  alert("12");
 
-       // $(".share_text_area").blur(function() {
-           // $(".share_specific_pic").animate({ "top": "-59px" }, 500);
-      //     $(".share_specific_pic").removeClass("up");
-      //  });
-         //  alert("13");
+
+        //   $(".share_text_area").click(function() {
+        //  $(".share_specific_pic").animate({ "top": "-50%" }, 500);
+        //                             alert("NP");
+        //                             $(".share_specific_pic").addClass("up");
+        //  });
+        //  alert("12");
+
+        // $(".share_text_area").blur(function() {
+        // $(".share_specific_pic").animate({ "top": "-59px" }, 500);
+        //     $(".share_specific_pic").removeClass("up");
+        //  });
+        //  alert("13");
     }
 
     $("#browseBtn").click(function () {
-        alert('1');
-        alert(navigator.camera.getPicture);
         navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
@@ -76,31 +74,33 @@ function shareMan() {
         });
 
     });
-  $("#takeAPicBtn").click(function () {
-      //$('.share_position').hide();
-      //$('.share_specific_pic').show();
-      navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail, { quality: 50,
-          destinationType: Camera.DestinationType.DATA_URL, targetWidth: 584, correctOrientation: true
-      });
-  });
-  this.onSuccess = function(imageData) {
-      //        $('.share_img').attr("src", "data:image/jpeg;base64," + imageData);
-      //      $('.share_specific_pic').show();
-      //    $('.share_position').hide();
-      //  NavigationMan_.navigate("","browse");
-      showLoading();
-      jQuery.ajax({
-          type: 'POST',
-          url: 'http://appetite.theboxsite.com/wp-content/uploads/save.php',
-          data: { 'data': 'data:image/jpeg;base64,' + imageData },
-          complete: function(data) { //do what ever needed
-              $('.share_img').attr("src", "http://appetite.theboxsite.com/wp-content/uploads/" + data.responseText);
-              if($('.share_img').height() < $('.share_img').width()) {
-                  $('.share_img').css("width", "99%");
-              }
-              $('.share_position').hide();
-              NavigationMan_.navigate("", "browse");
-              hideLoading();
+    $("#takeAPicBtn").click(function () {
+        //$('.share_position').hide();
+        //$('.share_specific_pic').show();
+        navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail,
+       { quality: 50,
+           destinationType: Camera.DestinationType.DATA_URL, targetWidth: 584, correctOrientation: true
+       });
+    });
+
+    this.onSuccess = function (imageData) {
+        //        $('.share_img').attr("src", "data:image/jpeg;base64," + imageData);
+        //      $('.share_specific_pic').show();
+        //    $('.share_position').hide();
+        //  NavigationMan_.navigate("","browse");
+        showLoading();
+        jQuery.ajax({
+            type: 'POST',
+            url: 'http://appetite.theboxsite.com/wp-content/uploads/save.php',
+            data: { 'data': 'data:image/jpeg;base64,' + imageData },
+            complete: function (data) { //do what ever needed
+                $('.share_img').attr("src", "http://appetite.theboxsite.com/wp-content/uploads/" + data.responseText);
+                if ($('.share_img').height() < $('.share_img').width()) {
+                    $('.share_img').css("width", "99%");
+                }
+                $('.share_position').hide();
+                NavigationMan_.navigate("", "browse");
+                hideLoading();
 
             }
         });
@@ -166,11 +166,11 @@ function shareMan() {
         // You can change
         var params = {};
         params['message'] = msg;
-        params['name'] = 'Домашний.Рецепты — приложение без прикосновения к экрану';
-        params['description'] = "Я готовлю с помощью приложения «Домашний.Рецепты» и вот, что у меня получилось";
+        params['name'] = '׀”׀¾׀¼׀°ׁˆ׀½׀¸׀¹.׀ ׀µׁ†׀µ׀¿ׁ‚ׁ‹ ג€” ׀¿ׁ€׀¸׀»׀¾׀¶׀µ׀½׀¸׀µ ׀±׀µ׀· ׀¿ׁ€׀¸׀÷׀¾ׁ�׀½׀¾׀²׀µ׀½׀¸ׁ� ׀÷ ׁ�׀÷ׁ€׀°׀½ׁƒ';
+        params['description'] = "׀¯ ׀³׀¾ׁ‚׀¾׀²׀»ׁ� ׁ� ׀¿׀¾׀¼׀¾ׁ‰ׁ�ׁ� ׀¿ׁ€׀¸׀»׀¾׀¶׀µ׀½׀¸ׁ� ֲ«׀”׀¾׀¼׀°ׁˆ׀½׀¸׀¹.׀ ׀µׁ†׀µ׀¿ׁ‚ׁ‹ֲ» ׀¸ ׀²׀¾ׁ‚, ׁ‡ׁ‚׀¾ ׁƒ ׀¼׀µ׀½ׁ� ׀¿׀¾׀»ׁƒׁ‡׀¸׀»׀¾ׁ�ׁ�";
         params['link'] = "http://www.domashniy.ru/article/eda/";
         params['picture'] = $('.share_img').attr("src");
-        params['caption'] = 'Привет, Друзья ';
+        params['caption'] = '׀�ׁ€׀¸׀²׀µׁ‚, ׀”ׁ€ׁƒ׀·ׁ�ׁ� ';
 
         // When you're ready send you request off to be processed!
         facebookMan_.post(_fbType, params);
