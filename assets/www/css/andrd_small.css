@@ -274,8 +274,12 @@ position: relative;
  width: 80%;
 height: 1.7em;
 line-height: 25px;
-font-size: 25px;
+font-size: 23px;
 top: 2px;
+}
+
+.search_page .search_text{
+    font-size: 17px;
 }
 
 
@@ -345,8 +349,14 @@ left: 69px;*/
     margin-bottom: 10px;
 }
 
-/*****recipe page******/
 
+.categories_text_down{
+    height: 85px;
+}
+/*****recipe page******/
+.one_recipe_page {
+height: 1280px;
+}
 .recipes_background_recipres_page, .recipes_background_favorite, .recipes_background_search {
     top: auto;
 }
@@ -461,7 +471,7 @@ left: 69px;*/
 }
 
 .what_u_need_wrap {
-    height: 120%;
+    height: 100%;
 }
 
 .search_page .recipes_footer_text {
@@ -883,7 +893,7 @@ top: 30px;
 
 .recipes_background_what_to_do {
     top: 0.6em;
-    height: 39em;
+    height: 100%;
 }
 
 #recipePage_what_to_do_title {
@@ -1403,7 +1413,7 @@ top: 30px;
 
 .recipes_middel_window_what_u_need {
     overflow-y: scroll;
-    height: 545px;
+    height: 100%;
     
 }
 
