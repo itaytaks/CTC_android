@@ -976,17 +976,19 @@ top: 30px;
     background-size:  auto 100%;
 }
 
-.background_term {
-    top: 40px;
-}
+
 .background_term, .about_all_text{
     height: 900px;
-    overflow-y: auto;
+}
+.background_term{
+     height:650px;
+       top: 40px
+     
 }
 .middel_pic_gesture{
     width: 320px;
     height: 100%;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     overflow-y: auto;
     margin-bottom: 60px;    
 }
