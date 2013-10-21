@@ -7,6 +7,14 @@
 }
 
 
+/*@font-face {
+    font-family: 'CTCSplashRounded Bold';
+    src: url('fonts/CTC_Splash_Rounded.eot');
+    src: local('☺'), url('fonts/CTC_Splash_Rounded.woff') format('woff'), url('fonts/CTC_Splash_Rounded.ttf') format('truetype'), url('fonts/CTC_Splash_Rounded.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -499,6 +507,9 @@ a {
 }
 
 .Gesture_btn_main {
+    /*no gestures in android*/
+    display: none;
+    
     background-image: url("../images/Gesture_btn.jpg");
     background-repeat: no-repeat;
     background-size: auto 75%;
@@ -2110,7 +2121,7 @@ a {
 }
 
 .all_categories {
-    height: 678px;
+    height: 660px;
     margin: auto;
     overflow-x: hidden;
     position: relative;
@@ -3311,11 +3322,34 @@ width: 100%;
     color: #484F57;
 }
 
+.about_icon{
+    float: left;
+}
+
+.about_title{
+    float: left;
+margin-top: 15px;
+margin-left: 17px;
+}
+
+.abut_desc{
+    clear: both;
+    font-size: 1.2em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+}
+
+.abut_desc span {
+    display: block;
+    margin-top:13px
+    
+}
+
 .about_text_title {
     font-size: 1.5em;
     font-weight: bold;
     position: relative;
-    color: #484F57;
+    color: #cc0000;
     line-height: 2em;
 }
 
@@ -3329,11 +3363,15 @@ width: 100%;
 
 .about_text {
     color: #484F57;
-    font-size: 1.5em;
+    font-size: 1.6em;
+font-weight: bold;
     padding-left: 10%;
     line-height: 2em;
 }
 
+.about_footer{
+    margin-top: 2em
+}
 .about_text_position {
     width: 80%;
     padding: 3% 10%;
