@@ -234,7 +234,10 @@ width: 25%;
     background-size: 32% 62%;
     background-position: 49% 30%;
 }*/
-}
+
 .background_term{
     height: 430px; 
+}
+.recipes_middel_window_main {
+height: 375px;
 }
