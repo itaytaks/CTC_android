@@ -31,6 +31,9 @@ function initBrowser() {
     if (ua.search("android") > -1 && ua.search("mobile") > -1 && (ua.search("i9300") > -1 || ua.search("i9500") > -1)) {
         androidSmall = true;
     }
+    if(ua.search("htc one" > -1)){ //for htc one
+         androidSmall = true;
+    }
     if (androidSmall) {
         //for galaxy s4 -s3
         browser = "isGt3";

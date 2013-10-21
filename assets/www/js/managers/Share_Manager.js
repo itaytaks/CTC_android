@@ -83,7 +83,7 @@ function shareMan() {
        });
     });
 
-    this.onSuccess = function (imageData) {
+    this.onSuccess = function(imageData) {
         //        $('.share_img').attr("src", "data:image/jpeg;base64," + imageData);
         //      $('.share_specific_pic').show();
         //    $('.share_position').hide();
@@ -93,11 +93,12 @@ function shareMan() {
             type: 'POST',
             url: 'http://appetite.theboxsite.com/wp-content/uploads/save.php',
             data: { 'data': 'data:image/jpeg;base64,' + imageData },
-            complete: function (data) { //do what ever needed
-                $('.share_img').attr("src", "http://appetite.theboxsite.com/wp-content/uploads/" + data.responseText);
-                if ($('.share_img').height() < $('.share_img').width()) {
-                    $('.share_img').css("width", "99%");
-                }
+            complete: function(data) { //do what ever needed
+                //$('.share_img').attr("src", "http://appetite.theboxsite.com/wp-content/uploads/" + data.responseText);
+                //if ($('.share_img').height() < $('.share_img').width()) {
+                //    $('.share_img').css("width", "99%");
+                //}
+                $(".share_img").css("background-image", "url('http://appetite.theboxsite.com/wp-content/uploads/" + data.responseText + "')");
                 $('.share_position').hide();
                 NavigationMan_.navigate("", "browse");
                 hideLoading();
