@@ -82,7 +82,7 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
 
 .down_menu_background {
     /*height: 40px;*/
-    height: 4em;
+    height: 4.2em;
 }
 
 .Up_banner_background {
@@ -149,7 +149,7 @@ left: 96px;*/
     font-size: 5px;
     line-height: 29px;
     letter-spacing: 0.2px;
-    bottom: 35%;
+    bottom: 32%;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -167,7 +167,7 @@ left: 96px;*/
     margin: auto;
     font-size: 5px;
     line-height: 7px;
-    bottom: 9%;
+    bottom: 5%;
 }
 /*******main page*****/
 .App_posotion {
@@ -948,11 +948,11 @@ left: 69px;*/
 }
 
 .about_text_red {
-    line-height: 2.5em;
-    font-size: 15px;
-    letter-spacing: 0em;
-    top: -3px;
-    position: relative;
+   line-height: 0;
+font-size: 15px;
+letter-spacing: 0em;
+top: 0;
+position: relative;
 }
 
 .about_text_position {
@@ -964,13 +964,18 @@ left: 69px;*/
     font-size: 14px;
     top: -11px;
     letter-spacing: 0em;
+    
+font-size: 2.5em;
+
+  
 }
 
 .about_text_credits {
-    line-height: 1.1em;
-    font-size: 11px;
-    bottom: 0px;
-    letter-spacing: 0em;
+  line-height: 1em;
+font-size: 1.8em;
+bottom: 0px;
+letter-spacing: 0em;
+font-weight: bold;
 }
 
 .reshat_logo {
@@ -981,10 +986,11 @@ left: 69px;*/
 }
 
 .screenz_logo {
-    top: 6px;
-    background-size: 100px;
-    right: 0em;
-    width: 112px;
+    top: 2em;
+background-size: 100px;
+right: 0em;
+width: 30%;
+height: 37px;
 }
 
 .about_text {
@@ -1006,8 +1012,7 @@ left: 69px;*/
 }
 
 .about_text_copyright_red {
-    font-size: 10px;
-    top: -13px;
+    font-size: 1.4em;
     position: relative;
 }
 /*******tools page*****/

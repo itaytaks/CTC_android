@@ -92,11 +92,11 @@ body {
 }
 
 .about_text_red {
-    line-height: 2.5em;
-    font-size: 15px;
-    letter-spacing: 0em;
-    top: -3px;
-    position: relative;
+  line-height: 0;
+font-size: 15px;
+letter-spacing: 0em;
+top: 0;
+position: relative;
 }
 
 .about_text_position {
@@ -105,34 +105,16 @@ body {
 
 .about_text_title {
     line-height: 0.5em;
-    font-size: 14px;
     top: -6px;
     letter-spacing: 0em;
 }
 
-.about_text_credits {
-    line-height: 1em;
-    font-size: 11px;
-    bottom: 0px;
-    letter-spacing: 0em;
-}
 
 .reshat_logo {
-    top: 10px;
-    background-size: 90px;
-    left: 0em;
-    width: 102px;
-}
-
-.screenz_logo {
-    top: 0px;
-    background-size: 100px;
-    right: 0em;
-    width: 112px;
-}
-
-.about_text {
-    font-size: 13px;
+  top: 16px;
+background-size: 100px;
+left: 0em;
+width: 102px;
 }
 
 .text_red_about {
@@ -151,8 +133,7 @@ body {
 }
 
 .about_text_copyright_red {
-    font-size: 10px;
-    top: -13px;
+    
     position: relative;
 }
 
@@ -179,7 +160,7 @@ font-size: 1.15em;
 .middel_pic_gesture{
     width: 320px;
     height: 100%;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     overflow-y: auto;
     margin-bottom: 60px;    
 }
@@ -253,3 +234,7 @@ width: 25%;
     background-size: 32% 62%;
     background-position: 49% 30%;
 }*/
+}
+.background_term{
+    height: 430px; 
+}
