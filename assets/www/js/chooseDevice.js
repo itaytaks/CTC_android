@@ -31,11 +31,8 @@ function initBrowser() {
     if (ua.search("android") > -1 && ua.search("mobile") > -1 && (ua.search("i9300") > -1 || ua.search("i9500") > -1)) {
         androidSmall = true;
     }
-    if(ua.search("HTC One") > -1){
-         androidSmall = true;
-    }
     if (androidSmall) {
-        //for galaxy s4 -s3 - HTC One
+        //for galaxy s4 -s3
         browser = "isGt3";
     }
     if (ua.search("android") > -1 && ua.search("mobile") > -1 && ua.search("i9100") > -1) {

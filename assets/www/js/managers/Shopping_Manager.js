@@ -115,7 +115,7 @@ function shoppingMan() {
             //alert("Add to Sopping-List");
             //$(".addToShopping").show();
 
-            $(".main_background").append("<div class=\"addToShopping\"><span class=\"timer_all_background_black\"></span>" + timerMan_.image_finish +
+            $(".main_background").append("<div class=\"addToShopping\">" + timerMan_.image_finish +   //<span class=\"timer_all_background_black\"></span>
                                                         "<div id=\"timer_finish_recipe_name\" class=\"addToShoppingText\">Этот список был отправлен в корзину</div>" +
                                                         "<span class=\"shopping_ok_border\" ontouchend=\"shoppingMan_.closeWindow()\"><span class=\"timer_finish_OK\">OK</span></span></div>");
             $(".timer_all_background_black").css("background-color", "Black");
