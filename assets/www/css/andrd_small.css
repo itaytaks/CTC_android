@@ -14,27 +14,27 @@ body {
 
 #main_icon {
     background-size: 70% 68%;
-    background-position: 50% 38%;
+    background-position: 50% 23%;
     width: 22%;
 }
 
 #favorite_icon {
     background-size: 45% 65%;
-    background-position: 50% 27%;
+    background-position: 50% 12%;
 }
 
 #recipes_icon {
     background-size: 32% 62%;
-    background-position: 49% 35%;
+    background-position: 49% 20%;
 }
 
 #foodgrator_icon {
     background-size: 65% 65%;
-    background-position: 50% 38%;
+    background-position: 50% 21%;
 }
 
 #tools_icon {
-    background-position: 50% 38%;
+    background-position: 50% 20%;
     background-size: 40% 65%;
 }
 /*#recipes_icon, #favorite_icon, #main_icon, #foodgrator_icon, #tools_icon {
@@ -1365,7 +1365,7 @@ z-index: 15;
     left: 33%;
     margin: auto;
     position: absolute;
-   top: 52%;
+   top: 55%;
 width: 25%;
     background-size: 100% 100%;
     background-image: url("../images/timer_border_ok.png");
