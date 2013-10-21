@@ -986,11 +986,11 @@ font-weight: bold;
 }
 
 .screenz_logo {
-    top: 2em;
+  top: 0em;
 background-size: 100px;
 right: 0em;
 width: 30%;
-height: 37px;
+height: 63px;
 }
 
 .about_text {
