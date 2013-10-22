@@ -211,7 +211,7 @@ left: 96px;*/
     color: #fff;
     margin-left: 3%;
     margin-top: 7%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #btn_txt_2 {
@@ -226,7 +226,7 @@ left: 96px;*/
     color: #fff;
     margin-left: 14%;
     margin-top: 8%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .white_background {
@@ -522,7 +522,6 @@ z-index: 1;
 .recipes_text_down {
     font-size: 18px;
     height: 36px;
-    margin-top: 16px;
     top: 7px;
 }
 
