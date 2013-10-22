@@ -230,7 +230,7 @@ left: 96px;*/
 
 .white_background {
     height: 9em;
-    background: rgba(225,225,225,1);
+    background: rgba(225,225,225,0.90);
     bottom: 0;
     
 }

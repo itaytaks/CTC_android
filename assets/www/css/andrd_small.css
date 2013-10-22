@@ -225,13 +225,13 @@ left: 96px;*/
     background-position: 50% 30%;
     color: #fff;
     margin-left: 14%;
-    margin-top: 8%;
+    margin-top: 7%;
     font-size: 1.2em;
 }
 
 .white_background {
     height: 9em;
-    background: rgba(225,225,225,1);
+    background: rgba(225,225,225,.9);
     height: 10em;
     bottom: 0;    
 }
@@ -510,7 +510,7 @@ z-index: 1;
 }
 
 .btn_background_down {
-    width: 138px;
+    width: 68%;
     height: 24px;
     background-size: 100% 100%;
     margin: auto;
@@ -1498,7 +1498,7 @@ ire_icon_recipes {
     top: 1em;
     width: 42%;
     margin: auto;
-    font-size: 9px;
+    font-size: 0.9em;
     text-align: center;
     margin-top: -5.5px;
     padding-right: 2%;
