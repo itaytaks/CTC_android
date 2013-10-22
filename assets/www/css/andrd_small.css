@@ -301,7 +301,7 @@ height: 1100px;
 }*/
 .all_categories {
     top: 0px;
-   height: 550px;
+   height: 520px;
 }
 
 .all_categories ul {
@@ -324,7 +324,7 @@ height: 1100px;
 
 .cat_white_back {
     height: 43%;
-    top: 57%;
+    top: 59%;
     width: 100%;
     position: absolute;
 }
@@ -516,7 +516,7 @@ z-index: 1;
     margin: auto;
     line-height: 25px;
     border-radius: 4px;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 .recipes_text_down {
