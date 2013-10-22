@@ -3297,10 +3297,12 @@ width: 100%;
 
 
 .share_img {
-    height: 99%;
-    margin: auto;
-    position: relative;
-    /*width: 99%;*/
+  height: 99%;
+position: relative;
+background-repeat: no-repeat;
+background-size: contain;
+width: 99%;
+margin: auto;
 }
 
 .about_us_page {

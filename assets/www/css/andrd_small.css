@@ -637,15 +637,14 @@ top: 30px;
 }
 
 .share_img {
-    /*height: 190px;*/
+    /*height: 190px;
     height: 99%;
     width: 114px;
     margin: auto;
     position: relative;
-    /*width: 285px;*/
     left: -3px;
     top: -2px;
-    width: auto;
+    width: auto;*/
 }
 
 .share_text_area {
