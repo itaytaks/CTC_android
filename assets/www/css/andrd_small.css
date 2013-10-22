@@ -225,7 +225,7 @@ left: 96px;*/
     background-position: 50% 30%;
     color: #fff;
     margin-left: 14%;
-    margin-top: 8%;
+    margin-top: 7%;
     font-size: 1.2em;
 }
 
@@ -510,7 +510,7 @@ z-index: 1;
 }
 
 .btn_background_down {
-    width: 138px;
+    width: 68%;
     height: 24px;
     background-size: 100% 100%;
     margin: auto;
