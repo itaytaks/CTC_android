@@ -210,7 +210,7 @@ left: 96px;*/
     color: #fff;
     margin-left: 3%;
     margin-top: 7%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #btn_txt_2 {
@@ -225,12 +225,12 @@ left: 96px;*/
     color: #fff;
     margin-left: 14%;
     margin-top: 8%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .white_background {
     height: 9em;
-    background: rgba(225,225,225,.8);
+    background: rgba(225,225,225,1);
     bottom: 0;
     
 }
