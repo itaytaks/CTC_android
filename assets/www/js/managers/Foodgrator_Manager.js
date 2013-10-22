@@ -38,7 +38,7 @@ function FoodgrMan () {
         }
         $("#Text_search_foodgrator").keypress(function(e) {
             if(e.keyCode == 13) {
-                if($("#Text_search_foodgrator").val() != "") {
+                if($("#Text_search_foodgrator").val() != "" && $("#Text_search_foodgrator").val() != " ") {
                     $(".recipes_list_Results").hide();
                     $("#food_listWrap").show();
                     $("#food_list").append("<li>" + "<div class=\"cover_delete\" ></div>" + "<div class=\"food_name_div\"><span class=\"food_name\">" + $("#Text_search_foodgrator").val() + "</span></div>" +

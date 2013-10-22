@@ -21,6 +21,8 @@ favorite_Manager = function() {
         catch(ex) { }
 
         if(tempFavoriteList != null && tempFavoriteList != "") {
+            //if there is 
+            $(".favorite_page .recipes_text_down").hide();
 
             favoriteMan_.clearResultsListPage();
             // jQuery.parseJSON(jsonString);
@@ -135,6 +137,12 @@ favorite_Manager = function() {
             });
         }
 
+        //if there is no favorite recipe
+        else {
+            //Вы пока не добавили ни одного рецепта в избранное
+            $(".favorite_page .recipes_text_down").show();
+        }
+
         NavigationMan_.navigate(NavigationMan_.pagePosition, "favorite");
 
 
@@ -152,22 +160,22 @@ favorite_Manager = function() {
         $(myObj).addClass("delete");
         switch(browser) {
             case "isGt2":
-             //   $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
-             //   $(myObj + ' .recipes_first_title').css("margin-left", "28px");
+                //   $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
+                //   $(myObj + ' .recipes_first_title').css("margin-left", "28px");
                 /*$(myObj + ' .recipes_second_title').css("margin-left", "227px");*/
-             //   $(myObj + ' .recipes_second_title').css("display", "none");
+                //   $(myObj + ' .recipes_second_title').css("display", "none");
                 //$(myObj + ' .cover_delete').css("left", "115px");
                 //$(myObj + ' .cover_delete').css("width", "30%");
-             //   $(myObj + ' .recipes_look_inside_btn').css("display", "none");
+                //   $(myObj + ' .recipes_look_inside_btn').css("display", "none");
                 break;
             case "isGt3":
-              //  $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
-              //  $(myObj + ' .recipes_first_title').css("margin-left", "228px");
+                //  $(myObj + ' .recipes_small_pic_border').css("margin", "0 0 0 63px");
+                //  $(myObj + ' .recipes_first_title').css("margin-left", "228px");
                 /*$(myObj + ' .recipes_second_title').css("margin-left", "227px");*/
-             //   $(myObj + ' .recipes_second_title').css("display", "none");
-            //    $(myObj + ' .cover_delete').css("left", "115px");
-            //    $(myObj + ' .cover_delete').css("width", "30%");
-            //    $(myObj + ' .recipes_look_inside_btn').css("display", "none");
+                //   $(myObj + ' .recipes_second_title').css("display", "none");
+                //    $(myObj + ' .cover_delete').css("left", "115px");
+                //    $(myObj + ' .cover_delete').css("width", "30%");
+                //    $(myObj + ' .recipes_look_inside_btn').css("display", "none");
                 break;
         }
 

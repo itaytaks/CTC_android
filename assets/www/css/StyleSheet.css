@@ -1163,6 +1163,12 @@ a {
     height: 260px;
 }
 
+
+.favorite_page .recipes_text_down{
+    color: black;
+    top: 0px;
+    margin-top: 0px;
+}
 .btn_background_down {
     background-color: #CC0000;
     border-radius: 20px;
