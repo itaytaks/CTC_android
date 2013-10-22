@@ -568,6 +568,7 @@ a {
     width: 90%;
     display: none;
     -webkit-user-select: auto;
+    font-family: arial;
 }
 
 .search_text:focus {
@@ -580,7 +581,7 @@ a {
     opacity: 0.7;
     position: absolute;
     top: 67%;
-    width: 100%;
+    width: 20%;
 }
 
 .title_pic_white {
@@ -590,7 +591,8 @@ a {
     left: 18px;
     position: relative;
     display: block;
-    width: 11%;
+    width: 55%;
+    top: 4%;
     margin-right: 2em;
 }
 
@@ -1965,7 +1967,7 @@ a {
 #Text_search_foodgrator {
     -webkit-user-select: auto;
     border: 0 none;
-    font-family: georgia;
+    font-family: arial;
     font-size: 30px;
     height: 29px;
     left: 7px;
@@ -2115,7 +2117,7 @@ a {
 }
 
 .cat_pic img {
-    height: 140px;
+    height: 100%;
     width: 100%;
     /*border-radius: 11px 11px 11px 11px;*/
 }
@@ -3292,14 +3294,7 @@ width: 100%;
     height: 99%;
     margin: auto;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-   
-height: 99%;
-margin: auto;
-position: relative;
-width: 99%;
+    /*width: 99%;*/
 }
 
 .about_us_page {

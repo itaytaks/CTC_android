@@ -180,13 +180,14 @@ left: 96px;*/
 }
 
 .btn_main_1, .btn_main_2 {
+    font-size: 1.1em;
     border-radius: 3px;
     background-position-x: 15%;
 }
 
 .time_pic_white {
     top: 54%;
-    left: 13%;
+    left: 65%;
 }
 /*
 .midddel_main_pic
@@ -210,7 +211,7 @@ left: 96px;*/
     color: #fff;
     margin-left: 3%;
     margin-top: 7%;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 #btn_txt_2 {
@@ -223,19 +224,16 @@ left: 96px;*/
     display: block;
     background-position: 50% 30%;
     color: #fff;
-    margin-left: 13%;
+    margin-left: 14%;
     margin-top: 8%;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .white_background {
     height: 9em;
-    background: rgba(225,225,225,.6);
-}
-
-
-.white_background {
-    bottom: 0;
+    background: rgba(225,225,225,1);
+    height: 10em;
+    bottom: 0;    
 }
 
 .title_pic_white {
@@ -293,10 +291,6 @@ top: 2px;
     top: 50px;
 }
 
-.white_background {
-    height: 10em;
-}
-
 .midddel_main_pic {
     padding-top: 30px;
 }
@@ -315,8 +309,8 @@ height: 1100px;
 }
 
 .all_categories ul li {
-    height: 120px;
-    margin-bottom: -53px;
+    height: 160px;
+    margin-bottom: -63px;
 }
 
 .cat_pic {
@@ -325,11 +319,11 @@ height: 1100px;
 
 
 .cat_pic img {
-    height: 75px;
+    height: 100%;
 }
 
 .cat_white_back {
-    height: 29px;
+    height: 43%;
     top: 57%;
     width: 100%;
     position: absolute;
@@ -526,10 +520,10 @@ z-index: 1;
 }
 
 .recipes_text_down {
-    font-size: 14px;
+    font-size: 18px;
     height: 36px;
     margin-top: 16px;
-    top: 20px;
+    top: 7px;
 }
 
 .clock_icon_recipes {
@@ -643,6 +637,17 @@ top: 30px;
     position: relative;
 }
 
+.share_img {
+    /*height: 190px;*/
+    height: 99%;
+    width: 114px;
+    margin: auto;
+    position: relative;
+    /*width: 285px;*/
+    left: -3px;
+    top: -2px;
+    width: auto;
+}
 
 .share_text_area {
     background-color: #FFFFFF;
@@ -1691,7 +1696,8 @@ ire_icon_recipes {
 }
 .foodgrator_instructions{
     width: 90%;
-    padding: 5%;
+    padding-left: 3%;
+padding-right: 7%;
 }
 /*----------info Page------------*/
 
