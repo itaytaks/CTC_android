@@ -1,3 +1,5 @@
+var applicationDownloadLink = "";
+
 function attachEventFacebook() {
     try {
         FB.init({
@@ -18,7 +20,7 @@ function attachEventFacebook() {
             method: 'feed',
             message: 'msg',
             name: 'Домашний.Рецепты — приложение без прикосновения к экрану',
-            link: 'http://www.domashniy.ru/article/eda/',
+            link: applicationDownloadLink,
             picture: $('.share_img').attr("src"),
             caption: 'Привет, Друзья ',
             description: 'Я готовлю с помощью приложения «Домашний.Рецепты» и вот, что у меня получилось'
@@ -27,4 +29,6 @@ function attachEventFacebook() {
         FB.ui(params, function (obj) { console.log(obj); });
 
     });
+
+    //get the dynamic link for google play
 }
