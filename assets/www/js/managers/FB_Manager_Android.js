@@ -15,7 +15,6 @@ function attachEventFacebook() {
         var msg = $("#TextArea_share").val();
         var str= ($('.share_img').css("background-image"));
         str=str.substring(4, str.length - 1);
-        alert(str);
         var params = {
             method: 'feed',
             message: 'msg',
