@@ -1,11 +1,31 @@
 body {
 }
+
+
+.btn_main_1, .btn_main_2 {
+background-position-x: 12%;
+}
 .all_categories {
     top: 0px;
 }
 
 .all_categories ul {
     margin-top: 2%;
+}
+
+
+.all_categories ul li {
+height: 94px;
+margin-bottom: 15px;
+}
+
+.cat_pic {
+height: 100%;
+}
+
+.btn_background_down{
+    width: 239px;
+font-size: 0.9em;
 }
 
 .Gesture_btn_main {
@@ -23,6 +43,10 @@ body {
 
 #btn_txt_1 {
     line-height: 17px;
+    font-size: 1.4em;
+}
+#btn_txt_2{
+     font-size: 1.4em;
 }
 
 .categories_text_down {
@@ -241,4 +265,8 @@ width: 25%;
 }
 .recipes_middel_window_main {
 height: 375px;
+}
+
+.foodgrator_btn_left{
+    background-position-x: 6%;
 }

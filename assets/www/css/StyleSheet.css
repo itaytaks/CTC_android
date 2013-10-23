@@ -3296,7 +3296,7 @@ width: 100%;
 }
 
 
-    .share_img {
+.share_img {
   height: 99%;
 position: relative;
 background-repeat: no-repeat;
@@ -3304,7 +3304,6 @@ background-size: contain;
 background-position: center;
 width: 99%;
 margin: auto;
-
 }
 
 .about_us_page {
