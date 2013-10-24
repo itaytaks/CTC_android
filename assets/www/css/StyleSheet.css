@@ -633,6 +633,8 @@ a {
 
 .recipes_header_pic {
 width: 100%;
+}
+.recipes_middel_pic_recipres_page .recipes_header_pic {
 height: 9px;
 }
 
@@ -714,7 +716,7 @@ height: 5%;
 }
 
 #main_icon {
-    background-size: 63% 63%;
+    background-size: auto 63%;
 }
 
 #recipes_icon {
@@ -1105,7 +1107,7 @@ height: 5%;
     display: block;
     float: left;
     height: 34px;
-    left: 40%;
+    left: 18%;
     position: relative;
     top: -7px;
     width: 30px;

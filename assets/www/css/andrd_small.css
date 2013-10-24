@@ -13,7 +13,7 @@ body {
 }
 
 #main_icon {
-    background-size: 63% 63%;
+    background-size: auto 63%;
     background-position: 50% 23%;
     width: 22%;
 }
@@ -824,7 +824,7 @@ top: 30px;
     height: 7px;
     position: relative;
     top: 0px;
-    left: 24%;
+    left: 20%;
 }
 
 
@@ -1384,7 +1384,7 @@ width: 25%;
 
 .star_icon_recipes_one {
     background-size: 33px 14px;
-    left: 37%;
+    left: 22%;
     width: 17px;
     height: 15px;
     top: 0;
@@ -1669,7 +1669,7 @@ ire_icon_recipes {
     height: 40px;
     top: -6px;
     background-position: 27px 6px;
-    left: 29%;
+    left: 18%;
     background-image: url("../images/one_recipe_one_star.png");
 }
 .foodgrator_instructions{

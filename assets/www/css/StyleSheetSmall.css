@@ -13,7 +13,7 @@ body {
 }
 
 #main_icon {
-    background-size: 63% 63%;
+    background-size: auto 63%;
     background-position: 50% 41%;
     width: 22%;
 }
@@ -1331,7 +1331,7 @@ height: 63px;
 
 .star_icon_recipes_one {
     background-size: 33px 14px;
-    left: 24%;
+    left: 18%;
     width: 17px;
     height: 15px;
     top: 0;
