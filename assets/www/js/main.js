@@ -139,7 +139,6 @@ function getRecipeNumberById( id,type)
         $(".recipes_hover").removeClass("recipes_hover");
         $('.recipes_second_title').css({"color":"#727A85"});
         $('.clock_icon_recipes').css({"background-position":"0"});
-        $('.fire_icon_recipes').css({"background-position":"0"});
         $('.star_icon_recipes').css({"background-position":"0"});
         $('.recipes_line').css({"color":"#4D555F"});
         $('.recipes_footer_text').css({"color":"#4D555F"});

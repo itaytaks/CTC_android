@@ -490,12 +490,6 @@ z-index: 1;
     height: 530px;
 }
 
-.fire_icon_recipes {
-    background-size: 200% 100%;
-    width: 14px;
-    height: 16px;
-    top: -2px;
-}
 
 .searchFavoriteBtnOuter .recipes_footer_text {
     width: 25%;

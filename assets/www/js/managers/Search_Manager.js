@@ -127,8 +127,8 @@ function searchMan() {
                                                 "</div>" +
                                                 //"<span class=\"recipes_line\">|</span>" +
                                                 "<div class=\"fire_side_footer\">" +
-                                                    "<span class=\"fire_icon_recipes\"></span>" +
-                                                    "<span class=\"recipes_footer_text\"> сложно</span>" +
+                                                   
+                                                    "<span class=\"recipes_footer_text\"> "+val.posts[i].custom_fields["wpcf-complexity_level"][0]+"</span>" +
                                                 "</div>" +
                                                 "<span class=\"recipes_line\">|</span> " +
                                                 "<div  class=\"searchFavoriteBtnOuter\" id=\"searchFavoriteF" + id + "\" onclick=\"searchMan_.addToFavorite(this)\"><span class=\"star_icon_recipes\" ></span> " +
