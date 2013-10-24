@@ -82,7 +82,7 @@ function shareMan() {
         //$('.share_specific_pic').show();
         navigator.camera.getPicture(shareMan_.onSuccess, shareMan_.onFail,
        { quality: 50,
-           destinationType: Camera.DestinationType.DATA_URL, targetWidth: 584, correctOrientation: true
+           destinationType: Camera.DestinationType.DATA_URL, targetWidth: 584, correctOrientation: true,saveToPhotoAlbum: false
        });
     });
 
