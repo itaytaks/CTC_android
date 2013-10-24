@@ -13,7 +13,7 @@ body {
 }
 
 #main_icon {
-    background-size: 70% 68%;
+    background-size: 63% 63%;
     background-position: 50% 41%;
     width: 22%;
 }
@@ -351,7 +351,6 @@ left: 69px;*/
 }
 
 .recipes_middel_pic_recipres_page, recipes_middel_pic_search, .recipes_middel_pic_favorite {
-    top: 9px;
 }
 
 .recipes_list ul {
@@ -739,7 +738,6 @@ left: 69px;*/
     background-image: url("../images/add_to_cart_btn.png");
     background-size: auto 70%;
     background-position: 4% 50%;
-    background-color: #cc0000;
     background-repeat: no-repeat;
     border-radius: 5px;
     color: #fff;
@@ -791,7 +789,7 @@ left: 69px;*/
 
 
 .small_icons_title {
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 #totalTimeRecipePage {
