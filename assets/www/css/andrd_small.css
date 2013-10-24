@@ -280,6 +280,7 @@ top: 2px;
 
 .search_page .search_text{
     font-size: 12px;
+    height:43px;
 }
 
 
@@ -1524,9 +1525,8 @@ ire_icon_recipes {
 }
 
 #Text_search_foodgrator {
-    height: 17px;
+    height: 21px;
     top: -14px;
-    line-height: 1em;
     font-size: 1.2em;
     width: 80%;
     display: inherit;

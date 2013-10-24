@@ -161,8 +161,25 @@ width: 102px;
     position: relative;
 }
 
+.search_text_background {
+height: 35px;
+margin-bottom: 15px;
+}
+
+.search_btn_icon{
+    width: 37px;
+}
+
 .search_btn {
     top: 6px;
+}
+
+.search_text {
+height: 31px;
+top: 1px;
+line-height: 1em;
+font-size: 2em;
+width: 86%;
 }
 
 .categories_text_down {
