@@ -26,24 +26,27 @@ function shareMan() {
         }
     }
 
-    this.initShareCB = function (val) {
+    this.initShareCB = function(val) {
 
         try {
             var body = "";
             var subject = "";
-            $(val["posts"]).each(function () {
-                if ($(this).attr("slug") == browser.toLowerCase()) {
+            $(val["posts"]).each(function() {
+                //if the data is about andrpid - set it
+                if($(this).attr("slug") == "isgt3" || $(this).attr("slug") == "isgt2") {
+
+                    applicationDownloadLink = $(this).attr("custom_fields")["wpcf-link"][0];
 
                     body = $('<div/>').html($(this).attr("excerpt")).text();
                     subject = $(this).attr("custom_fields")["wpcf-subject"][0];
                     subject += "<br/>" + $(this).attr("custom_fields")["wpcf-link"][0];
                 }
             });
-
+            
             var mailToShare = "mailto:?Subject=" + subject + "&body=%0D%0A" + body;
             $(".tools_share").attr("href", mailToShare);
         }
-        catch (e) { }
+        catch(e) { }
     }
 
     this.showPage = function () {

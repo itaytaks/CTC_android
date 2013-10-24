@@ -1067,16 +1067,6 @@ height: 5%;
     width: 29px;
 }
 
-.fire_icon_recipes {
-    background-image: url('../images/fire_icon_recipes_all.png');
-    background-repeat: no-repeat;
-    width: 16px;
-    height: 20px;
-    position: relative;
-    background-position: left;
-    display: block;
-    float: left;
-}
 
 .favorite_close_btn {
     background-image: url("../images/favorite_close_btn_all.png");
@@ -1089,18 +1079,6 @@ height: 5%;
     float: left;
 }
 
-.fire_icon_recipes_one {
-    background-image: url("../images/one_recipe_fire.png");
-    background-position: left center;
-    background-repeat: no-repeat;
-    display: block;
-    float: left;
-    height: 29px;
-    left: 20%;
-    position: relative;
-    top: -4px;
-    width: 25px;
-}
 
 .star_icon_recipes {
     background-image: url('../images/star_icon_recipes_all.png');

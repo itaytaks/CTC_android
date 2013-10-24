@@ -1,3 +1,5 @@
+var applicationDownloadLink = "";
+
 function attachEventFacebook() {
     try {
         FB.init({
@@ -15,11 +17,12 @@ function attachEventFacebook() {
         var msg = $("#TextArea_share").val();
         var str= ($('.share_img').css("background-image"));
         str=str.substring(4, str.length - 1);
+        
         var params = {
             method: 'feed',
             message: 'msg',
             name: 'CTC.Рецепты — приложение без прикосновения к экрану',
-            link: 'http://www.domashniy.ru/article/eda/',
+            link: applicationDownloadLink,
             picture: str,
             caption: 'Привет, Друзья ',
             description: 'Друзья, я готовлю при помощи приложения «СТС.Рецепты» и вот, что у меня получилось!'
@@ -28,4 +31,6 @@ function attachEventFacebook() {
         FB.ui(params, function (obj) { console.log(obj); });
 
     });
+
+    //get the dynamic link for google play
 }
