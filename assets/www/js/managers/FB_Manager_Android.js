@@ -15,15 +15,17 @@ function attachEventFacebook() {
 
     $('.share_facebook_btn').click(function () {
         var msg = $("#TextArea_share").val();
-
+        var str= ($('.share_img').css("background-image"));
+        str=str.substring(4, str.length - 1);
+        
         var params = {
             method: 'feed',
             message: 'msg',
-            name: 'Домашний.Рецепты — приложение без прикосновения к экрану',
+            name: 'CTC.Рецепты — приложение без прикосновения к экрану',
             link: applicationDownloadLink,
-            picture: $('.share_img').attr("src"),
+            picture: str,
             caption: 'Привет, Друзья ',
-            description: 'Я готовлю с помощью приложения «Домашний.Рецепты» и вот, что у меня получилось'
+            description: 'Друзья, я готовлю при помощи приложения «СТС.Рецепты» и вот, что у меня получилось!'
         };
         console.log(params);
         FB.ui(params, function (obj) { console.log(obj); });
