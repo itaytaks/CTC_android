@@ -632,6 +632,11 @@ a {
 }
 
 .recipes_header_pic {
+width: 100%;
+height: 9px;
+}
+
+.search_page .recipes_header_pic {
 border-bottom: 1px solid #ababab;
 width: 100%;
 height: 5%;
