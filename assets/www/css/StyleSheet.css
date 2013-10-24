@@ -632,15 +632,9 @@ a {
 }
 
 .recipes_header_pic {
-    /*background-color: white;
-    border-radius: 9px;
-    height: 6.35%;
-    position: relative;
-    top: 39px;
-    width: 92%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;*/
+border-bottom: 1px solid #ababab;
+width: 100%;
+height: 5%;
 }
 
 .recipes_middel_pic_recipres_page, recipes_middel_pic_search, .recipes_middel_pic_favorite {
@@ -658,7 +652,6 @@ a {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 10%;
 }
 
 .recipes_middel_pic_foodgrator {
@@ -716,7 +709,7 @@ a {
 }
 
 #main_icon {
-    background-size: auto 45%;
+    background-size: auto 63%;
 }
 
 #recipes_icon {
@@ -1347,7 +1340,7 @@ a {
     float: left;
     position: relative;
     text-align: center;
-    width: 86%;
+    width: 83%;
     height: 2em;
     padding: 7%;
     font-size: 1.2em;
@@ -1950,7 +1943,7 @@ a {
 }
 
 .food_list ul li {
-    border-top: 1px solid #8F9CA2;
+    border-top: 1px solid #e6e8ea;
     left: 13px;
     list-style-type: none;
     position: relative;
@@ -1985,7 +1978,6 @@ a {
 .food_name {
     color: #484F57;
     font-size: 32px;
-    font-style: italic;
     font-weight: bold;
     position: relative;
     top: 18px;
@@ -2327,7 +2319,7 @@ a {
     background-image: url("../images/add_to_cart_btn.png");
     background-size: auto 80%;
     background-position: 10% 50%;
-    background-color: #cc0000;
+    background-color: #e6e8ea; /*#cc0000;*/
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #fff;
@@ -3852,6 +3844,7 @@ font-weight: bold;
     line-height: 6px;
     display: block;
     width: 207px;
+    text-transform: capitalize;
 }
 
 
