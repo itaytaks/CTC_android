@@ -109,7 +109,7 @@ margin: 0px;
 
 
 .recipes_middel_window_favorite {
-    height: 350px;
+    /*height: 350px;*/
 }
 
 .recipes_look_inside_btn {
@@ -192,8 +192,16 @@ height: 35px;
 margin-bottom: 15px;
 }
 
+.foodgrator_text_background{
+    height: 3em;
+}
+#Text_search_foodgrator{
+    height: 1.5em;
+    font-size: 1.5em;
+}
 .search_btn_icon{
-    width: 37px;
+    width: auto;
+    height: 100%;
 }
 
 .search_btn {

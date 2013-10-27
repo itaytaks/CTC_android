@@ -1,5 +1,9 @@
 var subMenu = "menu";
-
+//alert("window : "+$(document).height());
+//alert("down_menu_background : "+$(".down_menu_background").height());
+//alert("Up_banner_background : "+$(".Up_banner_background").height());
+var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 20;
+//alert("all : "+ pageHeight);
 function NavigationMan() {
     this.navigationArray = [];
     this.navigationArray[0] = "main";
@@ -110,6 +114,15 @@ function NavigationMan() {
         gestureMan_.gestureStart("UD");
         //$('.one_recipe_page').hide();
        // $('.text_main_icon_position').css({ "color": "#ffffff" });
+       
+       
+       //.recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search  recipes_middel_window_recipres_page    SARA
+       var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 20;
+       $(".recipes_middel_window_recipres_page").css("height", pageHeight+'px');
+       // alert("aaa : "+$(".recipes_middel_window_recipres_page").css("height"));
+        //$(".recipes_middel_window_recipres_page").css("background-color", "blue");
+
+
         $('.main_menu_icon_hover').removeClass('main_menu_icon_hover');
         $('#recipes_icon').addClass('main_menu_icon_hover');
         $('.main_text_background').hide();
@@ -172,6 +185,11 @@ function NavigationMan() {
     this.showRecipeListPage = function() {
         $(".page").hide();
         gestureMan_.gestureStart("UD");
+        //.recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search    .all_categories SARA
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 20 ;
+        $(".all_categories").css("height", pageHeight+'px');
+        //alert("bbb : "+$(".all_categories").css("height"));
+        //$(".all_categories").css("background-color", "green");        
         $("#recipes_list li").each(function() {
             var $this = $(this);
             if($this.hasClass("recipes_hover")) {
@@ -383,47 +401,53 @@ function NavigationMan() {
         this.subMenu = "tools";
     }
 
-    this.showFavoritePage = function() {
+    this.showFavoritePage = function () {
         $(".page").hide();
         gestureMan_.gestureStart("UD");
-        $("#recipes_list_favorite li").each(function(){
-                                            var $this=$(this);
-                                            if($this.hasClass("recipes_hover")){
-                                            var height = $("#recipes_list_favorite li").height()+$("#recipes_list_favorite li").css("margin-bottom").substring(0,2)/2;
-                                            $(".recipes_middel_window_favorite").animate({scrollTop:($this.index() *height)});
-                                            //alert();
-                                            }
-                                            });
-       
+        //.recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search    SARA
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 20;
+        $(".recipes_middel_window_favorite").css("height", pageHeight + 'px');
+        //alert("fff : " + $(".recipes_middel_window_favorite").css("height"));
+        //alert("pageHeight" + pageHeight);
+        //$(".recipes_middel_window_favorite").css("background-color", "green");
+        $("#recipes_list_favorite li").each(function () {
+            var $this = $(this);
+            if ($this.hasClass("recipes_hover")) {
+                var height = $("#recipes_list_favorite li").height() + $("#recipes_list_favorite li").css("margin-bottom").substring(0, 2) / 2;
+                $(".recipes_middel_window_favorite").animate({ scrollTop: ($this.index() * height) });
+                //alert();
+            }
+        });
+
         $('.main_menu_icon_hover').removeClass('main_menu_icon_hover');
         $('#favorite_icon').addClass('main_menu_icon_hover');
         $('#favorite_icon').show();
 
-        switch(browser){
-            case "isGt2": 
+        switch (browser) {
+            case "isGt2":
                 //$('#favorite_icon_hover').css({ "margin-left": "2px" });//- android      
-            break;
-            case "isGt3": 
+                break;
+            case "isGt3":
                 //$('#favorite_icon_hover').css({ "margin-left": "2px" });//- android  
-            break;
-            case "ipad": 
+                break;
+            case "ipad":
                 //$('#favorite_icon_hover').css({ "margin-left": "112px" }); //-ipad 
-            break;
-            case "iphone": 
+                break;
+            case "iphone":
                 //$('#favorite_icon_hover').css({ "margin-left": "9px" });//- iphone    
-            break;
+                break;
         }
-        
-        
+
+
         /*if(isIpad()) {
-            $('#favorite_icon_hover').css({ "margin-left": "112px" });//ipad
+        $('#favorite_icon_hover').css({ "margin-left": "112px" });//ipad
         }
         else{
-            $('#favorite_icon_hover').css({ "margin-left": "9px" });//-iphone
+        $('#favorite_icon_hover').css({ "margin-left": "9px" });//-iphone
         }
         if (isAndroid)
         {
-         $('#favorite_icon_hover').css({ "margin-left": "2px" });//-android
+        $('#favorite_icon_hover').css({ "margin-left": "2px" });//-android
         }
         */
         //$('.text_main_icon_position').css({ "color": "#ffffff" });
@@ -432,12 +456,12 @@ function NavigationMan() {
         //$('#tools_icon_hover').hide();
         //$('#tools_icon').show();
         $('.favorite_page').show();
-        
+
         $('.search_text_background').hide();
-       // $('.recipes_list ul li').css({ "margin-bottom": "60px" });
-       
+        // $('.recipes_list ul li').css({ "margin-bottom": "60px" });
+
         $('.Gesture_btn').css({ "background-position": "0" });
-       
+
 
         //set the gesture page divs
         $(".gesture_list ul  li").hide();
@@ -445,8 +469,8 @@ function NavigationMan() {
         $(".gesture_list #gestureDown").show();
         $(".gesture_list #gestureSelect").show();
 
-        
-        
+
+
         this.backPosition = this.pagePosition;
         this.pagePosition = "favorite";
         this.subMenu = "favorite";

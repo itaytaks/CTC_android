@@ -82,11 +82,11 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
 
 .down_menu_background {
     /*height: 40px;*/
-    height: 4.2em;
+    height: 44px;/*4.2em;*/
 }
 
 .Up_banner_background {
-    height: 4.5em;
+    height: 44px;/*4.5em;*/
     border-bottom: 1px solid #cc0000;
 }
 
@@ -806,7 +806,7 @@ height: 13px;
 }
 
 .recipes_middel_window_favorite {
-    height: 386px;
+    /*height: 386px;*/
 }
 
 .favorite_delete_icon {

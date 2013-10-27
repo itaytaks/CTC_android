@@ -1195,7 +1195,7 @@ height: 5%;
 }
 
 .recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search {
-    height: 605px;
+    /*height: 605px;*//*sarajS*/
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
