@@ -150,8 +150,8 @@ function FoodgrMan () {
                                      
                                      "<span class=\"recipes_footer_text\"> "+val.posts[i].custom_fields["wpcf-complexity_level"][0]+"</span>" +
                 //"<span class=\"recipes_line\">|</span> " +
-                //"<div  class=\"foodFavoriteBtnOuter\" id=\"favoriteF" + id + "\" onclick=\"foodgrMan_.addToFavorite(this)\"><span class=\"star_icon_recipes\" ></span> " +
-                //"<span class=\"recipes_footer_text\"> в избранное </span></div>" +
+                "<div  class=\"foodFavoriteBtnOuter\" id=\"favoriteF" + id + "\" onclick=\"foodgrMan_.addToFavorite(this)\"><span class=\"star_icon_recipes\" ></span> " +
+                "<span class=\"recipes_footer_text\"> в избранное </span></div>" +
                                      " </div>" +
                                      "</div>" +
                                      " </li>");

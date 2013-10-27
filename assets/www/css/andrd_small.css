@@ -532,7 +532,7 @@ top: 30px;
 }
 
 .recipes_small_pic {
-    border-radius: 6px;
+    border-radius: 15px;
 }
 .recipes_list_search ul li{
     height: 93px;
@@ -1568,6 +1568,8 @@ ire_icon_recipes {
 .recipes_list_Results ul li {
     height: 87px;
     margin-bottom: 0px;
+    width: 98%;
+
 }
 
 
