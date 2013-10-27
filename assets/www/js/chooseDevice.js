@@ -44,6 +44,7 @@ function initBrowser() {
     if (androidSmall2) {
         browser = "isGt2";
     }
+   // alert(browser);
 }
 
 function loadRelevantCss() {
