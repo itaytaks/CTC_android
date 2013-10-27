@@ -2438,7 +2438,7 @@ height: 5%;
 .recipes_middel_window_foodgrator {
     height: 473px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;/*auto;sara*/
     position: relative;
     /*width: 603px;*/
     -webkit-overflow-scrolling: touch;
