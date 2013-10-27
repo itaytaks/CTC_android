@@ -1745,3 +1745,29 @@ height: 39px;
     top: -13px;
     position: relative;
 }
+
+
+
+
+
+
+
+
+#result-gallery{
+    background-color: #cc0000;
+}
+#result-gallery ul{
+    background-color: #ffd800;
+}
+#result-gallery ul li{
+    background-color: #00ff21;
+}
+.gallery-vote-single img{
+    background-color: #b200ff;
+}
+.gallery-pic{
+    background-color: #0026ff;
+}
+#result-gallery .reMesseg{
+    background-color: #0ff;
+}
