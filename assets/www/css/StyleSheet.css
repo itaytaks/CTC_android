@@ -1003,8 +1003,8 @@ height: 5%;
 }
 
 .recipes_look_inside_btn {
-    /*background-image:url('images/recipes_look_btn_all.png');
-	background-repeat:no-repeat;*/
+    background-image:url('../images/goto_information_btn.png');
+	background-repeat:no-repeat;
     width: 20px;
     height: 34px;
     position: absolute;
@@ -1012,6 +1012,9 @@ height: 5%;
     top: 40px;
     cursor: pointer;
     font-size: 2em;
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .ui-loader {

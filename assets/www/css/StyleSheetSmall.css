@@ -417,16 +417,17 @@ left: 69px;*/
 }
 
 .recipes_list ul li, .recipes_list_search ul li {
-    height: 78px;
-    width: 99%;
-    padding-right: 0;
-    padding-left: 1%;
-    padding-top: 8px;
-    padding-bottom: 0px;
+   height: 70px;
+width: 99%;
+padding-right: 0;
+padding-left: 1%;
+padding-top: 8px;
+padding-bottom: 8px;
 }
 
 .recipes_list_search ul li {
-    padding-bottom: 12px;
+    padding-bottom: 8px; 
+    height: 88px;
 }
 
 .recipes_list_search .inside_information {
@@ -464,8 +465,9 @@ left: 69px;*/
     right: 1px;
     top: 10px;
     position: absolute;
-    font-size: 1.5em;
-    width: 9px;
+   
+    width: 7px;
+height: 13px;
 }
 
 .btn_background_down {
@@ -1239,9 +1241,9 @@ height: 63px;
 }
 
 #recipes_list_favorite li {
-    /*height: 50px;*/
+    height: 86px;
     margin-bottom: 0 !important;
-    padding-bottom: 15px;
+  
 }
 
 .one_recipe_back_btn {

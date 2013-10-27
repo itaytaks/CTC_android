@@ -402,7 +402,7 @@ z-index: 1;
 .inside_information {
     display: block;
     height: 6em;
-    width: 78%;
+    width: 80%;
     float: left;
     margin-left: 5px;
     position: relative;
@@ -454,7 +454,8 @@ z-index: 1;
     padding-right: 0;
     padding-left: 1%;
     padding-top: 8px;
-    padding-bottom: 0px;
+    height: 68px;
+padding-bottom: 8px;
 }
 
 .recipes_list_search ul li {
@@ -500,7 +501,9 @@ z-index: 1;
     top: 15px;
     position: absolute;
     font-size: 1.5em;
-    width: 9px;
+    
+    width: 7px;
+height: 13px;
 }
 
 .btn_background_down {
