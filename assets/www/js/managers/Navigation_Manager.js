@@ -485,11 +485,10 @@ function NavigationMan() {
         var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - $(".foodgrator_text_background").height() - topStr- 16; 
       //  alert("aaa pageHeight " + pageHeight);
         //$(".recipes_middel_window_foodgrator").css("background-color", "green");
-        $(".recipes_middel_window_foodgrator").css("height", pageHeight + 'px');
+        $(".recipes_middel_pic_foodgrator").css("height", pageHeight + 'px');
         $('.main_menu_icon_hover').removeClass('main_menu_icon_hover');
         $('#foodgrator_icon').addClass('main_menu_icon_hover');
         $('#foodgrator_icon').show();
-
         //$('.text_main_icon_position').css({ "color": "#ffffff" });
         $('.main_text_background').hide();
 
@@ -526,6 +525,12 @@ function NavigationMan() {
 
     }
     this.showFoodgeratorListPage = function() {
+       // var topStr = $(".foodgrator_text_background").css("top");
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - 16;
+        //  alert("aaa pageHeight " + pageHeight);
+        //$(".recipes_middel_window_foodgrator").css("background-color", "green");
+        $(".recipes_middel_pic_foodgrator").css("height", pageHeight + 'px');
+
         $(".page").hide();
 
         $('.foodgrator_page').show();
