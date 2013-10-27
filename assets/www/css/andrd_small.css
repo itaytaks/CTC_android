@@ -83,13 +83,13 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
 
 .down_menu_background {
     /*height: 40px;*/
-    height: 4.5em;
+    height: 44px;
     width: 100.5%;
     left: -1px;
 }
 
 .Up_banner_background {
-    height: 4.5em;
+    height: 44px;
     border-bottom: 1px solid #cc0000;
 }
 
@@ -844,7 +844,7 @@ top: 30px;
 }
 
 .recipes_middel_window_favorite {
-    height: 400px;
+    /*height: 400px;*/
 }
 
 .favorite_delete_icon {
