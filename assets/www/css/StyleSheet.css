@@ -666,7 +666,8 @@ height: 5%;
     background-repeat: repeat-y;*/
     background-color: #fff;
     height: 80%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     position: relative;
     width: 94%;
     right: 0;
@@ -2437,8 +2438,8 @@ height: 5%;
 
 .recipes_middel_window_foodgrator {
     height: 473px;
-    overflow-x: hidden;
-    overflow-y: scroll;/*auto;sara*/
+    /*overflow-x: hidden;
+    overflow-y: scroll;auto;sara*/
     position: relative;
     /*width: 603px;*/
     -webkit-overflow-scrolling: touch;

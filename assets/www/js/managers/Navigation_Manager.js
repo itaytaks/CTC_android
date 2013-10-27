@@ -2,7 +2,7 @@ var subMenu = "menu";
 //alert("window : "+$(document).height());
 //alert("down_menu_background : "+$(".down_menu_background").height());
 //alert("Up_banner_background : "+$(".Up_banner_background").height());
-var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() -12;
+var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
 //alert("all : "+ pageHeight);
 function NavigationMan() {
     this.navigationArray = [];
@@ -117,7 +117,7 @@ function NavigationMan() {
        
        
        //.recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search  recipes_middel_window_recipres_page    SARA
-       var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() -12;
+       var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
        $(".recipes_middel_window_recipres_page").css("height", pageHeight+'px');
        // alert("aaa : "+$(".recipes_middel_window_recipres_page").css("height"));
         //$(".recipes_middel_window_recipres_page").css("background-color", "blue");
@@ -186,7 +186,7 @@ function NavigationMan() {
         $(".page").hide();
         gestureMan_.gestureStart("UD");
         //.recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search    .all_categories SARA
-        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() -12 ;
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16 ;
         $(".all_categories").css("height", pageHeight+'px');
        // alert("bbb : "+$(".all_categories").css("height"));
         //$(".all_categories").css("background-color", "green");        
@@ -405,7 +405,7 @@ function NavigationMan() {
         $(".page").hide();
         gestureMan_.gestureStart("UD");
         //.recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search    SARA
-        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() -12;
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
         $(".recipes_middel_window_favorite").css("height", pageHeight + 'px');
        // alert("fff : " + $(".recipes_middel_window_favorite").css("height"));
         //alert("pageHeight" + pageHeight);
@@ -485,7 +485,7 @@ function NavigationMan() {
         var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - $(".foodgrator_text_background").height() - topStr- 16; 
       //  alert("aaa pageHeight " + pageHeight);
         //$(".recipes_middel_window_foodgrator").css("background-color", "green");
-        $(".recipes_middel_window_foodgrator").css("height", pageHeight + 'px');
+        $(".recipes_middel_pic_foodgrator").css("height", pageHeight + 'px');
         $('.main_menu_icon_hover').removeClass('main_menu_icon_hover');
         $('#foodgrator_icon').addClass('main_menu_icon_hover');
         $('#foodgrator_icon').show();
