@@ -32,9 +32,9 @@ var init = {
 
         //$('.upload_app').hide();
         //$('#favorite_icon_hover').hide();
-       // $('#recipes_icon_hover').hide();
-       // $('#foodgrator_icon_hover').hide();
-      //  $('#tools_icon_hover').hide();
+        // $('#recipes_icon_hover').hide();
+        // $('#foodgrator_icon_hover').hide();
+        //  $('#tools_icon_hover').hide();
 
         //init js object
         jsonMan_ = new JsonMan();
@@ -66,6 +66,7 @@ var init = {
         shoppingMan_.attachEvents();
         //init foodgerator manager
         foodgrMan_ = new FoodgrMan();
+        foodgrMan_.setHeightMainContent();
         toolsMan_ = new tools_Manager();
 
         recipeMan_ = new RecipeMan();
@@ -79,7 +80,7 @@ var init = {
 
 
         //   facebookManAndroid_ = new FacebookMan();
-       
+
 
         //when the keyboard is up - hide the footer
         keyboardUpEvent();

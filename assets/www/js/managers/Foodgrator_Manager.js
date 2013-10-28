@@ -1,4 +1,7 @@
 var wordsToSearch =[];
+var pageHeight ="";// $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
+var pageHeightFood = "";//$(document).height();
+
 function FoodgrMan () {
     //this.wordsToSearch = "";
     this.isFirstTime = true;
@@ -260,6 +263,13 @@ function FoodgrMan () {
             }
         });
         $(".cover_delete").hide();
+    }
+
+
+    this.setHeightMainContent = function () {
+        var topStr = $(".foodgrator_text_background").css("top")
+        topStr = topStr.substring(0, topStr.length - 2);
+        pageHeightFood = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - $(".foodgrator_text_background").height() - topStr - 16;
     }
 
 }

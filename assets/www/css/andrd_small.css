@@ -463,7 +463,7 @@ padding-bottom: 8px;
 }
 
 .recipes_list_search .inside_information {
-     width: 77%;;
+     width: 77%;
     float: left;
 }
 
@@ -1503,7 +1503,7 @@ ire_icon_recipes {
 
 .recipes_background_foodgrator {
     /*float: right;*/
-    height: 471px;
+    /*height: 471px;*/
     /*top: 148px;*/
     width: 100%;
 }
@@ -1665,7 +1665,7 @@ ire_icon_recipes {
 }
 
 .foodgrator_instructions {
-    top: 200px;
+    /*top: 200px;*/
 }
 
 .star_icon_recipes_one {

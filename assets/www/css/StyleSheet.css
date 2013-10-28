@@ -138,6 +138,8 @@ a {
 .page {
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .Main_page {
@@ -168,7 +170,7 @@ a {
     /*top: 16px;*/
     position: relative;
     width: 100%;
-    z-index: 6;
+    z-index: 30;
     background-color: #fcbf14;
     border-bottom: 2px solid #cc0000;
 }
@@ -222,6 +224,7 @@ a {
     left: 0;
     padding: 0;
     margin: 0;
+    z-index: 30;
 }
 
 .icon {
@@ -762,7 +765,7 @@ height: 5%;
 
 .foodgrator_instructions {
     display: block;
-    height: 611px;
+    /*height: 611px;*/
     position: absolute;
     top: 173px;
     width: 100%;
@@ -842,7 +845,7 @@ height: 5%;
 
 .recipes_background_foodgrator {
     /*float: left;*/
-    height: 611px;
+    /*height: 611px;*/
     position: relative;
     /*top: 173px;*/
     width: 100%;
@@ -1850,10 +1853,10 @@ height: 5%;
 
 .message_no_Results {
     display: none;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 1;
     margin: auto;
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-family: Conv_PlumbMed;
     font-size: 22px;
@@ -1926,7 +1929,7 @@ height: 5%;
 }
 
 .food_list {
-    height: 388px;
+    /*height: 388px;*/
     margin: 25px 0 0 -26px;
     position: relative;
 }
@@ -2437,7 +2440,7 @@ height: 5%;
 }
 
 .recipes_middel_window_foodgrator {
-    height: 473px;
+    height: 90%;
     /*overflow-x: hidden;
     overflow-y: scroll;auto;sara*/
     position: relative;
@@ -3168,9 +3171,7 @@ width: 100%;
     background-image: url(../images/photo_btn.png);
     top: 16px;
 }
-#takeAPicBtn.disable {
-    background-color: gray;
-}
+
 /*#takeAPicBtn:hover {*/
 .share_btn:hover {
     background-color: #fcbf14;
@@ -3795,6 +3796,7 @@ font-weight: bold;
 }
 
 .foodgrator_instructions {
+    height: 10px;
 }
 
 .foodgrator_text_background {
