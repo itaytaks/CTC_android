@@ -1,4 +1,6 @@
 
+var hideCameraOption = false;
+
 function cb(data)
 {
     console.log("");
