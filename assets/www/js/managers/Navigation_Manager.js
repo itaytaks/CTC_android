@@ -462,7 +462,7 @@ function NavigationMan() {
         $('.foodgrator_page').show();
         $('.recipes_list_Results').show();
         $(".foodgrator_instructions").hide();
-        $(".recipes_middel_pic_foodgrator").css("height", pageHeightFood + 'px');
+        $(".recipes_middel_pic_foodgrator").css("height", pageHeightFoodList + 'px');
         $('.food_list').hide();
         $('.foodgrator_text_background').hide();
         if(isIpad()) {
