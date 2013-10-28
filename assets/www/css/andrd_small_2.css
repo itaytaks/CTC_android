@@ -321,3 +321,12 @@ height: 375px;
 .foodgrator_btn_left{
     background-position-x: 6%;
 }
+
+.recipes_footer_text {
+width: 28%;
+margin-right: 0px;
+}
+
+.recipes_middel_pic_foodgrator{
+    min-height: 670px !important;
+}

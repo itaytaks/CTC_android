@@ -3168,7 +3168,9 @@ width: 100%;
     background-image: url(../images/photo_btn.png);
     top: 16px;
 }
-
+#takeAPicBtn.disable {
+    background-color: gray;
+}
 /*#takeAPicBtn:hover {*/
 .share_btn:hover {
     background-color: #fcbf14;

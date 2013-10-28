@@ -1,9 +1,10 @@
 
-$(document).ready(function () {
+$(document).ready(function() {
     //initAppSize();
     initBrowser();
     loadRelevantCss();
     //checkOrientation();
+    setHideCameraOption();
 });
 
 //check if tha app run on small screen or big. According to result load appropriate sized image
@@ -102,4 +103,16 @@ function checkOrientation() {
             //    $("#horizonal-screen").show();
             break;
     }
+}
+
+//check if the device has a problem with the camera and our application
+function setHideCameraOption(){
+     var ua = navigator.userAgent.toLowerCase();
+    // alert(ua);
+    //galaxy 4 || GT-N
+    if((ua.search("gt-i9195") > -1 ) || (ua.search("gt-i9500") > -1 ) || (ua.search("gt-n") > -1 )){
+        hideCameraOption =true;
+        $("#takeAPicBtn").addClass("disable");
+    }
+ //    alert("hideCameraOption: "+hideCameraOption);
 }
