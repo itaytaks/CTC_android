@@ -1076,7 +1076,7 @@ height: 63px;
 .recipes_middel_pic_shopping {
     background-image: url("../images/recipes_middel_pic.png");
     background-repeat: repeat-y;
-    height: 636px;
+    height: 100%;
     margin-left: 15px;
     overflow: hidden;
     position: relative;
@@ -1162,24 +1162,16 @@ height: 63px;
 }
 
 .shopping_list ul li {
-    border-bottom: 1px solid #8F9CA2;
+    /*border-bottom: 1px solid #8F9CA2;
     left: 13px;
     list-style-type: none;
     margin-bottom: 17px;
     position: relative;
-    width: 669px;
-    top: 22px;
+    width: 100%;
+    top: 22px;*/
 }
 
 #Text_search_shopping {
-    -webkit-user-select: auto;
-    border-color: transparent;
-    font-size: 15px;
-    height: 15px;
-    left: 10px;
-    position: relative;
-    top: 5px;
-    width: 236px;
 }
 
 .food_name_shopping {
@@ -1191,28 +1183,12 @@ height: 63px;
     top: -6px;
     line-height: 9px;
     display: block;
-    width: 558px;
-    left: -4px;
+    width: 71%;
+    left: 20px;
 }
 
 .delete_btn_foodgator {
-    background-color: #cc0000;
-    border-radius: 5px;
-    color: #fff;
-    margin: auto;
-    text-align: center;
-    top: -55px;
-    line-height: 16px;
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    left: 226px;
-    line-height: 22px;
-    bottom: -55px;
-    z-index: 600;
-    height: 20px;
-    width: 52px;
-    text-indent: 2px;
+    
 }
 
 .shopping_middel_window {
@@ -1272,9 +1248,6 @@ height: 63px;
 
 /*******unplaced************/
 .finish_background {
-    width: 86%;
-    left: 21px;
-    top: 200px;
 }
 
 
@@ -1286,35 +1259,6 @@ height: 63px;
     top: 236px;
     width: 60%;
     left: 20%;
-}
-
-.shopping_ok_border {
-    background-image: url("../images/timer_border_ok.png");
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 38px;
-    left: 33%;
-    margin: auto;
-    position: absolute;
-    top: 305px;
-    width: 34%;
-    background-size: 100% 100%;
-    background-image: url("../images/timer_border_ok.png");
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 38px;
-    left: 33%;
-    margin: auto;
-    position: absolute;
-    top: 235px;
-    width: 34%;
-    background-size: 100% 100%;
-}
-
-.timer_finish_OK {
-    font-size: 22px;
-    left: 35%;
-    line-height: 41px;
 }
 
 .favorite_recipe_name {
