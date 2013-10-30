@@ -7,8 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
-        <link rel="stylesheet" type="text/css" media="all and (max-device-width: 480px)" href="css/StyleSheetSmall.css" />
-        <link rel="stylesheet" type="text/css" media="all and (min-device-width: 481px)" href="css/andrd_small.css" />
+        <!--<link rel="stylesheet" type="text/css" media="all and (max-device-width: 480px)" href="css/StyleSheetSmall.css" />
+        <link rel="stylesheet" type="text/css" media="all and (min-device-width: 481px)" href="css/andrd_small.css" />-->
+        <link rel="stylesheet"  href="css/StyleSheetSmall.css" />
+        <link rel="stylesheet" href="css/andrd_small_2.css" />
         <script type="text/javascript" id="myJSONPCall" src=""></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
@@ -59,19 +61,22 @@
 
         <script type="text/javascript">
 
-            
+
             document.addEventListener("deviceready", deviceIsReady, false);
-            
+
             function deviceIsReady() {
-                         attachEventFacebook();
+                attachEventFacebook();
+                document.addEventListener("backbutton", function (e) {
+                    e.preventDefault();
+                });
                          
                             document.addEventListener("backbutton", function (e) {
                     e.preventDefault();
                 });
             }
-            
-            $(document).ready(function() {
-            
+
+            $(document).ready(function () {
+
                 //var jsonMan;
                 // var mainMan;
                 //  var featerMan;
@@ -80,23 +85,23 @@
                 var shoppingList;
                 var timersList;
                 var ingradientsList;
-            
+
                 init.start();
                 changeCssToIpad();
-            
-            
+
+
                 //prevent scroll when keyboard open
-                $(window).scroll(function(e) {
+                $(window).scroll(function (e) {
                     e.preventDefault();
                     $(window).scrollTop(0);
                     //               if(window.pageYOffset > 340) $(window).scrollTop(340);
-            
+
                 });
-            
+
             });
-            
-            
-            
+
+
+
         </script>
     </head>
     <body ononline="updateInternetAccess()" onoffline="updateInternetAccess()">
@@ -450,7 +455,7 @@
                                     <a href="" class="tools_share">
                                         <div class="tools_share_text">Поделиться с друзьями</div>
                                     </a>
-                                    <a class="tools_website" href="http://www.domashniy.ru/" target="_blank">
+                                    <a class="tools_website" href="http://www.domashniy.ru/" target="_blank" onclick="window.open(this.href,'_system'); return false;">
                                         <div class="tools_share_text">www.domashniy.ru</div>
                                     </a>
                                 </div>
@@ -481,25 +486,24 @@
                         </div>
                         <div class="timer_middel">
                             <div id="timer_name_recipe" class="timer_name_recipe"><input class="timer_name_recipe_input" value="The Name" id="timerName" type="text" /></div>
-                            <div id="timeEdit" class="timer_time">07:03</div>
-
-                            <div id="timer_cancel_btn" class="timer_cancel_btn" ontouchstart="timerMan_.orange_on('')" ontouchend="timerMan_.orange_off('')">
-                                <span class="timer_cancel_btn_text">сброс</span>
-                            </div>
+                            <div id="timeEdit" class="timer_time">07:03</div>                     
                             <div class="timer_down_position">
+                                <div id="timer_cancel_btn" class="timer_cancel_btn" ontouchstart="timerMan_.orange_on('')" ontouchend="timerMan_.orange_off('')">
+                                    <div class="timer_cancel_btn_text">Cброс</div>
+                                </div>
                                 <div class="timer_small_border" ontouchstart="timerMan_.orange_text_on(this)" ontouchend="timerMan_.orange_text_off(this)">
-                                    <div id="timer_hour" class="timer_hour">10 </br> мин
-                                        <!--<span class="timer_text">мин</span>-->
+                                    <div id="timer_hour" class="timer_hour">+10 
+                                       <span id="timer_text_1" class="timer_text">мин</span>
                                     </div>
                                 </div>
                                 <div class="timer_small_border" ontouchstart="timerMan_.orange_text_on(this)" ontouchend="timerMan_.orange_text_off(this)">
-                                    <div id="timer_min" class="timer_min">1 </br> мин
-                                        <!--<span class="timer_text">мин</span>-->
+                                    <div id="timer_min" class="timer_min">+1 
+                                        <span id="timer_text_2" class="timer_text">мин</span>
                                     </div>
                                 </div>
                                 <div class="timer_small_border" ontouchstart="timerMan_.orange_text_on(this)" ontouchend="timerMan_.orange_text_off(this)">
-                                    <div id="timer_sec" class="timer_sec">10 </br> сек
-                                        <!--<span class="timer_text">сек</span>-->
+                                    <div id="timer_sec" class="timer_sec">+10
+                                        <span id="timer_text_3" class="timer_text">сек</span>
                                     </div>
                                 </div>
                             </div>
@@ -860,7 +864,7 @@
                             </div>
                             <div class="about_two_logos">
                                 <div class="reshat_logo"></div>
-                                <div><a href="http://www.scrnz.com/" target="_blank"><img class="screenz_logo" src="images_ipad/logo_screenz_new.png" alt="" /></a></div>
+                                <div><a href="http://www.scrnz.com/" target="_blank" onclick="window.open(this.href,'_system'); return false;"><img class="screenz_logo" src="images_ipad/logo_screenz_new.png" alt="" /></a></div>
                             </div>
                             <span class="about_text">Контакты:<br /></span>
                             <a href="mailto:web@ctc.ru" class="about_text_red">электронная почта</a>
@@ -943,8 +947,8 @@
                         <div class="text_icon_position">рецептор</div>
                     </div>
                    
-                    <div id="tools_icon" class="icon">
-                        <!--ontouchstart="toolsMan_.start_touch(event)" ontouchend="toolsMan_.start()">-->
+                    <div id="tools_icon" class="icon"
+                        ontouchstart="toolsMan_.start_touch(event)" ontouchend="toolsMan_.start()">
                         <div class="img_icon_posotion">
                         </div>
                         <!-- <div class="text_icon_position_tools">Tools</div>-->
@@ -969,8 +973,8 @@
                 });
             });
         </script>
+    <script type="text/javascript" src="js/plugins/LocalNotification.js"></script>
     </body>
-
 </html>
 
 

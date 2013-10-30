@@ -1115,7 +1115,7 @@ top: 30px;
 .recipes_middel_pic_shopping {
     background-image: url("../images/recipes_middel_pic.png");
     background-repeat: repeat-y;
-    height: 636px;
+    height: 100%;
     margin-left: 15px;
     overflow: hidden;
     position: relative;
@@ -1201,57 +1201,24 @@ top: 30px;
 }
 
 .shopping_list ul li {
-    border-bottom: 1px solid #8F9CA2;
+    /*border-bottom: 1px solid #8F9CA2;
     left: 13px;
     list-style-type: none;
     margin-bottom: 17px;
     position: relative;
-    width: 669px;
-    top: 22px;
+    width: 100%;
+    top: 22px;*/
 }
 
 #Text_search_shopping {
-    -webkit-user-select: auto;
-    border-color: transparent;
-    font-size: 15px;
-    height: 15px;
-    left: 10px;
-    position: relative;
-    top: 5px;
-    width: 236px;
 }
 
 .food_name_shopping {
-    color: #484F57;
-    font-size: 17px;
-    font-style: italic;
-    font-weight: bold;
-    position: relative;
-    top: -6px;
-    line-height: 9px;
-    display: block;
-    width: 558px;
-    left: -4px;
+    
 }
 
 .delete_btn_foodgator {
-    background-color: #cc0000;
-    border-radius: 5px;
-    color: #fff;
-    margin: auto;
-    text-align: center;
-    top: -54px;
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    left: 240px;
-    line-height: 36px;
-    bottom: -55px;
-    z-index: 600;
-    height: 30px;
-    width: 76px;
-    font-size: 16px;
-    text-indent: 2px;
+    
 }
 
 .shopping_middel_window {
@@ -1322,12 +1289,6 @@ padding-bottom: 8px;
 }
 
 .finish_background {
-    width: 82%;
-left: 0;
-right: 0;
-margin: auto;
-top: 36%;
-z-index: 15;
 }
 
 
@@ -1366,9 +1327,6 @@ width: 25%;
 }
 
 .timer_finish_OK {
-    font-size: 22px;
-    left: 35%;
-    line-height: 41px;
 }
 
 .favorite_recipe_name {

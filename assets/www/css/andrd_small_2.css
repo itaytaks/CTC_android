@@ -270,12 +270,6 @@ font-size: 1.15em;
     height: 100%;
 }
 .finish_background {
-    width: 82%;
-left: 0;
-right: 0;
-margin: auto;
-top: 36%;
-z-index: 20;
 }
 
 
@@ -290,7 +284,7 @@ z-index: 20;
     z-index: 22;
 }
 
-.shopping_ok_border {
+/*.shopping_ok_border {
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
     cursor: pointer;
@@ -311,7 +305,7 @@ width: 25%;
    
     background-size: 100% 100%;
     z-index: 22;
-}
+}*/
 
 .one_recipe_middle_what_u_need_list {
     top: 0;
