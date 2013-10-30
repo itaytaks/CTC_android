@@ -64,6 +64,10 @@
             
             function deviceIsReady() {
                          attachEventFacebook();
+                         
+                            document.addEventListener("backbutton", function (e) {
+                    e.preventDefault();
+                });
             }
             
             $(document).ready(function() {

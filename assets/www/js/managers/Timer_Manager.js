@@ -29,18 +29,18 @@ this.orange_font=function(obj)
 this.orange_text_on=function(obj)
 {
    $(obj).addClass("timer_small_border_orange");
-   $(obj).children(".timer_hour").css("color","#E76A06");
-       $(obj).children(".timer_min").css("color","#E76A06");
-       $(obj).children(".timer_sec").css("color","#E76A06");
-   $(obj).children().children(".timer_text").css("color","#E76A06");
+   $(obj).children(".timer_hour").addClass("red");
+       $(obj).children(".timer_min").addClass("red");
+       $(obj).children(".timer_sec").addClass("red");
+  $(obj).children().children(".timer_text").addClass("red");
 } 
 this.orange_text_off=function(obj)
 {
    $(obj).removeClass("timer_small_border_orange");
-   $(obj).children(".timer_hour").css("color","#BBB");
-    $(obj).children(".timer_min").css("color","#BBB");
-    $(obj).children(".timer_sec").css("color","#BBB");
-   $(obj).children().children(".timer_text").css("color","#BBB");
+   $(obj).children(".timer_hour").removeClass("red");
+    $(obj).children(".timer_min").removeClass("red");
+    $(obj).children(".timer_sec").removeClass("red");
+   $(obj).children().children(".timer_text").removeClass("red");
 } 
 this.green_on=function()
 {
@@ -52,15 +52,13 @@ this.green_off=function()
 }
 this.orange_on=function()
 {
-    $('.timer_cancel_btn_text').css("color","#E76A06");//כפתור כתום
-    $('.timer_cancel_btn').addClass("orange");
-    $('.timer_cancel_btn').css("background-image","url(images_ipad/timer_cancel_orange.png);");
+    $('.timer_cancel_btn_text').addClass("red")//כפתור כתום
+    
 }
 this.orange_off=function()
 {
-    $('.timer_cancel_btn_text').css("color","#BBB");//כפתור אפור
-    $('.timer_cancel_btn').removeClass("orange");
-    $('.timer_cancel_btn').css("background-image","url(images_ipad/timer_cancel_gray.png);");
+    $('.timer_cancel_btn_text').removeClass("red")//כפתור אפור
+    
 }
     this.attachEvents = function() {
         
@@ -166,9 +164,9 @@ this.orange_off=function()
     this.setTimerList = function() {
 
         if(isIpad()) {
-            timerMan_.image_start = "images_ipad/timer_pause_btni.png";
-            timerMan_.image_reset = "images_ipad/timer_play_btni.png";
-            timerMan_.image_delete = "<img class=\"timer_delete_btn\" onclick=\"timerMan_.deleteTimer(this)\" alt=\"\" src=\"images_ipad/timer_delete_btn.png\" />";
+            timerMan_.image_start = "images/timer_play_btni.png";
+            timerMan_.image_reset = "images/timer_pause_btni.png";
+            timerMan_.image_delete = "<img class=\"timer_delete_btn\" onclick=\"timerMan_.deleteTimer(this)\" alt=\"\" src=\"images/timer_delete_btn.png\" />";
             timerMan_.image_finish = "<img class=\"finish_background\" alt=\"\" src=\"images_ipad/timer_finished_background.png\" />";
 
         }
@@ -204,10 +202,10 @@ this.orange_off=function()
                     timerMan_.updateStatusInLocal(name, isPlay);
 
                     $("#timer_list_middel").append("<div class=\"new_timer\">" +
-                                    "<div class=\"timer_name\">" + nameToDisplay + "</div>" +
                                     "<div class=\"timer_toPic_position\"><span class=\"timer_clock\">" + timeToDisplay + " </span>" +
-                                    "<img class=\"timer_recet_btn\" ontouchstart=\"timerMan_.initOrStart(this)\" alt=\"\" src=" + timerMan_.image_start + " />"
-                                      + timerMan_.image_delete +
+                                    "<img class=\"timer_recet_btn\" ontouchstart=\"timerMan_.initOrStart(this)\" alt=\"\" src=" + timerMan_.image_start + " />" +
+                                    "<div class=\"timer_name\">" + nameToDisplay + "</div>" +
+                                       timerMan_.image_delete +
                                     "</div>" +
                                 "</div>");
 
@@ -223,7 +221,7 @@ this.orange_off=function()
                          $(".add_timer_btn").css("margin-top", "-23px");
                     }
                     else {
-                        checkHtml($(currentTimer).children(".timer_name"), 94); 
+                     //   checkHtml($(currentTimer).children(".timer_name"), 94); 
                          $(".add_timer_btn").css("margin-top", "-3px");
                         
                     }
@@ -427,10 +425,10 @@ this.orange_off=function()
                         $(timer_name).text(nameToDisplay);
 
                         if(browser == "ipad") {
-                            checkHtml($(timer_name), 136);
+                            //checkHtml($(timer_name), 136);
                         }
                         else {
-                            checkHtml($(timer_name), 70);
+                           // checkHtml($(timer_name), 70);
                         }
 
 
@@ -533,9 +531,10 @@ this.orange_off=function()
     this.addTimerToList = function(name) {
 
         $("#timer_list_middel").append("<div class=\"new_timer\">" +
-                                "<div class=\"timer_name\">" + $("#timerName").val() + "</div>" +
+                                
                                 "<div class=\"timer_toPic_position\"><span class=\"timer_clock\">" + $("#timeEdit").text() + "</span>" +
                                 "<img class=\"timer_recet_btn\" ontouchstart=\"timerMan_.initOrStart(this)\" alt=\"\" src=" + timerMan_.image_reset + " />"
+                                      +"<div class=\"timer_name\">" + $("#timerName").val() + "</div>" 
                                       + timerMan_.image_delete +
                                 "</div>" +
                             "</div>");
@@ -550,11 +549,11 @@ this.orange_off=function()
         currentT.data("nameToDisplay", $("#timerName").val());
 
         if(isIpad()) {
-            checkHtml(currentT.children(".timer_name"), 94);
-            $(".add_timer_btn").css("margin-top", "-23px");
+          //  checkHtml(currentT.children(".timer_name"), 94);
+            $(".add_timer_btn").css("margin-top", "32px");
         }
         else {
-            checkHtml(currentT.children(".timer_name"), 94);
+         //   checkHtml(currentT.children(".timer_name"), 94);
             $(".add_timer_btn").css("margin-top", "-3px");
         }
         
