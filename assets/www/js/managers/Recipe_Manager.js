@@ -151,40 +151,42 @@ function RecipeMan () {
             $("#imgRecipePage").hide();
             $("#videoRecipePage").show();*/
             var width = "516";
-            var height = "334"
+            var height = "334";
             var video_playbtn = "";
             //var src="";
-            if(browser == "ipad") {
-                width = "1266";
-                height = "856";
-                // src = currentRecipeDetails["wpcf-video"][0];
+            //if(browser == "ipad") {
+            //    width = "1266";
+            //    height = "856";
+            //    // src = currentRecipeDetails["wpcf-video"][0];
+            //}
+            //if(browser == "isGt3" || browser == "isGt2") {
+            var width = "640";
+            var height = "413";
+            try {
+                src = currentRecipeDetails["wpcf-videomp4"][0];
             }
-            if(browser == "isGt3" || browser == "isGt2") {
-                var width = "640";
-                var height = "413";
-                try {
-                    src = currentRecipeDetails["wpcf-videomp4"][0];
-                }
-                catch(ex) {
-                    src = currentRecipeDetails["wpcf-video"][0];
-                }
+            catch(ex) {
+                src = currentRecipeDetails["wpcf-video"][0];
+            }
 
-                video_playbtn = "<div id=\"video_playbtn_andro\" class=\"video_playbtn\" ontouchstart=\"recipeMan_.playVideo()\";></div>";
-                $("#imgRecipePage").hide();
-              
-                $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video>");
-                $("#videoRecipePage").show();
-            }
-            else if(browser != "isGt3" && browser != "isGt2") {
-                src = currentRecipeDetails["wpcf-video"][0];
-                $("#imgRecipePage").hide();
-               
-                $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video>");
-                 $("#videoRecipePage").show();
-            }
-            else {
-                src = currentRecipeDetails["wpcf-video"][0];
-            }
+            video_playbtn = "<div id=\"video_playbtn_andro\" class=\"video_playbtn\" ontouchstart=\"recipeMan_.playVideo()\";></div>";
+            $("#imgRecipePage").hide();
+
+            $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video></div>");
+            $("#videoRecipePage").show();
+            $("#playVideoBtn").show();
+            // }
+            //else if(browser != "isGt3" && browser != "isGt2") {
+            //    src = currentRecipeDetails["wpcf-video"][0];
+            //    $("#imgRecipePage").hide();
+
+            //    $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video>");
+            //    $("#videoRecipePage").show();
+            //    $("#playVideoBtn").show();
+            //}
+            //else {
+            //    src = currentRecipeDetails["wpcf-video"][0];
+            //}
 
 
             $("#videoRecipePage").bind("play", function() {
@@ -370,14 +372,9 @@ function RecipeMan () {
       
     }
     this.playVideo = function() {
-        
-        if (browser=="isGt2"||browser=="isGt3")
-        {
-            location.href = src;
-        } else {
-            document.getElementById("videoRecipePage").play();
-            $('.video_playbtn').hide();
-        }
+         document.getElementById("videoRecipePage").play();
+        $('.video_playbtn').hide();
+       // $(".one_recipe_white").hide();
     }
 
     this.pauseVideo = function() {

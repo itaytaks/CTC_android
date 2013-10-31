@@ -125,7 +125,6 @@ Inherited from body.ui-mobile-viewport.ui-overlay-c body {
     position: relative;
     top: -7px;
     right: 12px;
-    
 }
 
 .Gesture_btn_main.no_Gesture {
@@ -233,7 +232,7 @@ left: 96px;*/
     height: 9em;
     background: rgba(225,225,225,.9);
     height: 10em;
-    bottom: 0;    
+    bottom: 0;
 }
 
 .title_pic_white {
@@ -251,12 +250,12 @@ left: 96px;*/
 }
 
 .search_text_background {
-   height: 48px;
-top: 26px;
-margin-bottom: 0px;
-width: 90%;
-border-radius: 8px;
-position: relative;
+    height: 48px;
+    top: 26px;
+    margin-bottom: 0px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
 }
 
 .search_btn_icon {
@@ -271,16 +270,16 @@ position: relative;
 }
 
 .search_text {
- width: 80%;
-height: 1.7em;
-line-height: 25px;
-font-size: 23px;
-top: 2px;
+    width: 80%;
+    height: 1.7em;
+    line-height: 25px;
+    font-size: 23px;
+    top: 2px;
 }
 
-.search_page .search_text{
+.search_page .search_text {
     font-size: 12px;
-    height:43px;
+    height: 43px;
 }
 
 
@@ -302,7 +301,7 @@ height: 1100px;
 }*/
 .all_categories {
     top: 0px;
-   height: 520px;
+    height: 520px;
 }
 
 .all_categories ul {
@@ -352,21 +351,24 @@ left: 69px;*/
 }
 
 
-.categories_text_down{
+.categories_text_down {
     height: 85px;
 }
 /*****recipe page******/
 .one_recipe_page {
-height: 1280px;
-position: relative;
-z-index: 1;
+    height: 1280px;
+    position: relative;
+    z-index: 1;
 }
+
 .recipes_background_recipres_page, .recipes_background_favorite, .recipes_background_search {
     top: auto;
 }
-.recipes_background_search{
+
+.recipes_background_search {
     top: 138px;
 }
+
 .title_up_main_first, .title_up_main_all, .title_up_recipes, .title_up_one_recipe, .title_up_main_categories {
     font-size: 1.6em;
     width: 46%;
@@ -454,16 +456,16 @@ z-index: 1;
     padding-left: 1%;
     padding-top: 8px;
     height: 67px;
-padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .recipes_list_search ul li {
     padding-bottom: 8px;
-     height: 90px;
+    height: 90px;
 }
 
 .recipes_list_search .inside_information {
-     width: 77%;
+    width: 77%;
     float: left;
 }
 
@@ -501,9 +503,8 @@ padding-bottom: 8px;
     top: 15px;
     position: absolute;
     font-size: 1.5em;
-    
     width: 7px;
-height: 13px;
+    height: 13px;
 }
 
 .btn_background_down {
@@ -531,7 +532,7 @@ height: 13px;
 }
 
 .dots_position {
-top: 30px;
+    top: 30px;
 }
 
 .recipes_small_pic {
@@ -542,8 +543,8 @@ top: 30px;
     width: 100%;
 }
 
-.recipes_look_inside_btn{
-    top: 36%;    
+.recipes_look_inside_btn {
+    top: 36%;
 }
 /*******share pic page- partial***************/
 
@@ -630,6 +631,7 @@ top: 30px;
     top: 40px;
     position: relative;
 }
+
 .share_text_area {
     background-color: #FFFFFF;
     border: 6px solid #FFFFFF;
@@ -947,24 +949,25 @@ top: 30px;
 }
 /*********gesture page********/
 .middel_pic_gesture {
-    background-size:  auto 100%;
+    background-size: auto 100%;
 }
 
 
-.background_term, .about_all_text{
+.background_term, .about_all_text {
     height: 900px;
 }
-.background_term{
-     height:650px;
-       top: 40px
-     
+
+.background_term {
+    height: 650px;
+    top: 40px;
 }
-.middel_pic_gesture{
+
+.middel_pic_gesture {
     width: 320px;
     height: 100%;
     background-size: 100% 100%;
     overflow-y: auto;
-    margin-bottom: 60px;    
+    margin-bottom: 60px;
 }
 
 /*********info page*********/
@@ -1213,11 +1216,9 @@ top: 30px;
 }
 
 .food_name_shopping {
-    
 }
 
 .delete_btn_foodgator {
-    
 }
 
 .shopping_middel_window {
@@ -1248,9 +1249,8 @@ top: 30px;
 #recipes_list_favorite li {
     /*height: 50px;*/
     margin-bottom: 0 !important;
-   height: 90px;
-padding-bottom: 8px;
-
+    height: 90px;
+    padding-bottom: 8px;
 }
 
 .one_recipe_back_btn {
@@ -1292,14 +1292,7 @@ padding-bottom: 8px;
 
 
 .addToShoppingText {
-    color: white;
-    font-size: 19px;
-    position: absolute;
-    text-align: center;
-    top: 44%;
-    width: 60%;
-    left: 20%;
-    z-index: 17;
+    top: 35%;
 }
 
 .shopping_ok_border {
@@ -1310,8 +1303,8 @@ padding-bottom: 8px;
     left: 33%;
     margin: auto;
     position: absolute;
-   top: 55%;
-width: 25%;
+    top: 55%;
+    width: 25%;
     background-size: 100% 100%;
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
@@ -1320,12 +1313,15 @@ width: 25%;
     left: 37%;
     margin: auto;
     position: absolute;
-   
     background-size: 100% 100%;
     z-index: 17;
 }
 
 .timer_finish_OK {
+    font-size: 20px;
+    line-height: 1em;
+    margin: auto;
+    width: 43%;
 }
 
 .favorite_recipe_name {
@@ -1373,14 +1369,14 @@ width: 25%;
     clear: both;
     height: 203px;
 }
+
 .recipes_middel_window_main {
-height: 473px; 
+    height: 473px;
 }
 
 .recipes_middel_window_what_u_need {
-   overflow-y: auto;
-height: 430px;
-    
+    overflow-y: auto;
+    height: 430px;
 }
 
 .one_recipe_middle_what_u_need_list {
@@ -1481,7 +1477,6 @@ ire_icon_recipes {
 .foodgrator_text_background .search_btn_icon {
     width: 28px;
     height: 100%;
-    
 }
 
 #Text_search_foodgrator {
@@ -1529,7 +1524,6 @@ ire_icon_recipes {
     height: 87px;
     margin-bottom: 0px;
     width: 96%;
-
 }
 
 
@@ -1634,10 +1628,11 @@ ire_icon_recipes {
     left: 18%;
     background-image: url("../images/one_recipe_one_star.png");
 }
-.foodgrator_instructions{
+
+.foodgrator_instructions {
     width: 90%;
     padding-left: 3%;
-padding-right: 7%;
+    padding-right: 7%;
 }
 /*----------info Page------------*/
 
@@ -1678,10 +1673,10 @@ padding-right: 7%;
 
 .screenz_logo {
     top: 1.2em;
-background-size: 100px;
-right: 0em;
-width: 112px;
-height: 39px;
+    background-size: 100px;
+    right: 0em;
+    width: 112px;
+    height: 39px;
 }
 
 .about_text {
@@ -1715,21 +1710,35 @@ height: 39px;
 
 
 
-#result-gallery{
+#result-gallery {
     background-color: #cc0000;
 }
-#result-gallery ul{
+
+#result-gallery ul {
     background-color: #ffd800;
 }
-#result-gallery ul li{
+
+#result-gallery ul li {
     background-color: #00ff21;
 }
-.gallery-vote-single img{
+
+.gallery-vote-single img {
     background-color: #b200ff;
 }
-.gallery-pic{
+
+.gallery-pic {
     background-color: #0026ff;
 }
-#result-gallery .reMesseg{
+
+#result-gallery .reMesseg {
     background-color: #0ff;
+}
+
+.one_recipe_text_pic_term {
+    font-size: 2.5em;
+    line-height: 2.7em;
+}
+
+.one_recipe_text_pic_term {
+    width: 97%;
 }

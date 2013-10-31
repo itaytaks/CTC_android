@@ -641,6 +641,19 @@ a {
     height: 9px;
 }
 
+#video_playbtn_andro{
+   background-image: url('../images/play_andriod.png');
+background-repeat: no-repeat;
+width: 100%;
+height: 68%;
+position: absolute;
+top: 20px;
+left: 0;
+right: 0;
+z-index: 30;
+background-position: center center;
+}
+
 .search_page .recipes_header_pic {
     border-bottom: 1px solid #ababab;
     width: 100%;
@@ -2007,7 +2020,7 @@ a {
 .timer_finish {
     position: absolute;
     width: 100%;
-    z-index: 60;/*21sara*/
+    z-index: 100;
     top: 0;
     display: none;
     height: 100%;
@@ -2015,13 +2028,14 @@ a {
 
 .timer_all_background_black {
     /*background-color: Black;*/
-    height: 100%;
+    
+    /*height: 100%;
     opacity: 0.72;
     position: absolute;
     width: 100%;
     right: 0;
     left: 0;
-    margin: auto;
+    margin: auto;*/
 }
 
 .finish_background {
