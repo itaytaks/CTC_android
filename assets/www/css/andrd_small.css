@@ -1734,3 +1734,8 @@ height: 39px;
 #result-gallery .reMesseg{
     background-color: #0ff;
 }
+
+.one_recipe_text_pic_term{
+    font-size: 2.5em;
+    line-height: 2.7em;
+}
