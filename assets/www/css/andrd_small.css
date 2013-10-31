@@ -472,7 +472,7 @@ left: 69px;*/
 .recipes_footer_text {
     font-size: 0.8em;
     margin-left: 2px;
-    width: 30%;
+    width: 28%;
     margin-top: 3px;
     margin-right: 2px;
 }
@@ -861,7 +861,7 @@ left: 69px;*/
 }
 
 .favoriteBtnOuter .recipes_footer_text {
-    width: 33%;
+    width: 30%;
     margin-right: 0px;
 }
 
@@ -1054,7 +1054,9 @@ left: 69px;*/
     height: 31px;
     top: 2px;
 }
-
+.tools_clock{
+    background-size: 66%;
+}
 .tools_text {
     font-size: 2em;
     left: 45px;
@@ -1324,7 +1326,9 @@ left: 69px;*/
     margin: auto;
     width: 43%;
 }
-
+.timer_border_start{
+    top: 11.5%;
+}
 .favorite_recipe_name {
     font-size: 1.8em;
     line-height: 0.8em;
@@ -1746,4 +1750,8 @@ ire_icon_recipes {
 
 .timer_ok_border{
     border-radius: 5px;
+}
+.timer_finish_title {
+font-size: 2.8em;
+top: 20px;
 }
