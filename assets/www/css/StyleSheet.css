@@ -512,7 +512,6 @@ a {
 .Gesture_btn_main {
     /*no gestures in android*/
     display: none;
-    
     background-image: url("../images/Gesture_btn.jpg");
     background-repeat: no-repeat;
     background-size: auto 75%;
@@ -635,16 +634,17 @@ a {
 }
 
 .recipes_header_pic {
-width: 100%;
+    width: 100%;
 }
+
 .recipes_middel_pic_recipres_page .recipes_header_pic {
-height: 9px;
+    height: 9px;
 }
 
 .search_page .recipes_header_pic {
-border-bottom: 1px solid #ababab;
-width: 100%;
-height: 5%;
+    border-bottom: 1px solid #ababab;
+    width: 100%;
+    height: 5%;
 }
 
 .recipes_middel_pic_recipres_page, recipes_middel_pic_search, .recipes_middel_pic_favorite {
@@ -1007,8 +1007,8 @@ height: 5%;
 }
 
 .recipes_look_inside_btn {
-    background-image:url('../images/goto_information_btn.png');
-	background-repeat:no-repeat;
+    background-image: url('../images/goto_information_btn.png');
+    background-repeat: no-repeat;
     width: 20px;
     height: 34px;
     position: absolute;
@@ -1016,7 +1016,6 @@ height: 5%;
     top: 40px;
     cursor: pointer;
     font-size: 2em;
-    
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -1151,11 +1150,12 @@ height: 5%;
 }
 
 
-.favorite_page .recipes_text_down{
+.favorite_page .recipes_text_down {
     color: black;
     top: 0px;
     margin-top: 0px;
 }
+
 .btn_background_down {
     background-color: #CC0000;
     border-radius: 20px;
@@ -1199,7 +1199,7 @@ height: 5%;
 }
 
 .recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search {
-    /*height: 605px;*//*sarajS*/
+    /*height: 605px;*/ /*sarajS*/
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
@@ -1359,15 +1359,17 @@ height: 5%;
     width: 100%;
     height: 100%;
 }
+
 .one_term_pic {
-height: 20em;
-position: relative;
-width: 93%;
-left: 3.5%;
+    height: 20em;
+    position: relative;
+    width: 93%;
+    left: 3.5%;
 }
+
 #termImg {
-height: auto;
-width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .one_recipe_white {
@@ -1395,8 +1397,7 @@ width: 100%;
     /*height: 88px;*/
     text-align: left;
     left: 7PX;
-    
-     overflow: hidden;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -1692,25 +1693,27 @@ width: 100%;
     top: 20%;
     width: 92%;
 }
+
 .timer_name_recipe {
-background-color: #edeeef;
-border-radius: 15px;
-font-size: 2em;
-position: relative;
-top: 5%;
-height: 2em;
-left: 0;
-width: 91%;
-right: 0;
-margin: auto;
+    background-color: #edeeef;
+    border-radius: 15px;
+    font-size: 2em;
+    position: relative;
+    top: 5%;
+    height: 2em;
+    left: 0;
+    width: 91%;
+    right: 0;
+    margin: auto;
 }
+
 .timer_time {
     color: #4E555F;
     font-size: 9em;
     width: 100%;
-left: 0;
-right: 0;
-margin: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
     position: relative;
     text-align: center;
     top: 6%;
@@ -1718,14 +1721,14 @@ margin: auto;
 }
 
 .timer_down_position {
-font-size: 3em;
-line-height: 3em;
-position: relative;
-top: 9%;
-height: 1.8em;
-color: #bbbbbb;
-border-bottom: 1px solid #BBBBBB;
-padding-bottom: 3%;
+    font-size: 3em;
+    line-height: 3em;
+    position: relative;
+    top: 9%;
+    height: 1.8em;
+    color: #bbbbbb;
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 3%;
 }
 
 .timer_name_recipe_input {
@@ -1741,39 +1744,39 @@ padding-bottom: 3%;
 
 .timer_cancel_btn {
     width: 33%;
-height: 1.8em;
-line-height: 1.8em;
-float: left;
-line-height: 1.8em;
-position: relative;
-cursor: pointer;
-left: 6%;
+    height: 1.8em;
+    line-height: 1.8em;
+    float: left;
+    line-height: 1.8em;
+    position: relative;
+    cursor: pointer;
+    left: 6%;
 }
 
 .timer_cancel_btn_text {
     background-color: #FFCB01;
-border-radius: 15px;
-color: #4E555F;
-width: 100%;
-height: 100%;
-position: relative;
-text-align: center;
-font-size: 0.8em;
-vertical-align: middle;
+    border-radius: 15px;
+    color: #4E555F;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 0.8em;
+    vertical-align: middle;
 }
 
 .timer_cancel_btn.orange {
 }
 
 .timer_small_border {
-background-color: #FFCB01;
-border-radius: 15px;
-width: 15%;
-height: 100%;
-position: relative;
-float: left;
-left: 10%;
-margin-left: 2%;
+    background-color: #FFCB01;
+    border-radius: 15px;
+    width: 15%;
+    height: 100%;
+    position: relative;
+    float: left;
+    left: 10%;
+    margin-left: 2%;
 }
 
 .timer_small_border_orange {
@@ -1792,16 +1795,16 @@ margin-left: 2%;
 }
 
 .timer_hour, .timer_sec, .timer_min {
-color: #4E555F;
-float: left;
-position: relative;
-text-align: center;
-cursor: pointer;
-line-height: 2em;
-top: 0em;
-height: 100%;
-font-size: 0.8em;
-text-indent: 2%;
+    color: #4E555F;
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    line-height: 2em;
+    top: 0em;
+    height: 100%;
+    font-size: 0.8em;
+    text-indent: 2%;
 }
 
 .timer_text {
@@ -1812,10 +1815,10 @@ text-indent: 2%;
     font-size: 23px;
 }
 
-#timer_text_1,#timer_text_2,#timer_text_3 {
+#timer_text_1, #timer_text_2, #timer_text_3 {
     font-size: 0.5em;
-top: -3em;
-left: 3%;
+    top: -3em;
+    left: 3%;
 }
 
 .timer_min {
@@ -1830,7 +1833,6 @@ left: 3%;
     line-height: 67px;
     text-indent: 10px;*/
     text-indent: 24%;
-    
 }
 
 .timer_sec {
@@ -1895,16 +1897,16 @@ left: 3%;
 }
 
 .timer_Start_btn {
-background-color: #cc0000;
-color: #BBB;
-height: 100%;
-border-radius: 15px;
-cursor: pointer;
-font-size: 2.8em;
-line-height: 1.4em;
-position: absolute;
-text-align: center;
-width: 100%;
+    background-color: #cc0000;
+    color: #BBB;
+    height: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 2.8em;
+    line-height: 1.4em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .two_btn_foodgrator_position {
@@ -2019,79 +2021,78 @@ width: 100%;
     position: absolute;
     cursor: pointer;
     left: auto;
-    right: 0;   
+    right: 0;
     margin: auto;
 }
 
 .addToShopping .finish_background {
-  
     position: absolute;
-    top:0;
+    top: 0;
     cursor: pointer;
 }
 
 .timer_finish_title {
     color: white;
-font-size: 3em;
-margin: auto;
-position: absolute;
-text-align: center;
-top: 13px;
-width: 100%;
+    font-size: 3em;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+    width: 100%;
 }
 
 .timer_finish_all_position {
-position: absolute;
-width: 85%;
-left: 0;
-margin: auto;
-right: 0;
-top: 80px;
+    position: absolute;
+    width: 85%;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 80px;
 }
 
 .timer_finish_recipe_name {
-color: white;
-font-size: 3em;
-position: absolute;
-text-align: center;
-top: 50px;
-width: 100%;
-overflow: hidden;
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .timer_finish_finish_text {
- color: white;
-font-size: 1.2em;
-position: absolute;
-text-align: center;
-top: 90px;
-width: 100%;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    width: 100%;
 }
 
 .timer_finish_OK {
     color: white;
-font-size: 2em;
-line-height: 1em;
-margin: auto;
-position: relative;
-text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+    margin: auto;
+    position: relative;
+    text-align: center;
 }
 
 .timer_ok_border {
-cursor: pointer;
-margin: auto;
-position: relative;
-top: 110px;
-width: 20%;
-border: 1px solid white;
-border-radius: 13px;
-display: block;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    top: 110px;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 13px;
+    display: block;
 }
+
 .shopping_ok_border {
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
     cursor: pointer;
-    
     margin: auto;
     position: relative;
     top: 211px;
@@ -2099,7 +2100,7 @@ display: block;
     display: block;
     z-index: 24;
     border: 1px solid white;
-border-radius: 14px;
+    border-radius: 14px;
 }
 
 .timer_list {
@@ -2111,22 +2112,21 @@ border-radius: 14px;
 
 #timer_list_middel_window {
     overflow-x: hidden;
-overflow-y: auto;
-height: auto;
-max-height: 300px;
-top: 17px;
-width: 90%;
-left: 0;
-right: 0;
-margin: auto;
-background-color: white;
-position: relative;
-padding-bottom: 0em;
--webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    height: auto;
+    max-height: 300px;
+    top: 17px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    padding-bottom: 0em;
+    -webkit-overflow-scrolling: touch;
 }
 
-#timer_cancel_btn{
-    
+#timer_cancel_btn {
 }
 
 .term_name_arrow {
@@ -2637,13 +2637,13 @@ padding-bottom: 0em;
 
 #term_search {
     border-color: transparent;
-font-size: 2em;
-height: 90%;
-left: 7px;
-position: relative;
-top: 1%;
-width: 100%;
--webkit-user-select: auto;
+    font-size: 2em;
+    height: 90%;
+    left: 7px;
+    position: relative;
+    top: 1%;
+    width: 100%;
+    -webkit-user-select: auto;
 }
 
 .term_list {
@@ -2871,24 +2871,25 @@ width: 100%;
 }
 
 .white_term {
-background-color: white;
-height: 33%;
-left: 0;
-opacity: 0.8;
-position: relative;
-text-align: center;
-top: -33%;
-width: 100%;
-z-index: 4;
+    background-color: white;
+    height: 33%;
+    left: 0;
+    opacity: 0.8;
+    position: relative;
+    text-align: center;
+    top: -33%;
+    width: 100%;
+    z-index: 4;
 }
+
 .one_recipe_text_discription_term {
-color: #4D555F;
-font-size: 1.5em;
-left: 3.5%;
-position: relative;
-top: 4%;
-width: 91%;
-padding: 4% 1%
+    color: #4D555F;
+    font-size: 1.5em;
+    left: 3.5%;
+    position: relative;
+    top: 4%;
+    width: 91%;
+    padding: 4% 1%;
 }
 
 .one_recipe_text_pic_term {
@@ -2920,7 +2921,7 @@ overflow: hidden;
 }
 
 .shopping_middel_window {
-    height: 679px;
+    height: auto;
     overflow-y: auto;
     position: relative;
     width: 661px;
@@ -2935,14 +2936,15 @@ overflow: hidden;
 }
 
 .term_middel_window_singel {
-height: 47em;
-background-color: white;
-position: relative;
-width: 100%;
-top: 3%;
--webkit-overflow-scrolling: touch;
-overflow-y: auto;
+    height: 47em;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    top: 3%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
 }
+
 .term_middel_window_singel ul li {
     -webkit-transform: translate3d(0, 0, 0);
 }
@@ -2971,7 +2973,6 @@ overflow-y: auto;
 }
 
 .middel_pic_gesture {
-  
 }
 
 .text_explanation_gesture {
@@ -3132,6 +3133,7 @@ overflow-y: auto;
     text-align: center;
     top: 141px;
 }
+
 .delete_pop {
     display: none;
     position: absolute;
@@ -3324,13 +3326,13 @@ overflow-y: auto;
 
 
 .share_img {
-  height: 99%;
-position: relative;
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
-width: 99%;
-margin: auto;
+    height: 99%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 99%;
+    margin: auto;
 }
 
 .about_us_page {
@@ -3360,17 +3362,17 @@ margin: auto;
     color: #484F57;
 }
 
-.about_icon{
+.about_icon {
     float: left;
 }
 
-.about_title{
+.about_title {
     float: left;
-margin-top: 15px;
-margin-left: 17px;
+    margin-top: 15px;
+    margin-left: 17px;
 }
 
-.abut_desc{
+.abut_desc {
     clear: both;
     font-size: 1.2em;
     padding-top: 1.2em;
@@ -3379,8 +3381,7 @@ margin-left: 17px;
 
 .abut_desc span {
     display: block;
-    margin-top:13px
-    
+    margin-top: 13px;
 }
 
 .about_text_title {
@@ -3402,14 +3403,15 @@ margin-left: 17px;
 .about_text {
     color: #484F57;
     font-size: 1.6em;
-font-weight: bold;
+    font-weight: bold;
     padding-left: 10%;
     line-height: 2em;
 }
 
-.about_footer{
-    margin-top: 2em
+.about_footer {
+    margin-top: 2em;
 }
+
 .about_text_position {
     width: 80%;
     padding: 3% 10%;
@@ -3494,9 +3496,9 @@ font-weight: bold;
 }
 
 #timer_list_middel {
-width: 98%;
-margin-left: 2%;
-position: relative;
+    width: 98%;
+    margin-left: 2%;
+    position: relative;
 }
 
 .timer_list_footer {
@@ -3513,6 +3515,7 @@ position: relative;
     position: absolute;
     top: 55px;
     width: 100%;
+    height: auto;
 }
 
 .add_timer_btn {
@@ -3534,8 +3537,8 @@ position: relative;
     background-color: #edeeef;
     border-radius: 15px;
     text-indent: 29%;
-line-height: 2.5em;
-font-size: 2em;
+    line-height: 2.5em;
+    font-size: 2em;
     color: #4d555f;
 }
 
@@ -3543,8 +3546,8 @@ font-size: 2em;
     height: 47px;
     position: relative;
     top: 0px;
-width: 96%;
-/*padding: 0 2%;*/
+    width: 96%;
+    /*padding: 0 2%;*/
     margin-bottom: 3px;
     left: 0;
     right: 0;
@@ -4013,7 +4016,7 @@ width: 96%;
     display: none;
     /*border: solid 1px black;*/
     left: 0;
-width: 75%;
+    width: 75%;
 }
 
 
@@ -4024,7 +4027,6 @@ width: 75%;
     position: relative;
     width: 100%;
     top: 21px;
-   
     text-indent: 17px;
     -webkit-overflow-scrolling: touch;
 }
@@ -4032,7 +4034,7 @@ width: 75%;
 
 .shopping_list {
     height: 410px;
-     position: relative;
+    position: relative;
     top: -10px;
 }
 
@@ -4046,16 +4048,16 @@ width: 75%;
     line-height: 16px;
     display: none;
     cursor: pointer;
-    position: absolute;   
+    position: absolute;
     z-index: 600;
     height: 15px;
     width: 52px;
     right: 52px;
     text-indent: 0;
-    top: -100%
+    top: -100%;
 }
 
-.red{
+.red {
     color: #E76A06;
 }
 
@@ -4087,19 +4089,18 @@ width: 75%;
     right: 0;
     top: 20%;
     text-align: center;
-    
     width: 70%;
 }
 
 .yes_no {
-   height: 45%;
-width: 30%;
-position: relative;
-text-align: center;
-top: 24%;
-left: 0;
-right: 0;
-margin: auto;
+    height: 45%;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    top: 24%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .shopping_mail_backgroung {
@@ -4109,19 +4110,16 @@ margin: auto;
     margin: auto;
     position: relative;
     width: 100%;
-    
     top: 17%;
     background-size: 80% auto;
     background-position: center;
 }
 
 #yesDeleteShoppingList {
-   
     width: 100%;
 }
 
 #noDeleteShoppingList {
-  
     width: 100%;
     margin-top: 6%;
 }
