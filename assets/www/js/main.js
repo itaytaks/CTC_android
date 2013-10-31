@@ -167,6 +167,7 @@ function getRecipeNumberById( id,type)
           }
           catch(ex){*/
               $("#progress").hide();
+               navigator.notification.activityStop();
           //}
 
       }
@@ -179,6 +180,7 @@ function getRecipeNumberById( id,type)
           catch(ex){*/
               
               $("#progress").show();
+               navigator.notification.activityStart("", "загрузка");
           //}
           
 
