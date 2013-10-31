@@ -641,17 +641,17 @@ a {
     height: 9px;
 }
 
-#video_playbtn_andro{
-   background-image: url('../images/play_andriod.png');
-background-repeat: no-repeat;
-width: 100%;
-height: 68%;
-position: absolute;
-top: 20px;
-left: 0;
-right: 0;
-z-index: 30;
-background-position: center center;
+#video_playbtn_andro {
+    background-image: url('../images/play_andriod.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 68%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    background-position: center center;
 }
 
 .search_page .recipes_header_pic {
@@ -1167,6 +1167,7 @@ background-position: center center;
     color: black;
     top: 7px;
     margin-top: 15px;
+    font-family: Conv_PlumbMed;
 }
 
 .btn_background_down {
@@ -1587,6 +1588,7 @@ background-position: center center;
     position: relative;
     width: 432px;
 }
+
 #tools_middel_element_shopping .tools_text {
     color: #ccc;
 }
@@ -2028,7 +2030,6 @@ background-position: center center;
 
 .timer_all_background_black {
     /*background-color: Black;*/
-    
     /*height: 100%;
     opacity: 0.72;
     position: absolute;
@@ -2043,14 +2044,14 @@ background-position: center center;
     position: absolute;
     cursor: pointer;
     left: 0;
-right: 0;
-margin: auto;
+    right: 0;
+    margin: auto;
 }
 
 .addToShopping .finish_background {
- position: absolute;
-top: 27%;
-cursor: pointer;
+    position: absolute;
+    top: 27%;
+    cursor: pointer;
 }
 
 .timer_finish_title {
@@ -2098,7 +2099,7 @@ cursor: pointer;
     margin: auto;
     position: relative;
     text-align: center;
-display: block
+    display: block;
 }
 
 .timer_ok_border {
@@ -2917,18 +2918,18 @@ display: block
 
 .one_recipe_text_pic_term {
     color: #4D555F;
-font-size: 3em;
-margin-left: 9px;
-position: relative;
-z-index: 9;
-line-height: 2em;
-width: 98%;
-display: block;
-text-align: left;
-height: 96px;
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
+    font-size: 3em;
+    margin-left: 9px;
+    position: relative;
+    z-index: 9;
+    line-height: 2em;
+    width: 98%;
+    display: block;
+    text-align: left;
+    height: 96px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .term_middel_window {
@@ -3525,10 +3526,11 @@ overflow: hidden;
 }
 
 .timer_list_footer {
-width: 100%;
-height: 13px;
-position: relative;
+    width: 100%;
+    height: 13px;
+    position: relative;
 }
+
 .timer_list_background {
     z-index: 3;
     position: absolute;
