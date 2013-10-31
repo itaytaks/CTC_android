@@ -740,11 +740,11 @@ a {
 }
 
 #tools_icon {
-    background-image: url(../images_ipad/tools_icon.png);
+    background-image: url(../images_ipad/tools_icon_red.png);
 }
 
 #tools_icon_x {
-    color: #b0b0b0;
+    /*color: #b0b0b0;*/
 }
 
 .inside_information {
@@ -2003,6 +2003,7 @@ a {
     z-index: 21;
     top: 0;
     display: none;
+    height: 100%;
 }
 
 .timer_all_background_black {
@@ -2020,15 +2021,15 @@ a {
     width: 92%;
     position: absolute;
     cursor: pointer;
-    left: auto;
-    right: 0;
-    margin: auto;
+    left: 0;
+right: 0;
+margin: auto;
 }
 
 .addToShopping .finish_background {
-    position: absolute;
-    top: 0;
-    cursor: pointer;
+ position: absolute;
+top: 27%;
+cursor: pointer;
 }
 
 .timer_finish_title {
@@ -2076,6 +2077,7 @@ a {
     margin: auto;
     position: relative;
     text-align: center;
+display: block
 }
 
 .timer_ok_border {
@@ -2352,7 +2354,7 @@ a {
     background-image: url("../images/add_to_cart_btn.png");
     background-size: auto 80%;
     background-position: 10% 50%;
-    background-color: #e6e8ea; /*#cc0000;*/
+    background-color: #cc0000; /*#e6e8ea;*/
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #fff;
@@ -2894,15 +2896,18 @@ a {
 
 .one_recipe_text_pic_term {
     color: #4D555F;
-    font-size: 42px;
-    margin-left: 9px;
-    position: relative;
-    z-index: 9;
-    line-height: 1.7em;
-    width: 100%;
-    display: block;
-    text-align: left;
-    height: 96px;
+font-size: 3em;
+margin-left: 9px;
+position: relative;
+z-index: 9;
+line-height: 2em;
+width: 98%;
+display: block;
+text-align: left;
+height: 96px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
 }
 
 .term_middel_window {
@@ -3136,7 +3141,7 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 21;
+    z-index: 30;
     top: 0;
 }
 

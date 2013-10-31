@@ -1249,16 +1249,15 @@ height: 63px;
 /*******unplaced************/
 .finish_background {
 }
-
+.shopping_ok_border{
+    border-radius: 8px;
+}
 
 .addToShoppingText {
-    color: white;
-    font-size: 19px;
-    position: absolute;
-    text-align: center;
-    top: 236px;
-    width: 60%;
-    left: 20%;
+font-size: 19px;
+top: 35%;
+width: 60%;
+z-index: 17;
 }
 
 .favorite_recipe_name {
@@ -1554,3 +1553,6 @@ ire_icon_recipes {
 }
 
 
+.timer_ok_border{
+    border-radius: 4px;
+}

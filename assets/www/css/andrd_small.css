@@ -402,7 +402,7 @@ z-index: 1;
 .inside_information {
     display: block;
     height: 6em;
-    width: 77%;
+    width: 70%;
     float: left;
     margin-left: 5px;
     position: relative;
@@ -470,7 +470,7 @@ padding-bottom: 8px;
 .recipes_footer_text {
     font-size: 0.8em;
     margin-left: 2px;
-    width: 23%;
+    width: 30%;
     margin-top: 3px;
     margin-right: 2px;
 }
@@ -1293,14 +1293,7 @@ padding-bottom: 8px;
 
 
 .addToShoppingText {
-    color: white;
-    font-size: 19px;
-    position: absolute;
-    text-align: center;
-    top: 44%;
-    width: 60%;
-    left: 20%;
-    z-index: 17;
+  top: 35%;
 }
 
 .shopping_ok_border {
@@ -1327,6 +1320,13 @@ width: 25%;
 }
 
 .timer_finish_OK {
+
+font-size: 20px;
+line-height: 1em;
+margin: auto;
+
+width: 43%;
+
 }
 
 .favorite_recipe_name {

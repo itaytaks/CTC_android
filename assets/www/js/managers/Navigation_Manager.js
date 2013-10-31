@@ -320,8 +320,8 @@ function NavigationMan() {
         $('.main_menu_icon_hover').removeClass('main_menu_icon_hover');
         $('#tools_icon').addClass('main_menu_icon_hover');
         $('#tools_icon').show();
-
-
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
+       $(".tools_page").css("height", pageHeight+'px');
         $('.tools_page').show();
         if(isIpad()) {
             $('.Gesture_btn').css({ "background-position": "-59px 50%" }); //ipad
@@ -479,7 +479,7 @@ function NavigationMan() {
     }
 this.showTimerPage = function() {
     $(".page").hide();
-
+    
     $('.timer_page').show();
     $('.tools_page').hide();
     $('.favorite_page').hide();
@@ -503,7 +503,8 @@ this.showTimerPage = function() {
 
     this.showTermsPage = function() {
         $(".page").hide();
-
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
+       $(".Terminology_page").css("height", pageHeight+'px');
         $('.Terminology_page').show();
         this.backPosition = this.pagePosition;
         this.pagePosition = "terms";
@@ -555,6 +556,8 @@ this.showTimerPage = function() {
     this.showtimersListPage=function()
     {
         $(".timer_middel").hide();
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
+       $(".timer_list").css("height", pageHeight+'px');
         $(".timer_list").show();
         this.backPosition = this.pagePosition;
         this.pagePosition = "timersList";
@@ -576,7 +579,8 @@ this.showTimerPage = function() {
     this.showTermSinglePage = function()
     {
          $(".page").hide();
-
+         var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
+         $(".Terminology_singel_page").css("height", pageHeight+'px');
          $('.Terminology_singel_page').show();
          $('.Terminology_page').hide();
          $('.Gesture_page').hide();
