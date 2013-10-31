@@ -9,8 +9,8 @@
         <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
         <link rel="stylesheet" type="text/css" media="all and (max-device-width: 480px)" href="css/StyleSheetSmall.css" />
         <link rel="stylesheet" type="text/css" media="all and (min-device-width: 481px)" href="css/andrd_small.css" />
-        <!--<link rel="stylesheet"  href="css/StyleSheetSmall.css" />-->
-        <!--<link rel="stylesheet" href="css/andrd_small_2.css" />-->
+        <!--<link rel="stylesheet"  href="css/StyleSheetSmall.css" />
+        <link rel="stylesheet" href="css/andrd_small_2.css" />-->
         <script type="text/javascript" id="myJSONPCall" src=""></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
@@ -67,10 +67,6 @@
             function deviceIsReady() {
                 attachEventFacebook();
                 document.addEventListener("backbutton", function (e) {
-                    e.preventDefault();
-                });
-                         
-                            document.addEventListener("backbutton", function (e) {
                     e.preventDefault();
                 });
             }
@@ -325,7 +321,7 @@
                         </div>
                         <div class="recipes_background_what_u_need ">
                             <div class="what_u_need_wrap">
-                                <div id="add_to_cart_btn" class="add_to_cart_btn" onclick="recipeMan_.addToShoppingList();">Добавитьт ингредиенты в корзину</div>
+                                <div id="add_to_cart_btn" class="add_to_cart_btn" >Добавитьт ингредиенты в корзину</div>  <!--onclick="recipeMan_.addToShoppingList();"-->
                                 <div class="recipes_header_pic_what_u_need"></div>
                                 <div class="recipes_middel_pic_what_u_need">
                                     <div class="recipes_middel_window_what_u_need">
