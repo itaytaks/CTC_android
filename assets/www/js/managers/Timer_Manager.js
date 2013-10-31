@@ -637,28 +637,35 @@ this.orange_off=function()
 
 
     this.notificationStart = function(time, name) {
-       try{
+        try {
+            //  alert("notificationStart");
             d = new Date(time);
-        plugins.localNotification.add({
-                                            date: d,
-                                            message: name + 'истекло!',
-                                            hasAction: true,
-                                            badge: 0,
-                                            id: name + '_timer',
-                                            sound:'horn.caf'/*,
+            plugins.localNotification.add({
+                date: d,
+                message: name + 'истекло!',
+                hasAction: true,
+                badge: 0,
+                id: name + '_timer',
+                sound: 'horn.caf'/*,
                                             background:'app.background',
                                             foreground:'app.running'*/
-                                            });
+            });
 
-       }
-       catch(ex){}
+        }
+        catch(ex) {
+            // alert("notificationStart fail"); 
+        }
     }
 
     this.notificationStop = function(time, name) {
         try{
+           // alert("notificationStart");
+         //  alert("name: "+name+" time: "+time)
            plugins.localNotification.cancel(name + '_timer'); 
         }  
-        catch(ex){}
+        catch(ex){
+           // alert("notificationStop fail"+ex);
+        }
 
     }
 
