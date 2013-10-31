@@ -402,7 +402,7 @@ z-index: 1;
 .inside_information {
     display: block;
     height: 6em;
-    width: 77%;
+    width: 70%;
     float: left;
     margin-left: 5px;
     position: relative;
@@ -470,7 +470,7 @@ padding-bottom: 8px;
 .recipes_footer_text {
     font-size: 0.8em;
     margin-left: 2px;
-    width: 23%;
+    width: 30%;
     margin-top: 3px;
     margin-right: 2px;
 }

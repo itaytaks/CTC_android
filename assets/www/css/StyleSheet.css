@@ -740,11 +740,11 @@ height: 5%;
 }
 
 #tools_icon {
-    background-image: url(../images_ipad/tools_icon.png);
+    background-image: url(../images_ipad/tools_icon_red.png);
 }
 
 #tools_icon_x {
-    color: #b0b0b0;
+    /*color: #b0b0b0;*/
 }
 
 .inside_information {
@@ -2352,7 +2352,7 @@ padding-bottom: 0em;
     background-image: url("../images/add_to_cart_btn.png");
     background-size: auto 80%;
     background-position: 10% 50%;
-    background-color: #e6e8ea; /*#cc0000;*/
+    background-color: #cc0000; /*#e6e8ea;*/
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #fff;
@@ -2893,15 +2893,18 @@ padding: 4% 1%
 
 .one_recipe_text_pic_term {
     color: #4D555F;
-    font-size: 42px;
-    margin-left: 9px;
-    position: relative;
-    z-index: 9;
-    line-height: 1.7em;
-    width: 100%;
-    display: block;
-    text-align: left;
-    height: 96px;
+font-size: 3em;
+margin-left: 9px;
+position: relative;
+z-index: 9;
+line-height: 2em;
+width: 98%;
+display: block;
+text-align: left;
+height: 96px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
 }
 
 .term_middel_window {
