@@ -25,7 +25,7 @@ function FeatureMan () {
                 dotWidth = 12;
                 break;
             case "isGt3":
-                background_pos = "-17px 50%";
+                background_pos = "-9px 50%";
                 dotWidth = 27;
                 break;
         }
@@ -80,7 +80,7 @@ function FeatureMan () {
                 dotWidth = 12;
                 break;
             case "isGt3":
-                background_pos = "-17px 50%";
+                background_pos = "-9px 50%";
                 dotWidth = 27;
                 break;
         }
