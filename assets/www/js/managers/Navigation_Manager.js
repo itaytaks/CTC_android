@@ -487,7 +487,7 @@ this.showTimerPage = function() {
     $('.recipres_page').hide();
     $('.home_page').hide();
     $('.foodgrator_page').hide();
-    $('.timer_finish').hide();
+    //$('.timer_finish').hide();  test!!!!!!Sara
     $('.timer_middel').hide();
     // $('.categories_page').hide();
     if(isIpad()) {

@@ -1052,7 +1052,6 @@ top: 30px;
 }
 
 .tools_text {
-    color: #4d555f;
     font-size: 2em;
     left: 45px;
     line-height: 27px;
@@ -1293,7 +1292,14 @@ padding-bottom: 8px;
 
 
 .addToShoppingText {
-  top: 35%;
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    text-align: center;
+    top: 44%;
+    width: 60%;
+    left: 20%;
+    z-index: 17;
 }
 
 .shopping_ok_border {
@@ -1320,13 +1326,6 @@ width: 25%;
 }
 
 .timer_finish_OK {
-
-font-size: 20px;
-line-height: 1em;
-margin: auto;
-
-width: 43%;
-
 }
 
 .favorite_recipe_name {

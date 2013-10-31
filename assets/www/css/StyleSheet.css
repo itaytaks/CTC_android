@@ -1553,6 +1553,10 @@ a {
     border-radius: 25px;
 }
 
+#tools_middel_element_shopping:hover {
+    background-color: white;
+}
+
 .tools_middel_element_footer {
     border-top: 1px solid #4d555f;
 }
@@ -1569,6 +1573,9 @@ a {
     line-height: 53px;
     position: relative;
     width: 432px;
+}
+#tools_middel_element_shopping .tools_text {
+    color: #ccc;
 }
 
 .tools_text_orange {
@@ -2000,7 +2007,7 @@ a {
 .timer_finish {
     position: absolute;
     width: 100%;
-    z-index: 21;
+    z-index: 60;/*21sara*/
     top: 0;
     display: none;
     height: 100%;
@@ -2124,7 +2131,7 @@ display: block
     margin: auto;
     background-color: white;
     position: relative;
-    padding-bottom: 0em;
+    padding-bottom: 13px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -2354,7 +2361,7 @@ display: block
     background-image: url("../images/add_to_cart_btn.png");
     background-size: auto 80%;
     background-position: 10% 50%;
-    background-color: #cc0000; /*#e6e8ea;*/
+    background-color: #e6e8ea; /*#cc0000;*/
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #fff;
@@ -3534,8 +3541,8 @@ overflow: hidden;
     position: relative;
     width: 90%;
     top: 22%;
-    left: 5%;
-    margin: 5% 0;
+    /*left: 5%;*/
+    margin: 13px 5% 0;
     background-color: #edeeef;
     border-radius: 15px;
     text-indent: 29%;
