@@ -2052,6 +2052,7 @@ a {
     position: absolute;
     top: 27%;
     cursor: pointer;
+    z-index: 30;
 }
 
 .timer_finish_title {
@@ -2122,7 +2123,7 @@ a {
     top: 211px;
     width: 243px;
     display: block;
-    z-index: 24;
+    z-index: 30;
     border: 1px solid white;
     border-radius: 14px;
 }
@@ -3812,6 +3813,7 @@ a {
     top: 37px;
     width: 60%;
     left: 20%;
+    z-index: 30;
 }
 
 

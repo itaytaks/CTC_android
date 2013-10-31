@@ -1284,7 +1284,6 @@ left: 69px;*/
 .addToShopping {
     position: absolute;
     width: 100%;
-    z-index: 30;
     top: 0;
     height: 100%;
 }
@@ -1316,7 +1315,6 @@ left: 69px;*/
     margin: auto;
     position: absolute;
     background-size: 100% 100%;
-    z-index: 17;
 }
 
 .timer_finish_OK {
