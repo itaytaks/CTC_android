@@ -1293,14 +1293,7 @@ padding-bottom: 8px;
 
 
 .addToShoppingText {
-    color: white;
-    font-size: 19px;
-    position: absolute;
-    text-align: center;
-    top: 44%;
-    width: 60%;
-    left: 20%;
-    z-index: 17;
+  top: 35%;
 }
 
 .shopping_ok_border {
@@ -1327,6 +1320,13 @@ width: 25%;
 }
 
 .timer_finish_OK {
+
+font-size: 20px;
+line-height: 1em;
+margin: auto;
+
+width: 43%;
+
 }
 
 .favorite_recipe_name {
