@@ -2855,7 +2855,6 @@ a {
 }
 
 .shopping_page .shopping_text_background {
-    background-image: url("../images_ipad/search_btn_icon.png");
     background-repeat: no-repeat;
     background-size: 40% 40%;
     background-position-x: 10px;
@@ -3141,15 +3140,6 @@ a {
     text-align: center;
     top: 94px;
     width: 640px;
-}
-
-.all_background_black {
-    background-color: Black;
-    height: 100%;
-    opacity: 0.72;
-    position: absolute;
-    top: 0%;
-    width: 100%;
 }
 
 .yes_no {
@@ -4092,7 +4082,7 @@ a {
 }
 
 .all_background_black {
-    background-color: black;
+    background-color: transparent;
     height: 100%;
     opacity: 0.72;
     position: absolute;
