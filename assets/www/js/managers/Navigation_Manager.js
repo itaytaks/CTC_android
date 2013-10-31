@@ -504,7 +504,7 @@ this.showTimerPage = function() {
     this.showTermsPage = function() {
         $(".page").hide();
         var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
-       $(".Terminology_page").css("height", pageHeight+'px');
+       $(".term_middel_window").css("height", pageHeight+'px');
         $('.Terminology_page').show();
         this.backPosition = this.pagePosition;
         this.pagePosition = "terms";

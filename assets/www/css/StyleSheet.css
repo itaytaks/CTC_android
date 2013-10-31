@@ -2145,7 +2145,7 @@ display: block
     margin: auto;
     background-color: white;
     position: relative;
-    padding-bottom: 13px;
+    /*padding-bottom: 13px;*/
     -webkit-overflow-scrolling: touch;
 }
 
@@ -3525,14 +3525,10 @@ overflow: hidden;
 }
 
 .timer_list_footer {
-    background-image: url('../images/timer_list_footer_1.png');
-    background-repeat: no-repeat;
-    width: 608px;
-    height: 51px;
-    position: relative;
-    top: -12px;
+width: 100%;
+height: 13px;
+position: relative;
 }
-
 .timer_list_background {
     z-index: 3;
     position: absolute;
