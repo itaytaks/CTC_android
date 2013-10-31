@@ -27,8 +27,8 @@ var recipesArray2 = new Object;
 var recipesFeature = [];
 var categoriesArray = [];
 var init = {
-    start: function () {
-        document.addEventListener("touchstart", function () { }, true);
+    start: function() {
+        document.addEventListener("touchstart", function() { }, true);
 
         //$('.upload_app').hide();
         //$('#favorite_icon_hover').hide();
@@ -90,14 +90,15 @@ var init = {
         try {
             isFirstTime = localStorage.getItem('CTCFirstTime');
         }
-        catch (e) { }
-        if (isFirstTime != "noFirstTime") {
+        catch(e) { }
+        if(isFirstTime != "noFirstTime") {
             $(".start_pop_page").show();
             localStorage.setItem('CTCFirstTime', "noFirstTime");
         }
 
         //check internet
-        updateInternetAccess()
+        updateInternetAccess();
+
 
     }
 }
