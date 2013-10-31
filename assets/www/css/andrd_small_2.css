@@ -330,6 +330,7 @@ width: 25%;
 
 .background_term{
     height: 430px; 
+    top: 45px;
 }
 .recipes_middel_window_main {
 height: 375px;
@@ -353,4 +354,8 @@ height: 375px;
 
 .timer_recet_btn{
     top: 10%;
+}
+
+.timer_ok_border{
+    border-radius: 5px;
 }
