@@ -340,13 +340,17 @@ height: 375px;
 }
 
 .timer_clock{
-    top: 15%;
+    top: 20%;
 }
 
 .timer_name{
-    top: 15%;
+    top: -15%;
 }
 
 .timer_delete_btn{
-    top: -30%;
+    top: -25%;
+}
+
+.timer_recet_btn{
+    top: 10%;
 }
