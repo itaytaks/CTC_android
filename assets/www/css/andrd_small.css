@@ -959,7 +959,7 @@ left: 69px;*/
 
 .background_term {
     height: 650px;
-    top: 40px;
+    top: 45px;
 }
 
 .middel_pic_gesture {
@@ -1742,4 +1742,8 @@ ire_icon_recipes {
 
 .one_recipe_text_pic_term {
     width: 97%;
+}
+
+.timer_ok_border{
+    border-radius: 5px;
 }
