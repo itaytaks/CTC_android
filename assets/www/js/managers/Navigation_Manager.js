@@ -569,7 +569,8 @@ this.showTimerPage = function() {
 
     this.showTimerEditPage = function() {
         $(".timer_list").hide();
-        $("#timerName").blur();
+       // alert("blur");
+        //$("#timerName").blur();
         $("#timeEdit").text("00:00");
         $(".timer_middel").show();
         this.backPosition = this.pagePosition;

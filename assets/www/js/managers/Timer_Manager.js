@@ -60,94 +60,94 @@ this.orange_off=function()
     $('.timer_cancel_btn_text').removeClass("red")//כפתור אפור
     
 }
-    this.attachEvents = function() {
+this.attachEvents = function() {
+
+    $("#timer_cancel_btn").click(function() {
+        $('.timer_cancel_btn').css("color", "#BBB");
+        timerMan_.setTime("init");
+    });
+
+    $("#timerName").focus(function() {
         
-        $("#timer_cancel_btn").click(function() {
-        $('.timer_cancel_btn').css("color","#BBB");
-            timerMan_.setTime("init");
-        });
+        $("#timerName").val("");
+    });
+    $("#timer_hour").click(function() {
 
-        $("#timerName").focus(function() {
-            $("#timerName").val("");
-        });
-        $("#timer_hour").click(function() {
+        timerMan_.setTime("10min");
+    });
 
-            timerMan_.setTime("10min");
-        });
+    $("#timer_min").click(function() {
+        timerMan_.setTime("1min");
 
-        $("#timer_min").click(function() {
-            timerMan_.setTime("1min");
+    });
+    $("#timer_sec").click(function() {
 
-        });
-        $("#timer_sec").click(function() {
+        timerMan_.setTime("10second");
+    });
+    this.timersIndexForName;
+    $("#timer_Start_btn").click(function() {
 
-            timerMan_.setTime("10second");
-        });
-        this.timersIndexForName;
-        $("#timer_Start_btn").click(function() {
-            
-            if($("#timeEdit").text() == "00:00") {
-                alert("Timer should be at least 10 seconds");
+        if($("#timeEdit").text() == "00:00") {
+            alert("Timer should be at least 10 seconds");
+        }
+
+        else {//if(!timerMan_.hasTimer($("#timerName").val())) {
+
+            //add timer to localStorage
+            var oldTimers = localStorage.getItem("CTCTimers");
+            if(oldTimers == undefined) {
+                oldTimers = "";
             }
 
-            else {//if(!timerMan_.hasTimer($("#timerName").val())) {
-
-                //add timer to localStorage
-                var oldTimers = localStorage.getItem("CTCTimers");
-                if(oldTimers == undefined) {
-                    oldTimers = "";
-                }
-
-                //check if use with the default name
-                //if yes - update the local storsge - prevent double use
-                if("ТАЙМЕР "+timerMan_.timersIndexForName  == $("#timerName").val())
-                {
-                    localStorage.setItem("CTCTimersIndex", timerMan_.timersIndexForName);
-                }
-                //startTime + {} + how many time plus start time + {} + name + {} + name to display 
-               
-                ////set name to save in localstorage
-                //timersIndexForName = localStorage.getItem("CTCTimersIndex");
-                //if(timersIndexForName == undefined) {
-                //    timersIndexForName = "1";
-                //}
-                //else {
-                //    timersIndexForName = timersIndexForName * 1 + 1;
-                //}
-               // localStorage.setItem("CTCTimersIndex", timersIndexForName);
-
-                //var name = "timer " + timersIndexForName;
-
-                var date = new Date();
-                var startTime = date.getTime();
-                var time = timerMan_.convertToMiliseconds($("#timeEdit").text());
-                time = time + startTime; //$("#timeEdit").text();
-                var name = $("#timerName").val();
-                var nameToDisplay = $("#timerName").val();
-                //if(nameToDisplay == "" || nameToDisplay == "имя")//there is no name - set default
-                //{
-                //    nameToDisplay = name;
-
-                //}
-
-                //******************************
-                $("#timerName").val(nameToDisplay);
-                var newTimer = 'timer:' + startTime + '{}' + time + '{}' + name + '{}' + "play{}" + nameToDisplay;
-                localStorage.setItem('CTCTimers', oldTimers + newTimer);
-                //add timer to list
-                timerMan_.addTimerToList(name);
-                //navigate to timers list
-                NavigationMan_.navigate(NavigationMan_.pagePosition, "timersList");
-
-                //push notification
-                timerMan_.notificationStart(time, nameToDisplay);
+            //check if use with the default name
+            //if yes - update the local storsge - prevent double use
+            if("ТАЙМЕР " + timerMan_.timersIndexForName == $("#timerName").val()) {
+                localStorage.setItem("CTCTimersIndex", timerMan_.timersIndexForName);
             }
-            /*else {
-            alert("ther is another timer with the same name! give another name");
-            }*/
-        });
+            //startTime + {} + how many time plus start time + {} + name + {} + name to display 
 
-    }
+            ////set name to save in localstorage
+            //timersIndexForName = localStorage.getItem("CTCTimersIndex");
+            //if(timersIndexForName == undefined) {
+            //    timersIndexForName = "1";
+            //}
+            //else {
+            //    timersIndexForName = timersIndexForName * 1 + 1;
+            //}
+            // localStorage.setItem("CTCTimersIndex", timersIndexForName);
+
+            //var name = "timer " + timersIndexForName;
+
+            var date = new Date();
+            var startTime = date.getTime();
+            var time = timerMan_.convertToMiliseconds($("#timeEdit").text());
+            time = time + startTime; //$("#timeEdit").text();
+            var name = $("#timerName").val();
+            var nameToDisplay = $("#timerName").val();
+            //if(nameToDisplay == "" || nameToDisplay == "имя")//there is no name - set default
+            //{
+            //    nameToDisplay = name;
+
+            //}
+
+            //******************************
+            $("#timerName").val(nameToDisplay);
+            var newTimer = 'timer:' + startTime + '{}' + time + '{}' + name + '{}' + "play{}" + nameToDisplay;
+            localStorage.setItem('CTCTimers', oldTimers + newTimer);
+            //add timer to list
+            timerMan_.addTimerToList(name);
+            //navigate to timers list
+            NavigationMan_.navigate(NavigationMan_.pagePosition, "timersList");
+
+            //push notification
+            timerMan_.notificationStart(time, nameToDisplay);
+        }
+        /*else {
+        alert("ther is another timer with the same name! give another name");
+        }*/
+    });
+
+}
 
     this.getDefaultName = function()
     {
@@ -637,6 +637,7 @@ this.orange_off=function()
 
 
     this.notificationStart = function(time, name) {
+        alert("name1: " + name + " time1: " + time)
         try {
             //  alert("notificationStart");
             d = new Date(time);
@@ -658,13 +659,14 @@ this.orange_off=function()
     }
 
     this.notificationStop = function(time, name) {
-        try{
-           // alert("notificationStart");
-         //  alert("name: "+name+" time: "+time)
-           plugins.localNotification.cancel(name + '_timer'); 
-        }  
-        catch(ex){
-           // alert("notificationStop fail"+ex);
+        try {
+            // alert("notificationStart");
+            name = "sa";
+            alert("name: " + name + " time: " + time)
+            plugins.localNotification.cancel(name + '_timer');
+        }
+        catch(ex) {
+            alert("notificationStop fail" + ex);
         }
 
     }
