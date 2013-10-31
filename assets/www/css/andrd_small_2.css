@@ -338,3 +338,15 @@ height: 375px;
 .foodgrator_btn_left{
     background-position-x: 6%;
 }
+
+.timer_clock{
+    top: 15%;
+}
+
+.timer_name{
+    top: 15%;
+}
+
+.timer_delete_btn{
+    top: -30%;
+}
