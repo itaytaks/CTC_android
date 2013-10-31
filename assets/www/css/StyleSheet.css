@@ -3995,14 +3995,14 @@ a {
 
 
 .term_list ul li {
-    border-bottom: 1px solid #8F9CA2;
-    height: 17px;
-    left: 13px;
-    list-style-type: none;
-    padding-bottom: 14px;
-    position: relative;
-    width: 90%;
-    cursor: pointer;
+   border-bottom: 1px solid #8F9CA2;
+height: 26px;
+left: 13px;
+list-style-type: none;
+padding-bottom: 0;
+position: relative;
+width: 90%;
+cursor: pointer;
 }
 
 .term_name {
@@ -4011,7 +4011,7 @@ a {
     font-style: italic;
     font-weight: bold;
     position: relative;
-    top: 0.8em;
+    top: 6px;
 }
 
 .term_middel_window {
