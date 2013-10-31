@@ -505,7 +505,7 @@ this.showTimerPage = function() {
         $(".page").hide();
         var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;
        $(".term_middel_window").css("height", pageHeight+'px');
-       pageHeight = pageHeight - $(".second_nav_background_papers").height() +10 ;
+       pageHeight = pageHeight - $(".second_nav_background_papers").height() +35 ;
        $(".term_middel_pic").css("height", pageHeight+'px');
         $('.Terminology_page').show();
         this.backPosition = this.pagePosition;
