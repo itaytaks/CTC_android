@@ -30,12 +30,12 @@ function termsMan () {
         //    }
         //});
    }
-    
-    this.createList = function()
-    {
-         setTimeout("jsonMan_.get_terms_post('" + this.count + "','"+this.page +"'," +this.createListCB+")", 100);
 
-    }
+   this.createList = function() {
+       showLoading();
+       setTimeout("jsonMan_.get_terms_post('" + this.count + "','" + this.page + "'," + this.createListCB + ")", 100);
+
+   }
     this.createListCB = function(val) {
         
          var infoImage = "images/term_goto_information_btn.png";
@@ -55,7 +55,7 @@ function termsMan () {
 
         });
 
-           
+            hideLoading();
 
     }
 
