@@ -402,3 +402,42 @@ body {
 .delete_btn_foodgator{
     top: 25%;
 }
+
+
+
+/*-------delete---------*/
+.delete_pop{
+    z-index: 20000;
+}
+.shopping_mail_backgroung{
+    z-index: 20010;
+}
+
+.mail_text, .yes_no{
+    z-index: 200200;
+}
+.recipes_background_shopping{
+    z-index: 100;
+}
+
+.recipes_middel_pic_shopping{
+    z-index: 200;
+}
+
+.shopping_middel_window{
+    z-index: 300;
+}
+
+.cover_delete, .shopping_list{
+    z-index: 400;
+}
+
+.shopping_list ul{
+    z-index: 500;
+}
+#shopping_list{
+    z-index: 500;
+}
+.shopping_list ul li{
+    z-index: 600;
+}

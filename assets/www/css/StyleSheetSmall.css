@@ -1168,6 +1168,7 @@ height: 63px;
     left: 20px;
 font-weight: bold;
 left: 0;
+opacity: 1;
 }
 
 .delete_btn_foodgator {
@@ -1179,7 +1180,6 @@ left: 0;
     width: 95%;
     top: 12px;
     left: 9px;
-    -webkit-overflow-scrolling: touch;
 }
 
 

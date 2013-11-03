@@ -1567,9 +1567,9 @@ a {
     border-radius: 25px;
 }
 
-#tools_middel_element_shopping:hover {
+/*#tools_middel_element_shopping:hover {
     background-color: white;
-}
+}*/
 
 .tools_middel_element_footer {
     border-top: 1px solid #4d555f;
@@ -1589,9 +1589,9 @@ a {
     width: 432px;
 }
 
-#tools_middel_element_shopping .tools_text {
+/*#tools_middel_element_shopping .tools_text {
     color: #ccc;
-}
+}*/
 
 .tools_text_orange {
     /*color: #ff6000;
@@ -2787,7 +2787,6 @@ a {
 }
 
 .recipes_background_shopping {
-    height: inherit;
     position: relative;
     top: 8%;
     width: 95%;
@@ -2806,6 +2805,7 @@ a {
     position: relative;
     width: 100%;
     background-color: white;
+    z-index: 1;
 }
 
 .tree_btn_shopping_position {
@@ -2945,8 +2945,6 @@ a {
 }
 
 .shopping_middel_window {
-    height: auto;
-    overflow: hidden;
     position: relative;
     width: 95%;
     top: 21px;
@@ -4034,8 +4032,6 @@ cursor: pointer;
 
 
 .shopping_middel_window {
-    overflow-y: auto;
-    overflow-x: hidden;
     position: relative;
     width: 95%;
     top: 21px;
@@ -4073,17 +4069,19 @@ cursor: pointer;
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 60;
+    z-index: 100;
     top: 0;
 }
 
 .all_background_black {
-    background-color: transparent;
+    /*background-color: transparent;*/
+    display: none;
     height: 100%;
     opacity: 0.72;
     position: absolute;
     top: 0%;
     width: 100%;
+    z-index: 1;
 }
 
 .mail_text {
@@ -4104,7 +4102,7 @@ cursor: pointer;
     width: 30%;
     position: relative;
     text-align: center;
-    top: 34%;
+    top: 31%;
     left: 0;
     right: 0;
     margin: auto;
@@ -4121,6 +4119,7 @@ cursor: pointer;
     top: 17%;
     background-size: 80% auto;
     background-position: center;
+    z-index: 100;
 }
 
 #yesDeleteShoppingList {
