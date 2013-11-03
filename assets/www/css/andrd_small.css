@@ -805,7 +805,7 @@ left: 69px;*/
     line-height: 3.3em;
 }
 
-.food_name_what_u_need_list {
+.food_name_what_u_need_list, .food_name_shopping {
     font-size: 12px;
     font-weight: bold;
     top: 0.9em;
@@ -1194,10 +1194,6 @@ left: 69px;*/
 }
 
 .shopping_list {
-    height: 410px;
-    margin: 0px 0 0 -26px;
-    position: relative;
-    top: -10px;
 }
 
 .shopping_list ul {
