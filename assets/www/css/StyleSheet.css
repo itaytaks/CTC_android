@@ -2882,6 +2882,7 @@ a {
     position: relative;
     width: 100%;
     top: 18px;
+    z-index: 1;
 }
 
 #Text_search_shopping {
@@ -4081,7 +4082,7 @@ cursor: pointer;
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 21;
+    z-index: 60;
     top: 0;
 }
 
@@ -4096,13 +4097,13 @@ cursor: pointer;
 
 .mail_text {
     color: #fff;
-    font-size: 250%;
-    line-height: 180%;
+    font-size: 2em;
+    line-height: 1.8em;
     margin: auto;
     position: relative;
     left: 0;
     right: 0;
-    top: 20%;
+    top: 27%;
     text-align: center;
     width: 70%;
 }
@@ -4112,10 +4113,11 @@ cursor: pointer;
     width: 30%;
     position: relative;
     text-align: center;
-    top: 24%;
+    top: 34%;
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 60;
 }
 
 .shopping_mail_backgroung {
