@@ -379,3 +379,7 @@ body {
 .food_name_shopping{
     line-height: 2.5em;
 }
+
+.delete_btn_foodgator{
+    top: 25%;
+}
