@@ -1293,7 +1293,6 @@ left: 69px;*/
 
 
 .addToShoppingText {
-    top: 35%;
 }
 
 .shopping_ok_border {
@@ -1310,7 +1309,7 @@ left: 69px;*/
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
     cursor: pointer;
-    height: 38px;
+    height: 3.6em;
     left: 37%;
     margin: auto;
     position: absolute;
@@ -1318,8 +1317,8 @@ left: 69px;*/
 }
 
 .timer_finish_OK {
-    font-size: 20px;
-    line-height: 1em;
+    font-size: 2em;
+    line-height: 1.8em;
     margin: auto;
     width: 43%;
 }
