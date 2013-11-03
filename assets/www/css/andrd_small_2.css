@@ -370,3 +370,12 @@ body {
 .timer_ok_border {
     border-radius: 5px;
 }
+
+.shopping_list ul li {
+    height: 3em;
+    margin-bottom: 0;
+}
+
+.food_name_shopping{
+    line-height: 2.5em;
+}
