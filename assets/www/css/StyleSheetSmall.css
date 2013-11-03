@@ -1168,6 +1168,7 @@ height: 63px;
     position: relative;
     width: 100%;
     top: 22px;*/
+    z-index: 0;
 }
 
 #Text_search_shopping {

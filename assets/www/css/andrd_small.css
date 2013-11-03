@@ -1208,15 +1208,19 @@ left: 69px;*/
     position: relative;
     width: 100%;
     top: 22px;*/
+    height: 3em;
+    margin-bottom: 0;
 }
 
 #Text_search_shopping {
 }
 
 .food_name_shopping {
+    line-height: 2.5em;
 }
 
 .delete_btn_foodgator {
+    top: 25%;
 }
 
 .shopping_middel_window {
