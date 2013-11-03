@@ -637,7 +637,6 @@ this.attachEvents = function() {
 
 
     this.notificationStart = function(time, name) {
-        alert("name1: " + name + " time1: " + time)
         try {
             //  alert("notificationStart");
             d = new Date(time);
@@ -654,7 +653,7 @@ this.attachEvents = function() {
 
         }
         catch(ex) {
-            // alert("notificationStart fail"); 
+             alert("notificationStart fail"); 
         }
     }
 
@@ -662,11 +661,11 @@ this.attachEvents = function() {
         try {
             // alert("notificationStart");
             name = "sa";
-            alert("name: " + name + " time: " + time)
-            plugins.localNotification.cancel(name + '_timer');
+           // alert("name: " + name + " time: " + time)
+        //    plugins.localNotification.cancel(name + '_timer');
         }
         catch(ex) {
-            alert("notificationStop fail" + ex);
+          //  alert("notificationStop fail" + ex);
         }
 
     }

@@ -656,12 +656,12 @@
                         <div class="background_term">
                             <div class="recipes_header_pic"></div>
                             <div class="middel_pic_term">
-                                <div class="term_middel_window">
+                                <div> <!--class="term_middel_window"-->
                                     <img class="coffe_stain" alt="" src="images_ipad/coffe_stain.png" />
                                     <div class="term_text_background">
                                         <input id="term_search" type="text" visible="true" onkeyup="termsMan_.search(this)" onkeydown="termsMan_.search(this)" />
                                     </div>
-                                    <div class="term_list">
+                                    <div class="term_list term_middel_window">
                                         <div class="message_no_Results_term">Извините, по вашему запросу ничего не найдено</div>
                                         <ul id="terms_list">
 
@@ -969,6 +969,7 @@
             });
         </script>
     <script type="text/javascript" src="js/plugins/LocalNotification.js"></script>
+        <script type="text/javascript" src="js/plugins/statusbarnotification.js"></script>
     </body>
 </html>
 
