@@ -46,7 +46,7 @@ function FoodgrMan () {
                     $(".recipes_list_Results").hide();
                     $("#food_listWrap").show();
                     $("#food_list").append("<li>" + "<div class=\"cover_delete\" ></div>" + "<div class=\"food_name_div\"><span class=\"food_name\">" + $("#Text_search_foodgrator").val() + "</span></div>" +
-                "<span class=\"delete_btn_foodgator\" ontouchend=\"foodgrMan_.deleteLine(this)\">Удалить</span></li>");
+                "<span class=\"delete_btn_foodgator\"  ontouchend=\"foodgrMan_.deleteLine(this)\">Удалить</span></li>");
                     // wordsToSearch = wordsToSearch + "&" + $("#Text_search_foodgrator").val();
                     wordsToSearch[wordsToSearch.length] = $("#Text_search_foodgrator").val();
                     $("#Text_search_foodgrator").val("");

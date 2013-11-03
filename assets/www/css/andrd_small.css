@@ -805,10 +805,10 @@ left: 69px;*/
     line-height: 3.3em;
 }
 
-.food_name_what_u_need_list {
+.food_name_what_u_need_list, .food_name_shopping {
     font-size: 12px;
+    line-height: 24px;
     font-weight: bold;
-    top: 0.9em;
     left: 0;
 }
 
@@ -1108,24 +1108,10 @@ left: 69px;*/
 }
 
 .recipes_background_shopping {
-    height: inherit;
-    position: relative;
-    top: 36px;
-    width: 90%;
-    left: -20px;
-    margin-left: 37px;
-    background-color: white;
 }
 
 .recipes_middel_pic_shopping {
-    background-image: url("../images/recipes_middel_pic.png");
-    background-repeat: repeat-y;
-    height: 100%;
-    margin-left: 15px;
-    overflow: hidden;
-    position: relative;
-    width: 286px;
-    left: -12px;
+    
 }
 
 .tree_btn_shopping_position {
@@ -1181,7 +1167,6 @@ left: 69px;*/
 }
 
 .shopping_page .shopping_text_background {
-    background-image: url("../images_ipad/search_btn_icon.png");
     background-repeat: no-repeat;
     background-size: 10% 100%;
     background-position-x: 250px;
@@ -1195,10 +1180,6 @@ left: 69px;*/
 }
 
 .shopping_list {
-    height: 410px;
-    margin: 0px 0 0 -26px;
-    position: relative;
-    top: -10px;
 }
 
 .shopping_list ul {
@@ -1213,6 +1194,8 @@ left: 69px;*/
     position: relative;
     width: 100%;
     top: 22px;*/
+    /*height: 3em;*/
+    margin-bottom: 0;
 }
 
 #Text_search_shopping {
@@ -1222,16 +1205,14 @@ left: 69px;*/
 }
 
 .delete_btn_foodgator {
+    top: 25%;
 }
 
 .shopping_middel_window {
-    height: 679px;
-    overflow-y: auto;
     position: relative;
-    width: 290px;
+    width: 95%;
     top: 12px;
     left: 9px;
-    text-indent: 17px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -1285,7 +1266,6 @@ left: 69px;*/
 .addToShopping {
     position: absolute;
     width: 100%;
-    z-index: 30;
     top: 0;
     height: 100%;
 }
@@ -1295,7 +1275,6 @@ left: 69px;*/
 
 
 .addToShoppingText {
-    top: 35%;
 }
 
 .shopping_ok_border {
@@ -1312,17 +1291,16 @@ left: 69px;*/
     background-image: url("../images/timer_border_ok.png");
     background-repeat: no-repeat;
     cursor: pointer;
-    height: 38px;
+    height: 3.6em;
     left: 37%;
     margin: auto;
     position: absolute;
     background-size: 100% 100%;
-    z-index: 17;
 }
 
 .timer_finish_OK {
-    font-size: 20px;
-    line-height: 1em;
+    font-size: 2em;
+    line-height: 1.8em;
     margin: auto;
     width: 43%;
 }

@@ -268,9 +268,10 @@ function NavigationMan() {
 
     }
 
-    this.showShoppingPage = function() {
+    this.showShoppingPage = function () {
         $(".page").hide();
-
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - $(".tree_btn_shopping_position").height() - $(".shopping_text_background").height() ; //$(".shopping_text_background").css("margin-bottom") - 
+        $(".recipes_middel_pic_shopping").css("height", pageHeight + 'px');
         $('.shopping_page').show();
         //$('.tools_page').hide();
         $('.foodgrator_text_background').hide();
