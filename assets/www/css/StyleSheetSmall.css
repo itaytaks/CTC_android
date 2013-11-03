@@ -1252,10 +1252,9 @@ height: 63px;
 
 .addToShoppingText {
     color: white;
-    font-size: 19px;
+    font-size: 1.8em;
     position: absolute;
     text-align: center;
-    top: 236px;
     width: 60%;
     left: 20%;
 }

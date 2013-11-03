@@ -2096,7 +2096,7 @@ a {
 .timer_finish_OK {
     color: white;
     font-size: 2em;
-    line-height: 1em;
+    line-height: 1.8em;
     margin: auto;
     position: relative;
     text-align: center;
@@ -2126,6 +2126,7 @@ a {
     z-index: 30;
     border: 1px solid white;
     border-radius: 14px;
+    height: 3.6em;
 }
 
 .timer_list {
@@ -2377,7 +2378,7 @@ a {
     background-image: url("../images/add_to_cart_btn.png");
     background-size: auto 80%;
     background-position: 10% 50%;
-    background-color: #e6e8ea; /*#cc0000;*/
+    background-color: #cc0000; /*#e6e8ea;*/
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #fff;
@@ -3807,13 +3808,14 @@ a {
 
 .addToShoppingText {
     color: white;
-    font-size: 40px;
+    font-size: 1.8em;
     position: absolute;
     text-align: center;
     top: 37px;
     width: 60%;
     left: 20%;
     z-index: 30;
+    top: 35%;
 }
 
 
