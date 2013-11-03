@@ -1994,7 +1994,6 @@ a {
     display: block;
     width: 71%;
     left: 18px;
-    float: left;
 }
 
 #Text_search_foodgrator {
@@ -2790,17 +2789,20 @@ a {
 .recipes_background_shopping {
     height: inherit;
     position: relative;
-    top: 84px;
+    top: 8%;
     width: 95%;
     margin: auto;
     background-color: white;
+    left: 0;    
+    right: 0;
+    margin: auto;
 }
 
 .recipes_middel_pic_shopping {
-    background-image: url("../images/recipes_middel_pic.png");
-    background-repeat: repeat-y;
-    height: 636px;
-    overflow: hidden;
+    /*background-image: url("../images/recipes_middel_pic.png");
+    background-repeat: repeat-y;*/
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
     width: 100%;
     background-color: white;
@@ -2866,10 +2868,6 @@ a {
 }
 
 .shopping_list {
-    height: 410px;
-    margin: 0px 0 0 -26px;
-    position: relative;
-    top: -10px;
 }
 
 .shopping_list ul {
@@ -2880,10 +2878,9 @@ a {
     border-bottom: 1px solid #8F9CA2;
     list-style-type: none;
     position: relative;
-    width: 100%;
-    top: 18px;
+    width: 95%;
     z-index: 1;
-    height: 3em;
+    /*height: 3em;*/
 }
 
 #Text_search_shopping {
@@ -2949,13 +2946,13 @@ a {
 
 .shopping_middel_window {
     height: auto;
-    overflow-y: auto;
+    overflow: hidden;
     position: relative;
-    width: 661px;
+    width: 95%;
     top: 21px;
     left: 22px;
-    text-indent: 17px;
     -webkit-overflow-scrolling: touch;
+    padding-left: 11px;
 }
 
 .shopping_middel_window ul li {
@@ -4037,21 +4034,16 @@ cursor: pointer;
 
 
 .shopping_middel_window {
-    height: 679px;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    width: 100%;
+    width: 95%;
     top: 21px;
-    text-indent: 17px;
     -webkit-overflow-scrolling: touch;
 }
 
 
 .shopping_list {
-    height: 410px;
-    position: relative;
-    top: -10px;
 }
 
 
@@ -4070,7 +4062,6 @@ cursor: pointer;
     width: 52px;
     right: 5%;
     text-indent: 0;
-    top: -100%;
 }
 
 .red {

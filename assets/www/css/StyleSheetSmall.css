@@ -1064,24 +1064,10 @@ height: 63px;
 }
 
 .recipes_background_shopping {
-    height: inherit;
-    position: relative;
-    top: 36px;
-    width: 90%;
-    left: -20px;
-    margin-left: 37px;
-    background-color: white;
 }
 
 .recipes_middel_pic_shopping {
-    background-image: url("../images/recipes_middel_pic.png");
-    background-repeat: repeat-y;
-    height: 100%;
-    margin-left: 15px;
-    overflow: hidden;
-    position: relative;
-    width: 286px;
-    left: -12px;
+    
 }
 
 .tree_btn_shopping_position {
@@ -1150,10 +1136,6 @@ height: 63px;
 }
 
 .shopping_list {
-    height: 410px;
-    margin: 0px 0 0 -26px;
-    position: relative;
-    top: -10px;
 }
 
 .shopping_list ul {
@@ -1184,6 +1166,8 @@ height: 63px;
     display: block;
     width: 71%;
     left: 20px;
+font-weight: bold;
+left: 0;
 }
 
 .delete_btn_foodgator {
@@ -1191,13 +1175,10 @@ height: 63px;
 }
 
 .shopping_middel_window {
-    height: 679px;
-    overflow-y: auto;
     position: relative;
-    width: 290px;
+    width: 95%;
     top: 12px;
     left: 9px;
-    text-indent: 17px;
     -webkit-overflow-scrolling: touch;
 }
 
