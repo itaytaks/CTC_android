@@ -1069,6 +1069,9 @@ height: 63px;
 .recipes_middel_pic_shopping {
     
 }
+.recipes_middel_pic_shopping.opacity{
+    opacity:0.01;
+}
 
 .tree_btn_shopping_position {
     position: absolute;
@@ -1290,6 +1293,13 @@ opacity: 1;
     overflow-y: scroll;
     height: 282px;
 }
+
+
+.recipes_middel_window_what_u_need.opacity {
+    opacity: 0.01;
+}
+
+
 
 .one_recipe_middle_what_u_need_list {
     top: 0;

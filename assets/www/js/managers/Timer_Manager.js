@@ -139,12 +139,9 @@ this.attachEvents = function() {
             //navigate to timers list
             NavigationMan_.navigate(NavigationMan_.pagePosition, "timersList");
 
-            //push notification
-           // timerMan_.notificationStart(time, nameToDisplay);
+         
         }
-        /*else {
-        alert("ther is another timer with the same name! give another name");
-        }*/
+     
     });
 
 }
@@ -254,7 +251,7 @@ this.attachEvents = function() {
             $(timerWrap).children(".timer_toPic_position").children(".timer_clock").text(time);
             $(initStartBtn).attr("src", timerMan_.image_start);
 
-            timerMan_.notificationStop(timerMan_.convertToMiliseconds(time), nameToDisplay);
+            
 
         }
 
@@ -283,7 +280,7 @@ this.attachEvents = function() {
                     timerMan_.updateTimersStorage(timersArray);
                 }
             }
-           // timerMan_.notificationStart(updateTime, nameToDisplay);
+           
 
 
         }
@@ -388,38 +385,39 @@ this.attachEvents = function() {
                         //console.log("timeover");
                         //$(".timer_all_background_black").css("background-color", "transparent");
 
-                        var nameId = timerMan_.nameToId(name);
+                        var nameId = Date.now();// timerMan_.nameToId(name);
                         var timer_name = "#" + nameId + " .timer_finish_recipe_name";
                         var timer_back = "#" + nameId + " .timer_all_background_black";
-                        
+
                         //build the popup
-                        $(".main_background").append("<div id=\"" + nameId + "\" class=\"timer_finish\"><span class=\"timer_all_background_black\"></span>" +"<div class=\"timer_finish_all_position\">" + timerMan_.image_finish +
-                                                        "<span class=\"timer_finish_title\">ТАЙМЕР</span><div id=\"timer_finish_recipe_name\" class=\"timer_finish_recipe_name\">ПИРОГ С КАПУСТОЙ</div>" +
-                                                        "<div class=\"timer_finish_finish_text\">ПРИГОТОВЛЕН!</div><span class=\"timer_ok_border\" ontouchend=\"timerMan_.timer_finish(this)\"><span class=\"timer_finish_OK\">OK</span></span></div></div>");
+                        //alert("nameId: " + nameId);
+                        $(".main_background").append('<div id="' + nameId + '" class="timer_finish" style="display:block"><span class="timer_all_background_black"></span><div class="timer_finish_all_position">' + timerMan_.image_finish +
+                                                        '<span class="timer_finish_title">ТАЙМЕР</span><div id="timer_finish_recipe_name' + nameId + '" class="timer_finish_recipe_name">' + nameToDisplay + '</div>' +
+                                                        '<div class="timer_finish_finish_text">ПРИГОТОВЛЕН!</div><span class="timer_ok_border" ontouchend="timerMan_.timer_finish(this)"><span class="timer_finish_OK">OK</span></span></div></div>');
                         $(".timer_all_background_black").first().css("background-color", "black");
-                        
 
-                        $(timer_name).text(nameToDisplay);
 
-                          timer_name = "#" + nameId;
-                        $(timer_name).show();
+                        // $(timer_name).text(nameToDisplay);
+
+                       // timer_name = "#" + nameId;
+                        //$(timer_name).show();
 
                         //set the sound and the notification
                         try {
-							try{
-								snd.play();
-							} catch(err) {
-								console.log('error: ' + err);
-							}
-							window.plugins.statusBarNotification.notify('CTC '+nameToDisplay+' has ended','');
+                            try {
+                                snd.play();
+                            } catch(err) {
+                                console.log('error: ' + err);
+                            }
+                            window.plugins.statusBarNotification.notify('CTC ' + nameToDisplay + ' has ended', '');
                         }
                         catch(err) {
                             console.log('Its IOS: ' + err);
                         }
 
-                      
 
-                      
+
+
 
 
                     }
@@ -432,11 +430,6 @@ this.attachEvents = function() {
                     timerMan_.updateStatusInLocal(name, $(this).data("status"));
                     toolsMan_.setTimersCounter();
                     updated = $(this).data("duration");
-
-                    //show timer finish page 
-
-
-                    //timerMan_.notificationStop(timerMan_.convertToMiliseconds(updated), nameToDisplay);
 
 
                 }
@@ -621,40 +614,6 @@ this.attachEvents = function() {
     }
 
 
-
-    //this.notificationStart = function(time, name) {
-    //    try {
-    //        //  alert("notificationStart");
-    //        d = new Date(time);
-    //        plugins.localNotification.add({
-    //            date: d,
-    //            message: name + 'истекло!',
-    //            hasAction: true,
-    //            badge: 0,
-    //            id: name + '_timer',
-    //            sound: 'horn.caf'/*,
-    //                                        background:'app.background',
-    //                                        foreground:'app.running'*/
-    //        });
-
-    //    }
-    //    catch(ex) {
-    //         alert("notificationStart fail"); 
-    //    }
-    //}
-
-    //this.notificationStop = function(time, name) {
-    //    try {
-    //        // alert("notificationStart");
-    //        name = "sa";
-    //       // alert("name: " + name + " time: " + time)
-    //    //    plugins.localNotification.cancel(name + '_timer');
-    //    }
-    //    catch(ex) {
-    //      //  alert("notificationStop fail" + ex);
-    //    }
-
-    //}
 
 
 
