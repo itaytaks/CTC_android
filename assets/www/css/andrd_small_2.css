@@ -281,6 +281,7 @@ body {
 }
 
 .finish_background {
+    width: 100%;
 }
 
 
@@ -338,8 +339,12 @@ body {
     background-position: 49% 30%;
 }*/
 
-.background_term {
-    height: 430px;
+#term_search {
+font-size: 12px;
+height: 12px;
+}
+.background_term{
+    height: 430px; 
     top: 45px;
 }
 
@@ -369,6 +374,7 @@ body {
 
 .timer_ok_border {
     border-radius: 5px;
+    top: 107px
 }
 
 .shopping_list ul li {
@@ -432,12 +438,14 @@ body {
     /*background-color: #0ff;*/
 
     opacity: 0.11;
+   
 }
 
 .shopping_middel_window{
     /*z-index: 300;*/
     /*background-color: #0026ff;*/
     /*opacity: 0.01;*/
+     width: 92%;
 }
 
 .cover_delete, .shopping_list{

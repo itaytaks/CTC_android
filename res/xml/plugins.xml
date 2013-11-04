@@ -18,5 +18,5 @@
     <plugin name="Capture" value="com.phonegap.Capture"/>
     <plugin name="applicationPreferences" value="com.simonmacdonald.prefs.AppPreferences"/>
     <plugin name="ChildBrowser" value="com.phonegap.plugins.childBrowser.ChildBrowser"/>
-    <plugin name="LocalNotification" value="com.phonegap.plugin.localnotification.LocalNotification" />
+    <plugin name="LocalNotification" value="com.phonegap.plugins.localnotification.LocalNotification" />
 </plugins>

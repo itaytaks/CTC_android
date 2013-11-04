@@ -9,6 +9,8 @@ import android.util.Log;
 import android.webkit.DownloadListener;
 
 
+import android.view.WindowManager;
+import android.view.Window;
 public class MainActivity extends DroidGap {
 
 	@Override
@@ -16,6 +18,7 @@ public class MainActivity extends DroidGap {
 		
 		super.setIntegerProperty("splashscreen", R.drawable.splash);
 		super.onCreate(savedInstanceState);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		super.loadUrl("file:///android_asset/www/index.html", 10000);
 		
 		appView.setDownloadListener(new DownloadListener() 

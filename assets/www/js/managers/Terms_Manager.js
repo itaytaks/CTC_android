@@ -46,7 +46,7 @@ function termsMan () {
             //wpcf-describtion  wpcf-image wpcf-term_name
             //$(this).attr("custom_fields").
             var termItemDetails = $(this).attr("custom_fields");
-            $("#terms_list").append("<li onclick=\"termSingle_Manager_.showPage(this)\">" +
+            $("#terms_list").append("<li ontouchend=\"termSingle_Manager_.showPage(this)\">" +
                                         "<span class=\"term_name\">" + $(termItemDetails).attr("wpcf-term_name") + "</span>" +
                                         "<span class=\"get_information_term\" ><img alt=\"\" src=\""+infoImage+"\" /></span>" +
                                     "</li>");

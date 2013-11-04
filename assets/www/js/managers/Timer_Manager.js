@@ -140,7 +140,7 @@ this.attachEvents = function() {
             NavigationMan_.navigate(NavigationMan_.pagePosition, "timersList");
 
             //push notification
-            timerMan_.notificationStart(time, nameToDisplay);
+           // timerMan_.notificationStart(time, nameToDisplay);
         }
         /*else {
         alert("ther is another timer with the same name! give another name");
@@ -283,7 +283,7 @@ this.attachEvents = function() {
                     timerMan_.updateTimersStorage(timersArray);
                 }
             }
-            timerMan_.notificationStart(updateTime, nameToDisplay);
+           // timerMan_.notificationStart(updateTime, nameToDisplay);
 
 
         }
@@ -450,7 +450,7 @@ this.attachEvents = function() {
                     //show timer finish page 
 
 
-                    timerMan_.notificationStop(timerMan_.convertToMiliseconds(updated), nameToDisplay);
+                    //timerMan_.notificationStop(timerMan_.convertToMiliseconds(updated), nameToDisplay);
 
 
                 }
@@ -636,40 +636,39 @@ this.attachEvents = function() {
 
 
 
-    this.notificationStart = function(time, name) {
-        alert("name1: " + name + " time1: " + time)
-        try {
-            //  alert("notificationStart");
-            d = new Date(time);
-            plugins.localNotification.add({
-                date: d,
-                message: name + 'истекло!',
-                hasAction: true,
-                badge: 0,
-                id: name + '_timer',
-                sound: 'horn.caf'/*,
-                                            background:'app.background',
-                                            foreground:'app.running'*/
-            });
+    //this.notificationStart = function(time, name) {
+    //    try {
+    //        //  alert("notificationStart");
+    //        d = new Date(time);
+    //        plugins.localNotification.add({
+    //            date: d,
+    //            message: name + 'истекло!',
+    //            hasAction: true,
+    //            badge: 0,
+    //            id: name + '_timer',
+    //            sound: 'horn.caf'/*,
+    //                                        background:'app.background',
+    //                                        foreground:'app.running'*/
+    //        });
 
-        }
-        catch(ex) {
-            // alert("notificationStart fail"); 
-        }
-    }
+    //    }
+    //    catch(ex) {
+    //         alert("notificationStart fail"); 
+    //    }
+    //}
 
-    this.notificationStop = function(time, name) {
-        try {
-            // alert("notificationStart");
-            name = "sa";
-            alert("name: " + name + " time: " + time)
-            plugins.localNotification.cancel(name + '_timer');
-        }
-        catch(ex) {
-            alert("notificationStop fail" + ex);
-        }
+    //this.notificationStop = function(time, name) {
+    //    try {
+    //        // alert("notificationStart");
+    //        name = "sa";
+    //       // alert("name: " + name + " time: " + time)
+    //    //    plugins.localNotification.cancel(name + '_timer');
+    //    }
+    //    catch(ex) {
+    //      //  alert("notificationStop fail" + ex);
+    //    }
 
-    }
+    //}
 
 
 

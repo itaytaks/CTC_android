@@ -2701,6 +2701,11 @@ a {
     position: relative;
     top: 20px;
     padding-left: 1em;
+    
+    
+text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .get_information_term {
@@ -2930,18 +2935,6 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-.term_middel_window {
-    height: 581px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    width: 94%;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 .shopping_middel_window {
@@ -3969,11 +3962,11 @@ a {
 
 #term_search {
     border-color: transparent;
-    font-size: 26px;
-    height: 0.5em;
+   font-size: 14px;
+height: 14px;
     left: 7px;
     position: relative;
-    top: 3px;
+    top: 2px;
     width: 90%;
     -webkit-user-select: auto;
 }
@@ -4010,11 +4003,13 @@ cursor: pointer;
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    -webkit-overflow-scrolling: touch;
+   
     width: 94%;
     left: 0;
     right: 0;
     margin: auto;
+    top: 16px;
+   
 }
 
 
