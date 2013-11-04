@@ -407,37 +407,58 @@ body {
 
 /*-------delete---------*/
 .delete_pop{
-    z-index: 20000;
+    /*z-index: 20000;*/
+    /*background-color: #f00;*/
+    /*opacity: 1;*/
 }
 .shopping_mail_backgroung{
-    z-index: 20010;
+    /*z-index: 20010;*/
+    /*background-color: #ff6a00;*/
+    /*opacity: 1;*/
 }
 
 .mail_text, .yes_no{
-    z-index: 200200;
+    /*z-index: 200200;*/
+    /*background-color: #ffd800;*/
+    /*opacity: 1;*/
 }
 .recipes_background_shopping{
-    z-index: 100;
+    /*z-index: 100;*/
+    /*background-color: #b6ff00;*/
 }
 
-.recipes_middel_pic_shopping{
-    z-index: 200;
+.recipes_middel_pic_shopping, .recipes_middel_window_what_u_need{
+    /*z-index: 1;*/
+    /*background-color: #0ff;*/
+
+    opacity: 0.11;
 }
 
 .shopping_middel_window{
-    z-index: 300;
+    /*z-index: 300;*/
+    /*background-color: #0026ff;*/
+    /*opacity: 0.01;*/
 }
 
 .cover_delete, .shopping_list{
-    z-index: 400;
+    /*z-index: 400;*/
+    /*background-color: #b200ff;*/
+    /*opacity: 0.01;*/
 }
 
 .shopping_list ul{
-    z-index: 500;
+    /*z-index: 500;*/
+    /*background-color: #ff006e;*/
+    /*opacity: 0.11;*/
 }
 #shopping_list{
-    z-index: 500;
+    /*z-index: 500;*/
+    /*background-color: #808080;*/
+    /*opacity: 0.01;*/
 }
 .shopping_list ul li{
-    z-index: 600;
+    /*z-index: 600;*/
+    /*background-color: #000;*/
+    /*opacity: 0.01;
+    display: none;*/
 }
