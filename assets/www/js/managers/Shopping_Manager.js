@@ -42,9 +42,9 @@ function shoppingMan() {
 
 
         //NO to delete list clicked
-        $("#noDeleteShoppingList").click(function() { $(".delete_pop").hide(); $('.recipes_middel_pic_shopping').css("opacity","1");});
+        $("#noDeleteShoppingList").click(function() { $(".delete_pop").hide(); $('.recipes_middel_pic_shopping').removeClass("opacity");});
         $("#yesDeleteShoppingList").click(function() {
-            $('.recipes_middel_pic_shopping').css("opacity","1");
+            $('.recipes_middel_pic_shopping').removeClass("opacity");
             $(".delete_pop").hide();
             $("#shopping_list").html("");
             //delete from mail
@@ -69,7 +69,7 @@ function shoppingMan() {
         //shoppingMan_
         //$('body').focus();
         //$("#Text_search_shopping").blur();
-        $('.recipes_middel_pic_shopping').css("opacity","0.1");
+        $('.recipes_middel_pic_shopping').addClass("opacity");
         $('.delete_pop').show();
         $('.mail_text_delete').css({ "font-family": "georgia" });
 
@@ -121,7 +121,7 @@ function shoppingMan() {
                                                         "<div id=\"timer_finish_recipe_name\" class=\"addToShoppingText\">Этот список был отправлен в корзину</div>" +
                                                         "<span class=\"shopping_ok_border\" ontouchend=\"shoppingMan_.closeWindow()\"><span class=\"timer_finish_OK\">OK</span></span></div>");
 
-            $('.recipes_middel_window_what_u_need').css("opacity","0.1");
+            $('.recipes_middel_window_what_u_need').addClass("opacity");
             $(".timer_all_background_black").css("background-color", "Black");
         }
     }
@@ -137,7 +137,7 @@ function shoppingMan() {
 
     this.closeWindow = function() {
         $('.Gesture_btn').css("background-position", "0 50%");
-        $('.recipes_middel_window_what_u_need').css("opacity","1");
+        $('.recipes_middel_window_what_u_need').removeClass("opacity");
         $(".addToShopping").remove();
     }
 
