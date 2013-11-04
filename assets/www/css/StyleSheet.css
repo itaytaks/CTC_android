@@ -2440,7 +2440,7 @@ a {
 .recipes_middel_window_what_u_need {
     height: 416px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     position: relative;
     width: 100%;
     -webkit-overflow-scrolling: touch;
@@ -2806,7 +2806,7 @@ text-overflow: ellipsis;
     /*background-image: url("../images/recipes_middel_pic.png");
     background-repeat: repeat-y;*/
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     position: relative;
     width: 100%;
     background-color: white;

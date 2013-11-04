@@ -42,8 +42,9 @@ function shoppingMan() {
 
 
         //NO to delete list clicked
-        $("#noDeleteShoppingList").click(function() { $(".delete_pop").hide(); });
+        $("#noDeleteShoppingList").click(function() { $(".delete_pop").hide(); $('.recipes_middel_pic_shopping').css("opacity","1");});
         $("#yesDeleteShoppingList").click(function() {
+            $('.recipes_middel_pic_shopping').css("opacity","1");
             $(".delete_pop").hide();
             $("#shopping_list").html("");
             //delete from mail
@@ -64,13 +65,14 @@ function shoppingMan() {
         //$('.mail_pop').show();
     }
 
-    this.pop_delete_page = function() {
+    this.pop_delete_page = function () {
         //shoppingMan_
-         //$('body').focus();
+        //$('body').focus();
         //$("#Text_search_shopping").blur();
+        $('.recipes_middel_pic_shopping').css("opacity","0.1");
         $('.delete_pop').show();
-        $('.mail_text_delete').css({"font-family":"georgia"});
-       
+        $('.mail_text_delete').css({ "font-family": "georgia" });
+
 
     }
 
@@ -118,6 +120,8 @@ function shoppingMan() {
             $(".main_background").append("<div class=\"addToShopping\"><span class=\"timer_all_background_black\"></span>" + timerMan_.image_finish +   //<span class=\"timer_all_background_black\"></span>
                                                         "<div id=\"timer_finish_recipe_name\" class=\"addToShoppingText\">Этот список был отправлен в корзину</div>" +
                                                         "<span class=\"shopping_ok_border\" ontouchend=\"shoppingMan_.closeWindow()\"><span class=\"timer_finish_OK\">OK</span></span></div>");
+
+            $('.recipes_middel_window_what_u_need').css("opacity","0.1");
             $(".timer_all_background_black").css("background-color", "Black");
         }
     }
@@ -133,6 +137,7 @@ function shoppingMan() {
 
     this.closeWindow = function() {
         $('.Gesture_btn').css("background-position", "0 50%");
+        $('.recipes_middel_window_what_u_need').css("opacity","1");
         $(".addToShopping").remove();
     }
 
