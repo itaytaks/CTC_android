@@ -428,11 +428,12 @@ height: 12px;
 
 .recipes_middel_pic_shopping{
     z-index: 200;
-    width: 93%;
+   
 }
 
 .shopping_middel_window{
     z-index: 300;
+     width: 92%;
 }
 
 .cover_delete, .shopping_list{
