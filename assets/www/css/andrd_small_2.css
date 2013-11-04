@@ -433,7 +433,7 @@ height: 12px;
 
 .shopping_middel_window{
     z-index: 300;
-     width: 92%;
+     width: 85%;
 }
 
 .cover_delete, .shopping_list{
@@ -448,4 +448,10 @@ height: 12px;
 }
 .shopping_list ul li{
     z-index: 600;
+}
+
+#Text_search_shopping{
+    height: 1.3em;
+    font-size: 1.3em;
+    top: -2px;
 }

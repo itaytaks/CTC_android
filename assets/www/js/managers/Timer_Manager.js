@@ -353,8 +353,7 @@ this.attachEvents = function() {
             }
 
         }
-        //delete from notification
-        timerMan_.notificationStop(duration, nameToDisplay);
+        
     }
 
     this.updateTimersStorage = function(timersArray) {
@@ -392,48 +391,35 @@ this.attachEvents = function() {
                         var nameId = timerMan_.nameToId(name);
                         var timer_name = "#" + nameId + " .timer_finish_recipe_name";
                         var timer_back = "#" + nameId + " .timer_all_background_black";
+                        
+                        //build the popup
+                        $(".main_background").append("<div id=\"" + nameId + "\" class=\"timer_finish\"><span class=\"timer_all_background_black\"></span>" +"<div class=\"timer_finish_all_position\">" + timerMan_.image_finish +
+                                                        "<span class=\"timer_finish_title\">ТАЙМЕР</span><div id=\"timer_finish_recipe_name\" class=\"timer_finish_recipe_name\">ПИРОГ С КАПУСТОЙ</div>" +
+                                                        "<div class=\"timer_finish_finish_text\">ПРИГОТОВЛЕН!</div><span class=\"timer_ok_border\" ontouchend=\"timerMan_.timer_finish(this)\"><span class=\"timer_finish_OK\">OK</span></span></div></div>");
+                        $(".timer_all_background_black").first().css("background-color", "black");
+                        
 
+                        $(timer_name).text(nameToDisplay);
+
+                          timer_name = "#" + nameId;
+                        $(timer_name).show();
+
+                        //set the sound and the notification
                         try {
 							try{
 								snd.play();
 							} catch(err) {
 								console.log('error: ' + err);
 							}
-							window.plugins.statusBarNotification.notify('CTC', nameToDisplay + ' has ended');
+							window.plugins.statusBarNotification.notify('CTC '+nameToDisplay+' has ended','');
                         }
                         catch(err) {
                             console.log('Its IOS: ' + err);
                         }
 
-                        $(".main_background").append("<div id=\"" + nameId + "\" class=\"timer_finish\"><span class=\"timer_all_background_black\"></span>" +"<div class=\"timer_finish_all_position\">" + timerMan_.image_finish +
-                                                        "<span class=\"timer_finish_title\">ТАЙМЕР</span><div id=\"timer_finish_recipe_name\" class=\"timer_finish_recipe_name\">ПИРОГ С КАПУСТОЙ</div>" +
-                                                        "<div class=\"timer_finish_finish_text\">ПРИГОТОВЛЕН!</div><span class=\"timer_ok_border\" ontouchend=\"timerMan_.timer_finish(this)\"><span class=\"timer_finish_OK\">OK</span></span></div></div>");
-                        $(".timer_all_background_black").first().css("background-color", "black");
-                        //$(timer_name).text(name);
-                        //var shortName;
+                      
 
-                        //play the 'ding' when time over
-						try{
-                        document.getElementById("timerDing").play();
-						} catch(err){
-							console.log('android');
-
-						}
-					
-
-
-                        $(timer_name).text(nameToDisplay);
-
-                        if(browser == "ipad") {
-                            //checkHtml($(timer_name), 136);
-                        }
-                        else {
-                           // checkHtml($(timer_name), 70);
-                        }
-
-
-                        timer_name = "#" + nameId;
-                        $(timer_name).show();
+                      
 
 
                     }
