@@ -1113,6 +1113,9 @@ left: 69px;*/
 .recipes_middel_pic_shopping {
     
 }
+.recipes_middel_pic_shopping.opacity{
+    opacity:0.08;
+}
 
 .tree_btn_shopping_position {
     position: absolute;
@@ -1199,6 +1202,8 @@ left: 69px;*/
 }
 
 #Text_search_shopping {
+    height: 2em;
+top: -0px;
 }
 
 .food_name_shopping {
@@ -1359,6 +1364,9 @@ left: 69px;*/
 
 .recipes_middel_window_what_u_need {
     height: 430px;
+}
+.recipes_middel_window_what_u_need.opacity {
+    opacity: 0.08;
 }
 
 .one_recipe_middle_what_u_need_list {

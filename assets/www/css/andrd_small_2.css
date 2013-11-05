@@ -440,7 +440,14 @@ height: 12px;
     /*opacity: 0.1;*/
    
 }
+.recipes_middel_pic_shopping.opacity{
+    opacity:0.08;
+}
 
+
+.recipes_middel_window_what_u_need.opacity {
+    opacity: 0.08;
+}
 .shopping_middel_window{
     /*z-index: 300;*/
     /*background-color: #0026ff;*/

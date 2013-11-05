@@ -53,10 +53,6 @@ function RecipeMan () {
                 $(this).parent().fadeOut();
             });
 
-            /* $("#videoRecipePage").bind("play", function() {
-            $(".one_recipe_white").hide();
-            });*/
-
         }
    
     this.checkIfRecipeExist = function(id, category) {
@@ -119,47 +115,33 @@ function RecipeMan () {
         var ingraCollect = currentRecipeDetails["wpcf-formatted_ingradients"][0].split(",");
 
         $(ingraCollect).each(function(i) {
-            /*var singleLine = this.split(";");
-            if(singleLine[1] == undefined) {
-            singleLine[1] = "";
-            }*/
+       
             if(this != "") {
                 $("#one_recipe_what_u_need_list").append(" <li>" +
                                             "<div class=\"food_name_what_u_need_list_div\"><span class=\"food_name_what_u_need_list\">" + this + "</span></div>" +
                 "<span class=\"amount_need\"></span>" +
                                             "</li>");
-                recipeMan_.whatUNeedList[i] = this; // singleLine[0] + " " + singleLine[1];
+                recipeMan_.whatUNeedList[i] = this; 
             }
 
         });
 
         //set description tab
         $("#totalTimeRecipePage").text(currentRecipeDetails["wpcf-total_time"][0] + " мин.");
-        //$("#totalTimeRecipePage").text(currentRecipeDetails["wpcf-total_time"][0] + " Min."); //for english
+        
         $("#levelRecipPage").text(currentRecipeDetails["wpcf-complexity_level"][0]);
 
         var small_imag = currentRecipeDetails["wpcf-image"][0];
         if(small_imag == "") { small_imag = "images/default_pic.jpg"; }
 
         $("#imgRecipePage").attr("src", small_imag);
-        //$("#videoRecipePage").attr("poster", small_imag);
-
+       
         //if there is video        
         if((currentRecipeDetails["wpcf-video"] != "" && currentRecipeDetails["wpcf-video"][0] != "") || (currentRecipeDetails["wpcf-videomp4"] != undefined && currentRecipeDetails["wpcf-videomp4"][0] != "")) {
-            /*var myVideo = document.getElementById("videoRecipePage");
-            myVideo.src = currentRecipeDetails["wpcf-video"][0];
-            $("#imgRecipePage").hide();
-            $("#videoRecipePage").show();*/
-            var width = "516";
-            var height = "334";
+            
+          
             var video_playbtn = "";
-            //var src="";
-            //if(browser == "ipad") {
-            //    width = "1266";
-            //    height = "856";
-            //    // src = currentRecipeDetails["wpcf-video"][0];
-            //}
-            //if(browser == "isGt3" || browser == "isGt2") {
+           
             var width = "640";
             var height = "413";
             try {
@@ -170,27 +152,15 @@ function RecipeMan () {
             }
 
             video_playbtn = "<div id=\"video_playbtn_andro\" class=\"video_playbtn\" ontouchstart=\"recipeMan_.playVideo()\";></div>";
-            $("#imgRecipePage").hide();
-
-            $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video></div>");
-            $("#videoRecipePage").show();
+          //  $("#imgRecipePage").hide();
             $("#playVideoBtn").show();
-            // }
-            //else if(browser != "isGt3" && browser != "isGt2") {
-            //    src = currentRecipeDetails["wpcf-video"][0];
-            //    $("#imgRecipePage").hide();
-
-            //    $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video>");
-            //    $("#videoRecipePage").show();
-            //    $("#playVideoBtn").show();
-            //}
-            //else {
-            //    src = currentRecipeDetails["wpcf-video"][0];
-            //}
-
+            $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video></div>");
+            //$("#videoRecipePage").show();
+           
+           
 
             $("#videoRecipePage").bind("play", function() {
-                //showLoading();
+                
                 $(".one_recipe_white").hide();
             });
 
@@ -234,7 +204,7 @@ function RecipeMan () {
             checkHtml($(".one_recipe_text_pic"), 88);
         }
 
-        //}
+        
 
 
 
@@ -281,8 +251,7 @@ function RecipeMan () {
         $("#levelRecipPage").text("");
         $("#imgRecipePage").attr("src", "").show();
 
-        //$("#videoRecipePage").attr("poster","images/default_pic.jpg").hide();
-
+      
         $("#titleRecipePage").text("");
         $("#descRecipePage").text("");
         $(".one_recipe_white").show();
@@ -298,24 +267,15 @@ function RecipeMan () {
         $('.recipes_background_main').show();
         $('.recipes_background_what_u_need').hide();
         $('.recipes_background_what_to_do').hide();
-        //$('.Gesture_btn').css({"background-position":"0px"});
-        $('.one_recipe_text_bar_left').css({"color":"#f3f2ee"});
+       $('.one_recipe_text_bar_left').css({"color":"#f3f2ee"});
         $('.one_recipe_bar_left').css({"background-color":"#4d555f"});
         $('.one_recipe_text_bar_middel').css({"color":"#484F57"});
         $('.one_recipe_bar_middel').css({"background-color":"#f3f2ee"});
         $('.one_recipe_text_bar_right').css({"color":"#484F57"});
         $('.one_recipe_bar_right').css({"background-color":"#f3f2ee"});
-        if(isIpad())
-        {
-          //$('.one_recipe_text_bar_middel').css({"left":"94px"});  
-          $('.Gesture_btn').css({"background-position":"-59px 50%"});
-        }
-        else
-        {
-          //$('.one_recipe_text_bar_middel').css({"left":"37px"}); 
-          $('.Gesture_btn').css({"background-position":"-59px 50%"}); 
-        }
-     
+      
+        $('.Gesture_btn').css({"background-position":"-59px 50%"}); 
+       
         
 
     }
@@ -332,15 +292,7 @@ function RecipeMan () {
         $('.one_recipe_bar_left').css({"background-color":"#f3f2ee"});
         $('.one_recipe_text_bar_right').css({"color":"#4d555f"});
         $('.one_recipe_bar_right').css({"background-color":"#f3f2ee"});
-        if(isIpad())
-        {
-         // $('.one_recipe_text_bar_middel').css({"left":"60px"});
-        }
-        else 
-        {
-           // $('.one_recipe_text_bar_middel').css({"left":"31px"});  
-        }
-   
+       
     }
 	
 	this.what_u_need_start = function(e) {
@@ -361,20 +313,16 @@ function RecipeMan () {
         $('.one_recipe_text_bar_middel').css({"color":"#4d555f"});
         $('.one_recipe_bar_middel').css({"background-color":"#f3f2ee"});
         $('.Gesture_btn').css({"background-position":"0px"});
-        if(isIpad())
-        {
-          //$('.one_recipe_text_bar_middel').css({"left":"94px"});
-        }
-        else 
-        {
-          //$('.one_recipe_text_bar_middel').css({"left":"37px"});  
-        }
+      
       
     }
     this.playVideo = function() {
-         document.getElementById("videoRecipePage").play();
+        //hide the  preview image, show the video and play it
+        $("#imgRecipePage").hide()
+        $("#videoRecipePage").show();
+       $("#videoRecipePage")[0].play();
         $('.video_playbtn').hide();
-       // $(".one_recipe_white").hide();
+
     }
 
     this.pauseVideo = function() {

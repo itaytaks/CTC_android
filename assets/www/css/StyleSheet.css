@@ -1980,7 +1980,7 @@ a {
     left: 13px;
     list-style-type: none;
     position: relative;
-    width: 559px;
+    width: 95%;
     height: 25px;
 }
 
@@ -3786,7 +3786,7 @@ text-overflow: ellipsis;
 }
 
 #videoRecipePage {
-    /* display: none;*/
+     display: none;
 }
 
 .addToShopping {

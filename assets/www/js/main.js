@@ -328,3 +328,12 @@ function keyboardUpEvent(){
         $(".down_menu_background").show();
     });
 }
+
+
+function goBackByDeviceBtn(){
+   //if the current page is home page- do nothing
+   //else- go back by navigation
+   if( !(NavigationMan_.pagePosition == "main") ){
+       NavigationMan_.goBack('');
+   } 
+}

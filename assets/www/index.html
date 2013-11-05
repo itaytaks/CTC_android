@@ -65,12 +65,15 @@
 
             function deviceIsReady() {
                 attachEventFacebook();
-                document.addEventListener("backbutton", function (e) {
+                document.addEventListener("backbutton", function(e) {
                     e.preventDefault();
+
+                    goBackByDeviceBtn();
+
                 });
             }
 
-            $(document).ready(function () {
+            $(document).ready(function() {
 
                 //var jsonMan;
                 // var mainMan;
@@ -86,7 +89,7 @@
 
 
                 //prevent scroll when keyboard open
-                $(window).scroll(function (e) {
+                $(window).scroll(function(e) {
                     e.preventDefault();
                     $(window).scrollTop(0);
                     //               if(window.pageYOffset > 340) $(window).scrollTop(340);
@@ -184,7 +187,7 @@
                     <div class="recipres_page page">
                         <div class="Up_banner_background">
                             <div class="search_btn" onclick="open_search()"></div>
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('categories')" style="display:block"></div>
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')" style="display:block"></div>
                             <span class="title_up_recipes">Рецепты</span>
                             <div class="Gesture_btn_main" ontouchend="gestureMan_.showPage()"></div>
                         </div>
@@ -261,7 +264,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                             <span class="addToShoppingOk" ontouchend="shoppingMan_.closeWindow()"><span class="timer_finish_OK">OK</span></span>
                                                                                                                                                                                                                                                                                                                                                                                                                                                         </div>-->
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('recipesList')"></div><!--goback_recipes_page()-->
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div><!--goback_recipes_page()-->
                             <span class="title_up_one_recipe">Рецепт<!--Appetite--></span>
                             <div class="Gesture_btn_main" ontouchend="gestureMan_.showPage()"></div>
                         </div>
@@ -460,7 +463,7 @@
                     </div>
                     <div class="timer_page page">
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('tools')"></div><!--onclick="backto_toolspage()" -->
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div><!--onclick="backto_toolspage()" -->
                             <span class="title_up_one_recipe">Таймер</span>
                             <div class="Gesture_btn_main" ontouchend="gestureMan_.showPage()"></div>
                             <!-- <div class="info_btn"></div>-->
@@ -531,7 +534,7 @@
                             <span id="ResultBtnFood" class="foodgrator_btn_right foodgerator_buttons">ПОДОБРАТЬ РЕЦЕПТ</span>
                         </div>
                         <div class="search_text_background foodgrator_text_background">
-                            <img id="ResultBtnFoodSearch" class="search_btn_icon" src="images_ipad/search_btn_icon.png" />
+                            <img id="ResultBtnFoodSearch" class="search_btn_icon" src="images_ipad/search_btn_icon2.png" />
                             <input id="Text_search_foodgrator" type="text" class="search_text" placeholder="поиск рецепта" />
                             <!--<span class="search_text">поиск рецепта</span>-->
                         </div>
@@ -687,7 +690,7 @@
                     </div>
                     <div class="Terminology_singel_page page">
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('terms')"></div><!--onclick="goback_terminology_page()"-->
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div><!--onclick="goback_terminology_page()"-->
                             <span class="title_up_one_recipe">Каталог терминов</span>
                             <div class="Gesture_btn_main" ontouchend="gestureMan_.showPage()"></div>
                         </div>
@@ -718,7 +721,7 @@
                     </div>
                     <div class="shopping_page page">
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('tools')"></div><!--onclick="backto_toolspage()"-->
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div><!--onclick="backto_toolspage()"-->
                             <span class="title_up_one_recipe">Список покупок</span>
                             <div class="Gesture_btn_main" ontouchend="gestureMan_.showPage()"></div>
                         </div>
@@ -781,7 +784,7 @@
                     </div>
                     <div class="Gesture_page page">
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('tools')"></div>
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div>
                             <span class="title_up_one_recipe">Gesture</span>
                             <div class="Gesture_btn_main no_Gesture" ontouchend="gestureMan_.showPage()"></div>
                         </div>
@@ -796,7 +799,7 @@
                     </div>
                     <div class="share_page page">
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('tools')"></div>
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div>
                             <span class="title_up_one_recipe">Поделиться блюдом</span>
                             <div class="Gesture_btn_main no_Gesture" ontouchend="gestureMan_.showPage()"></div>
                         </div>
@@ -840,7 +843,7 @@
                     </div>
                     <div class="about_us_page  page">
                         <div class="Up_banner_background">
-                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('main')"></div>
+                            <div class="one_recipe_back_btn" ontouchend="NavigationMan_.goBack('')"></div>
                             <span class="title_up_one_recipe">Домашний</span>
                             <div class="Gesture_btn_main no_Gesture" ontouchend="gestureMan_.showPage()"></div>
                         </div>
