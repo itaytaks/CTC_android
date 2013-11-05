@@ -37,24 +37,6 @@ body {
     background-position: 50% 20%;
     background-size: 40% 65%;
 }
-/*#recipes_icon, #favorite_icon, #main_icon, #foodgrator_icon, #tools_icon {
-background-repeat: no-repeat;
-background-size: auto 69%;
-background-position-x: 50%;
-background-position-y: 28%;
-}
-.icon {
-background-color: transparent;
-cursor: pointer;
-float: left;
-height: 89px;
-letter-spacing: 1px;
-margin-left: 9px;
-width: 20%;
-height: 100%;
-position: relative;
-border: 1px solid red;
-}*/
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -188,16 +170,6 @@ left: 96px;*/
     top: 54%;
     left: 65%;
 }
-/*
-.midddel_main_pic
-{
-    height: 485px
-    
-}
-.midddel_main_pic_item img
-{
-    height: 100%;
-}*/
 #btn_txt_1 {
     font-size: 8px;
     letter-spacing: 0.2px;
@@ -295,10 +267,6 @@ left: 96px;*/
     padding-top: 30px;
 }
 /******categories list********/
-
-/*.categories_page {
-height: 1100px;
-}*/
 .all_categories {
     top: 0px;
     height: 520px;
@@ -1190,14 +1158,6 @@ left: 69px;*/
 }
 
 .shopping_list ul li {
-    /*border-bottom: 1px solid #8F9CA2;
-    left: 13px;
-    list-style-type: none;
-    margin-bottom: 17px;
-    position: relative;
-    width: 100%;
-    top: 22px;*/
-    /*height: 3em;*/
     margin-bottom: 0;
 }
 

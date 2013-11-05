@@ -36,9 +36,9 @@ function FoodgrMan () {
 
     }
     this.attachEvents = function() {        //enter clicked in search text box
-        var deleteImage = "images/delete_btn_foodgator.png";
+        var deleteImage = "";
         if(isIpad()) {
-            deleteImage = "images_ipad/delete_btn_foodgator.png";
+            deleteImage = "";
         }
         $("#Text_search_foodgrator").keypress(function(e) {
             if(e.keyCode == 13) {
@@ -293,7 +293,7 @@ function FoodgrMan () {
 
 
     this.setHeightMainContent = function () {
-        var topStr = $(".foodgrator_text_background").css("top")
+        var topStr = $(".foodgrator_text_background").css("top");
         topStr = topStr.substring(0, topStr.length - 2);
         pageHeightFood = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - $(".foodgrator_text_background").height() - topStr - 16;
         pageHeightFoodList = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - $(".second_nav_background_papers").height() - 16;

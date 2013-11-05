@@ -19,9 +19,9 @@ function shoppingMan() {
 
     }
     this.attachEvents = function() {
-        var deleteImage = "images/delete_btn_foodgator.png";
+        var deleteImage = "";
         if(isIpad()) {
-            deleteImage = "images_ipad/delete_btn_foodgator.png";
+            deleteImage = "";
         }
         //enter clicked in search text box
         $("#Text_search_shopping").keypress(function(e) {
@@ -97,9 +97,9 @@ function shoppingMan() {
 
     }
     this.addFromRecipePage = function(listToAdd) {
-        var deleteImage = "images/delete_btn_foodgator.png";
+        var deleteImage = "";
         if(isIpad()) {
-            deleteImage = "images_ipad/delete_btn_foodgator.png";
+            deleteImage = "";
         }
         $(listToAdd).each(function() {
             $("#shopping_list").append("<li>" +

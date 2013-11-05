@@ -610,6 +610,8 @@ this.showTimerPage = function() {
 
     }
     this.showAboutPage = function() {
+        var pageHeight = $(document).height() - $(".Up_banner_background").height() - $(".down_menu_background").height() - 16;        
+        $(".about_all_text").css("height", pageHeight+'px');
         $('.about_us_page').show();
         $('.home_page').hide();
         $(".about_us_page .one_recipe_back_btn").show();
