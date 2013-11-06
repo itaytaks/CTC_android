@@ -1,4 +1,4 @@
-function shareMan() {
+﻿function shareMan() {
 
     this.initShare = function () {
 

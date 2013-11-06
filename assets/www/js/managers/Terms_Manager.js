@@ -12,23 +12,7 @@ function termsMan () {
     
     this.attachEvents = function()
     {
-               //enter clicked in search text box
-        //$("#term_search").keypress(function(e) {
-
-        //    if(e.keyCode == 13) {
-
-        //        $("#terms_list").append("<li ontouchend=\"termSingle_Manager_.showPage()\">"+
-        //                                "<span class=\"term_name\">" + $("#term_search").val()+"</span>"+
-        //                               " <span class=\"get_information_term\" ><img alt=\"\" src=\"images/term_goto_information_btn.png\" /></span>"+
-        //                            "</li>");
-        //       
-        //        $("#term_search").val("");
-        //        $("#term_search").focus();
-
-        //        
-
-        //    }
-        //});
+         
    }
 
    this.createList = function() {
@@ -36,28 +20,33 @@ function termsMan () {
        setTimeout("jsonMan_.get_terms_post('" + this.count + "','" + this.page + "'," + this.createListCB + ")", 100);
 
    }
-    this.createListCB = function(val) {
-        
-         var infoImage = "images/term_goto_information_btn.png";
-        if(isIpad()) {
-            infoImage = "images_ipad/term_goto_information_btn.png";
-        }
-        $(val.posts).each(function(i) {
-            //wpcf-describtion  wpcf-image wpcf-term_name
-            //$(this).attr("custom_fields").
-            var termItemDetails = $(this).attr("custom_fields");
-            $("#terms_list").append("<li ontouchend=\"termSingle_Manager_.showPage(this)\">" +
+   this.createListCB = function(val) {
+
+       var infoImage = "images/term_goto_information_btn.png";
+       if(isIpad()) {
+           infoImage = "images_ipad/term_goto_information_btn.png";
+       }
+       var clickEvent = "onclick";
+       if(browser == "isGt2" || browser == "isGt3"){
+           clickEvent = "ontouchend";
+       }
+       $(val.posts).each(function(i) {
+           //wpcf-describtion  wpcf-image wpcf-term_name
+           //$(this).attr("custom_fields").
+           var termItemDetails = $(this).attr("custom_fields");
+
+           $("#terms_list").append("<li "+clickEvent+"=\"termSingle_Manager_.showPage(this)\">" +
                                         "<span class=\"term_name\">" + $(termItemDetails).attr("wpcf-term_name") + "</span>" +
-                                        "<span class=\"get_information_term\" ><img alt=\"\" src=\""+infoImage+"\" /></span>" +
+                                        "<span class=\"get_information_term\" ><img alt=\"\" src=\"" + infoImage + "\" /></span>" +
                                     "</li>");
-            var termItemLI = $("#terms_list li")[i];
-            $(termItemLI).data("details", termItemDetails);
+           var termItemLI = $("#terms_list li")[i];
+           $(termItemLI).data("details", termItemDetails);
 
-        });
+       });
 
-            hideLoading();
+       hideLoading();
 
-    }
+   }
 
     this.search = function() {
         var numOfItemsShown = 0;

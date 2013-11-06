@@ -337,3 +337,4 @@ function goBackByDeviceBtn(){
        NavigationMan_.goBack('');
    } 
 }
+

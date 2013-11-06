@@ -99,7 +99,7 @@ var init = {
         //check internet
         updateInternetAccess();
 
-
+        
     }
 }
 

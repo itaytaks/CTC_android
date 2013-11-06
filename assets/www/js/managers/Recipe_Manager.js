@@ -115,33 +115,33 @@ function RecipeMan () {
         var ingraCollect = currentRecipeDetails["wpcf-formatted_ingradients"][0].split(",");
 
         $(ingraCollect).each(function(i) {
-       
+
             if(this != "") {
                 $("#one_recipe_what_u_need_list").append(" <li>" +
                                             "<div class=\"food_name_what_u_need_list_div\"><span class=\"food_name_what_u_need_list\">" + this + "</span></div>" +
                 "<span class=\"amount_need\"></span>" +
                                             "</li>");
-                recipeMan_.whatUNeedList[i] = this; 
+                recipeMan_.whatUNeedList[i] = this;
             }
 
         });
 
         //set description tab
         $("#totalTimeRecipePage").text(currentRecipeDetails["wpcf-total_time"][0] + " мин.");
-        
+
         $("#levelRecipPage").text(currentRecipeDetails["wpcf-complexity_level"][0]);
 
         var small_imag = currentRecipeDetails["wpcf-image"][0];
         if(small_imag == "") { small_imag = "images/default_pic.jpg"; }
 
         $("#imgRecipePage").attr("src", small_imag);
-       
+
         //if there is video        
         if((currentRecipeDetails["wpcf-video"] != "" && currentRecipeDetails["wpcf-video"][0] != "") || (currentRecipeDetails["wpcf-videomp4"] != undefined && currentRecipeDetails["wpcf-videomp4"][0] != "")) {
-            
-          
+
+
             var video_playbtn = "";
-           
+
             var width = "640";
             var height = "413";
             try {
@@ -152,15 +152,15 @@ function RecipeMan () {
             }
 
             video_playbtn = "<div id=\"video_playbtn_andro\" class=\"video_playbtn\" ontouchstart=\"recipeMan_.playVideo()\";></div>";
-          //  $("#imgRecipePage").hide();
+            //  $("#imgRecipePage").hide();
             $("#playVideoBtn").show();
             $(".one_recipe_pic").prepend(video_playbtn + "<video id=\"videoRecipePage\" width=\"" + width + "\" height=\"" + height + "\" controls=\"controls\" poster=\"" + small_imag + "\"><source src=\"" + src + "\" type=\"video/mp4\"></video></div>");
             //$("#videoRecipePage").show();
-           
-           
+           recipeMan_.initVideoClick();
+
 
             $("#videoRecipePage").bind("play", function() {
-                
+
                 $(".one_recipe_white").hide();
             });
 
@@ -204,7 +204,7 @@ function RecipeMan () {
             checkHtml($(".one_recipe_text_pic"), 88);
         }
 
-        
+
 
 
 
@@ -320,7 +320,8 @@ function RecipeMan () {
         //hide the  preview image, show the video and play it
         $("#imgRecipePage").hide()
         $("#videoRecipePage").show();
-       $("#videoRecipePage")[0].play();
+        $("#videoRecipePage").click();
+        //$("#videoRecipePage")[0].play();
         $('.video_playbtn').hide();
 
     }
@@ -370,9 +371,12 @@ function RecipeMan () {
 
     }
 
-    
+    this.initVideoClick =function(){
+       var video = document.getElementById('videoRecipePage');
+       video.addEventListener('click',function(){
+          video.play();
+       },false);
+     }
 
-    }
-
     
-     
+}

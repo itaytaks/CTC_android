@@ -21,7 +21,7 @@ function attachEventFacebook() {
         var params = {
             method: 'feed',
             message: 'msg',
-            name: 'CTC.Рецепты — приложение без прикосновения к экрану',
+            name: 'CTC.Рецепты',
             link: applicationDownloadLink,
             picture: str,
             caption: 'Привет, Друзья ',
