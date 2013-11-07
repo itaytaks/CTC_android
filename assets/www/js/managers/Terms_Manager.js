@@ -3,7 +3,7 @@ function termsMan () {
     this.page = 1;
     this.showPage = function() {
         NavigationMan_.navigate("tools", "terms");        
-        $("#term_search").focus();
+       
         if($("#terms_list li").length==0){            
             this.createList();
         }
@@ -27,9 +27,9 @@ function termsMan () {
            infoImage = "images_ipad/term_goto_information_btn.png";
        }
        var clickEvent = "onclick";
-       if(browser == "isGt2" || browser == "isGt3"){
-           clickEvent = "ontouchend";
-       }
+       //if(browser == "isGt2" || browser == "isGt3"){
+       //    clickEvent = "ontouchend";
+       //}
        $(val.posts).each(function(i) {
            //wpcf-describtion  wpcf-image wpcf-term_name
            //$(this).attr("custom_fields").

@@ -64,7 +64,7 @@ border: 1px solid red;
     top: 0.4em;
     overflow-x: hidden;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
     height: 100%;
 }
 
@@ -1277,7 +1277,7 @@ opacity: 1;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .one_recipe_text_pic {
@@ -1542,4 +1542,6 @@ ire_icon_recipes {
     font-size: 16px;
 }
 
-
+.term_name{
+    width: 90%;
+}

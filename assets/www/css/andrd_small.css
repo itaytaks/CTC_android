@@ -46,7 +46,7 @@ body {
     top: 0.4em;
     overflow-x: hidden;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
     height: 100%;
 }
 
@@ -1178,7 +1178,7 @@ top: -0px;
     width: 95%;
     top: 12px;
     left: 9px;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 
@@ -1306,7 +1306,7 @@ top: -0px;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .one_recipe_text_pic {

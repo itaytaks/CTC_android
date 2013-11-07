@@ -111,7 +111,7 @@
     height: 100%;
     overflow: hidden;
     /*overflow-x: hidden;*/
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .one_recipe_page_what_to_do, .recipes_middel_window {

@@ -1002,7 +1002,7 @@ a {
     overflow-y: auto;
     position: relative;
     width: 94%;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
     margin: auto;
 }
 
@@ -1012,7 +1012,7 @@ a {
     overflow-y: auto;
     position: relative;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .recipes_middel_window_recipres_page, .recipes_middel_window_favorite, .recipes_middel_window_search {
@@ -1021,11 +1021,11 @@ a {
     overflow-y: scroll;
     position: relative;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .recipes_middel_window_recipres_page ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .one_recipe_page {
@@ -1872,7 +1872,7 @@ a {
     background-color: white;
     position: relative;
     /*padding-bottom: 13px;*/
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 #timer_cancel_btn {
@@ -1913,7 +1913,7 @@ a {
     background-color: #fff;
     top: -20px;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    /*/*///-webkit-overflow-scrolling: touch;*/*/
 }
 
 .all_categories ul {
@@ -1927,7 +1927,7 @@ a {
     /*margin-bottom: -43px;*/
     width: 100%;
     z-index: 3;
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .all_categories_hover {
@@ -2159,14 +2159,14 @@ a {
     overflow-y: scroll;
     position: relative;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .one_recipe_middle_what_u_need_list {
     position: relative;
     top: 5px;
     /*left:-15px;*/
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .cover_delete {
@@ -2190,7 +2190,7 @@ a {
     list-style-type: none;
     position: relative;
     padding-bottom: 15px;
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .recipes_header_pic_what_u_need {
@@ -2221,11 +2221,11 @@ a {
     overflow-y: scroll;auto;sara*/
     position: relative;
     /*width: 603px;*/
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .recipes_middel_window_foodgrator ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 
@@ -2236,7 +2236,7 @@ a {
     overflow-y: auto;
     position: relative;
     width: 604px;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .food_name_div {
@@ -2270,7 +2270,7 @@ a {
     /*width: 451px;*/
 }
 .recipes_middel_window_favorite ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 .uploader_video {
     background-image: url("../images/video_uploader.jpg");
@@ -2332,16 +2332,6 @@ a {
     list-style-type: none;
 }
 
-.term_list ul li {
-    border-bottom: 1px solid #8F9CA2;
-    height: 36px;
-    left: 13px;
-    list-style-type: none;
-    padding-bottom: 14px;
-    position: relative;
-    width: 553px;
-    cursor: pointer;
-}
 
 .term_name {
     color: #484F57;
@@ -2356,6 +2346,7 @@ a {
 text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    display: block;
 }
 
 .get_information_term {
@@ -2376,7 +2367,7 @@ text-overflow: ellipsis;
     width: 80%;
 }
 .term_middel_window ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .term_text_background {
@@ -2582,12 +2573,12 @@ text-overflow: ellipsis;
     width: 95%;
     top: 21px;
     left: 22px;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
     padding-left: 11px;
 }
 
 .shopping_middel_window ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .term_middel_window_singel {
@@ -2596,12 +2587,12 @@ text-overflow: ellipsis;
     position: relative;
     width: 100%;
     top: 3%;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
     overflow-y: auto;
 }
 
 .term_middel_window_singel ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .shopping_text_background {
@@ -2714,11 +2705,11 @@ text-overflow: ellipsis;
     overflow-y: auto;
     position: relative;
     width: 603px;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 .gesture_middel_window ul li {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
 }
 
 .mail_pop {
@@ -3611,7 +3602,7 @@ height: 14px;
 
 .term_list ul li {
    border-bottom: 1px solid #8F9CA2;
-height: 26px;
+height: 35px;
 left: 13px;
 list-style-type: none;
 padding-bottom: 0;
@@ -3661,7 +3652,7 @@ cursor: pointer;
     position: relative;
     width: 95%;
     top: 21px;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
 }
 
 
@@ -3765,7 +3756,7 @@ cursor: pointer;
     position: relative;
     width: 100%;
     top: 3%;
-    -webkit-overflow-scrolling: touch;
+    /*///-webkit-overflow-scrolling: touch;*/
     overflow-y: auto;
     overflow-x: hidden;
 }
