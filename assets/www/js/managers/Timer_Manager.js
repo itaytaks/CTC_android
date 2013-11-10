@@ -393,7 +393,7 @@ this.attachEvents = function() {
                         //alert("nameId: " + nameId);
                         $(".main_background").append('<div id="' + nameId + '" class="timer_finish" style="display:block"><span class="timer_all_background_black"></span><div class="timer_finish_all_position">' + timerMan_.image_finish +
                                                         '<span class="timer_finish_title">ТАЙМЕР</span><div id="timer_finish_recipe_name' + nameId + '" class="timer_finish_recipe_name">' + nameToDisplay + '</div>' +
-                                                        '<div class="timer_finish_finish_text">ПРИГОТОВЛЕН!</div><span class="timer_ok_border" ontouchend="timerMan_.timer_finish(this)"><span class="timer_finish_OK">OK</span></span></div></div>');
+                                                        '<div class="timer_finish_finish_text"> ПРИГОТОВЛЕН!</div><span class="timer_ok_border" ontouchend="timerMan_.timer_finish(this)"><span class="timer_finish_OK">OK</span></span></div></div>');
                         $(".timer_all_background_black").first().css("background-color", "black");
 
 
@@ -409,7 +409,7 @@ this.attachEvents = function() {
                             } catch(err) {
                                 console.log('error: ' + err);
                             }
-                            window.plugins.statusBarNotification.notify('CTC ' + nameToDisplay + ' has ended', '');
+                            window.plugins.statusBarNotification.notify(nameToDisplay + '  ПРИГОТОВЛЕН!', '');//'ТАЙМЕР ' + 
                         }
                         catch(err) {
                             console.log('Its IOS: ' + err);
