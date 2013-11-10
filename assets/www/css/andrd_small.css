@@ -1167,8 +1167,8 @@ line-height: 36px;
 }
 
 #Text_search_shopping {
-    height: 2em;
-top: -0px;
+    /*height: 2em;*/
+top: 2px;
 }
 
 .food_name_shopping {

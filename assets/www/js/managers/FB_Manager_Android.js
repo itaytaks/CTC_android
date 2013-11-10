@@ -30,6 +30,9 @@ function attachEventFacebook() {
         console.log(params);
         FB.ui(params, function (obj) { console.log(obj); });
 
+        //this line is for return the main share page after share the image
+        shareMan_.showPage()
+
     });
 
     //get the dynamic link for google play

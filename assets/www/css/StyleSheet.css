@@ -2520,14 +2520,14 @@ text-overflow: ellipsis;
 }
 
 #Text_search_shopping {
-    -webkit-user-select: auto;
-    border-color: transparent;
-    font-size: 1em;
-    height: 1em;
-    left: 7px;
-    position: relative;
-    top: 9px;
-    width: 79%;
+   -webkit-user-select: auto;
+border-color: transparent;
+font-size: 2em;
+height: 74%;
+left: 7px;
+position: relative;
+top: 1px;
+width: 79%;
 }
 
 .white_term {
@@ -2850,6 +2850,9 @@ text-overflow: ellipsis;
     background-color: #fcbf14;
 }
 
+#takeAPicBtn.disable {
+   background-color: #D4D4D4;
+}
 .share_browse_pic_position {
     position: relative;
     right: 53px;
