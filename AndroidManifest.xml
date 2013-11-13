@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thebox.ctc"
+    package="com.thebox.ctcnew"
     android:versionCode="5"
     android:versionName="5" >
   <uses-sdk
@@ -38,7 +38,7 @@
         android:theme="@android:style/Theme.NoTitleBar"
         android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" >
     <activity
-            android:name="com.thebox.ctc.MainActivity"
+            android:name="com.thebox.ctcnew.MainActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
       <intent-filter>
@@ -49,4 +49,5 @@
 
     
   </application>
+
 </manifest>

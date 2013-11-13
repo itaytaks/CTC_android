@@ -2060,34 +2060,34 @@ a {
 }
 
 .tools_counter_timer {
-    background-image: url("../images/tool_counter.png");
-    background-repeat: no-repeat;
-    height: 47px;
-    left: 251px;
-    position: relative;
-    top: -46px;
-    width: 44px;
+   background-image: url("../images/tool_counter.png");
+background-repeat: no-repeat;
+position: absolute;
+top: 15px;
+width: 44px;
+right: 10px;
+background-size: 100% 100%;
+height: 47px;
 }
 
 .tools_counter_num {
-    color: white;
-    font-size: 23px;
-    font-weight: bold;
-    line-height: 41px;
-    position: relative;
-    text-align: center;
-    min-width: 40px;
-    display: block;
+  color: white;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+display: block;
+padding: 11px;
 }
 
 .tools_counter_Shopping_cart {
     background-image: url("../images/tool_counter.png");
-    background-repeat: no-repeat;
-    height: 47px;
-    left: 422px;
-    position: relative;
-    top: -46px;
-    width: 44px;
+   background-repeat: no-repeat;
+position: absolute;
+top: 15px;
+width: 44px;
+right: 10px;
+background-size: 100% 100%;
+height: 47px;
 }
 
 .add_to_cart_btn {

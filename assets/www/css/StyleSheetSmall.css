@@ -1545,3 +1545,24 @@ ire_icon_recipes {
 .term_name{
     width: 90%;
 }
+
+
+.tools_counter_timer {
+
+top: 10px;
+width: 22px;
+right: 10px;
+height: 23px
+}
+
+.tools_counter_num {
+font-size: 10px;
+padding: 5px;
+}
+
+.tools_counter_Shopping_cart {
+top: 10px;
+width: 22px;
+right: 10px;
+height: 23px;
+}

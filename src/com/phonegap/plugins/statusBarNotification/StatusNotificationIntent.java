@@ -8,7 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
-import com.thebox.ctc.R;
+import com.thebox.ctcnew.R;
 
 public class StatusNotificationIntent {
     public static Notification buildNotification( Context context, CharSequence tag, CharSequence contentTitle, CharSequence contentText ) {
