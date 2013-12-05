@@ -22,7 +22,7 @@
     access elements control the Android whitelist.
     Domains are assumed blocked unless set otherwise
      -->
-
+    <preference name="orientation" value="portrait" />
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
 
     <!-- <access origin="https://example.com" /> allow any secure requests to example.com -->
@@ -35,6 +35,7 @@
     <log level="DEBUG"/>
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />
+	
 <plugins>
     <plugin name="App" value="org.apache.cordova.App"/>
     <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
@@ -55,9 +56,7 @@
     <plugin name="Echo" value="org.apache.cordova.Echo" />
     <plugin name="Globalization" value="org.apache.cordova.Globalization"/>
     <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
-    <plugin name="org.apache.cordova.facebook.Connect" value="org.apache.cordova.facebook.ConnectPlugin" />
-    <plugin name="StatusBarNotification" value="com.phonegap.plugins.statusBarNotification.StatusBarNotification"/>
-    
+	<plugin name="org.apache.cordova.facebook.Connect" value="org.apache.cordova.facebook.ConnectPlugin" />
 </plugins>
 </cordova>
 

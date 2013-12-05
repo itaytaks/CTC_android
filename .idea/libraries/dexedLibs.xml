@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/log4j-1.2.15-9f0f7c6e80b75696f59b876247a453d5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-a4e82f0af5bc34208072482ae1a8d410.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/appoxee-sdk-1.19-808cee31c9188f1adacb95c0fa400282.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gcm-c862037c695b9954b8f598e4c8be36fc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ormlite-android-4.40-56f06606a41edf8073848875e9138ed7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/appoxee resources-dafdc622d429164cda428d0c92b2685e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/cordova-2.4.0-8c8f29e79da80785f04a2a262f8d362c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-f6f0a78e9ea92d997e26e7c6531cbc1d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/facebooksdk-695ef816af4ee37a50947fe70b622d42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-logging-log4j-1.0.3-ba1a934ebb85d82ee999520a63b0b50b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ormlite-core-4.40-b1c35f0a5aac9bcecea7c8c800aba7ff.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
